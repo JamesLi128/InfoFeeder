@@ -26,7 +26,7 @@ Send the feed to the user, get feedback and update preference
 - Try to build the simplest frontend and make things work in the simplest way
 - Add-on features, add as I go...... (how to auto-email the feeds, other useful features to personalize, etc.)
 
-# Problem to Check
+# Problems to Check
 - Are there anything similar to this on the market?
 - Do people really need this? (At least I do, and new researchers do because we don't know anybody or the name of any journals)
 - How crap are the chatbots, any substitutions?
