@@ -5,6 +5,8 @@ It's not a real-time workflow, but can generate a few templates or find users wi
 Pipeline should look like:
 1. get interest queries(field of study/keywords/author names/journal/conference names)
 2. mode: survey / update in the field
+    if survey, then get papers by citations and specifically look for survey papers
+    if update, then get papers by relavance and date
 3. get papers[check if has been downloaded, if not download, with id]
 4. process papers: generate understanding if not, compose feed
 5. save feed
