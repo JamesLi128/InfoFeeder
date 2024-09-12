@@ -1,0 +1,11 @@
+Many things can be done off-line, like generating an understanding of the paper and compose a feed. 
+
+It's not a real-time workflow, but can generate a few templates or find users with parallel interests, then mimic
+
+Pipeline should look like:
+1. get interest queries(field of study/keywords/author names/journal/conference names)
+2. mode: survey / update in the field
+3. get papers[check if has been downloaded, if not download, with id]
+4. process papers: generate understanding if not, compose feed
+5. save feed
+6. update feed 
