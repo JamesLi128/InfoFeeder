@@ -13,3 +13,5 @@ Pipeline should look like:
 6. update feed 
 
 this collaboration graph can be used as a part of recommendation system, it searches and feed the works of close collaborators
+
+paper qa
