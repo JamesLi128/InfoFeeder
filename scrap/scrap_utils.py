@@ -3,6 +3,7 @@ import networkx as nx
 import pickle
 import feedparser
 import re
+import requests
 import matplotlib.pyplot as plt
 from tqdm import tqdm
 
@@ -44,10 +45,10 @@ class Collaboration_Graph_Scraper:
         """
         if self.cache_path != None and os.path.exists(self.cache_path):
             with open(self.cache_path, 'rb') as f:
-                self.graph, self.paper_record = pickle.load(f)
+                self.graph, self.paper_id2author_ls = pickle.load(f)
         else:
             self.graph = nx.Graph()
-            self.paper_record = {}
+            self.paper_id2author_ls = {}
 
     def _author_re(self, author_name : str) -> re.Pattern:
         """
@@ -88,9 +89,9 @@ class Collaboration_Graph_Scraper:
                         # print(searched_author.name)
                         if author_re.match(searched_author.name) is not None:
                             paper_id = entry.id.split('/abs/')[-1]
-                            if paper_id not in self.paper_record:
+                            if paper_id not in self.paper_id2author_ls:
                                 author_name_ls = [au_dict.name for au_dict in entry.authors if au_dict.name not in self.graph]
-                                self.paper_record[paper_id] = author_name_ls
+                                self.paper_id2author_ls[paper_id] = author_name_ls
                                 new_unexplored_authors.extend(author_name_ls)
                                 for co_author in entry.authors:
                                     if co_author.name not in self.graph:
@@ -128,10 +129,10 @@ class Collaboration_Graph_Scraper:
                         paper_id = entry.id.split('/abs/')[-1]
                         
                         with paper_record_lock:
-                            if paper_id in self.paper_record:
+                            if paper_id in self.paper_id2author_ls:
                                 continue
                             author_name_ls = [au_dict.name for au_dict in entry.authors if au_dict.name not in self.graph]
-                            self.paper_record[paper_id] = author_name_ls
+                            self.paper_id2author_ls[paper_id] = author_name_ls
 
                         local_new_authors.extend(author_name_ls)
 
@@ -180,7 +181,7 @@ class Collaboration_Graph_Scraper:
         if save_path is None:
             save_path = self.save_path
         with open(save_path, 'wb') as f:
-            pickle.dump((self.graph, self.paper_record), f)
+            pickle.dump((self.graph, self.paper_id2author_ls), f)
         print(f"Graph saved to {save_path}")
 
 
@@ -255,6 +256,21 @@ def url_generator(**kwargs) -> str:
     start = f"{kwargs.get('start', 0)}"
     max_results = f"{kwargs.get('max_results', 200)}"
     return f"http://export.arxiv.org/api/query?search_query={search_query}&start={start}&max_results={max_results}&sortBy=lastUpdatedDate&sortOrder=descending"
+
+def download_pdf(paper_id : str = None) -> None:
+    url = f"http://export.arxiv.org/pdf/{paper_id}"
+    if '/' in paper_id:
+        paper_id = paper_id.split('/')[-1]
+    save_path = f"../data/pdf/{paper_id}.pdf"
+    response = requests.get(url)
+    if response.status_code == 200:
+        with open(save_path, 'wb') as f:
+            f.write(response.content)
+    else:
+        print(f"Failed to download PDF for paper {paper_id}, status code: {response.status_code}")
+        return None
+
+    
 
 
 def visualize_collaboration_graph_matplotlib(
