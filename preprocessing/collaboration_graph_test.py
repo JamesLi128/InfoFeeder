@@ -1,4 +1,4 @@
-from scrap_utils import url_generator, Collaboration_Graph_Scraper, visualize_collaboration_graph_matplotlib
+from preprocessing.utils import url_generator, Collaboration_Graph_Scraper, visualize_collaboration_graph_matplotlib
 
 category_ls = ['cs.LG', 'cs.AI', 'math.CO', 'stat.ML']
 

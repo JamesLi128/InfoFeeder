@@ -190,6 +190,7 @@ class Collaboration_Graph_Scraper:
             pickle.dump((self.graph, self.paper_id2author_ls), f)
         print(f"Graph saved to {save_path}")
 
+
 class EmbeddingGenerator:
     def __init__(self, model_name : str = 'text-embedding-3-small') -> None:
         self.tokenizer = tiktoken.encoding_for_model(model_name)
@@ -199,10 +200,13 @@ class EmbeddingGenerator:
         else:
             raise ValueError(f"Unsupported model name: {model_name}. Choose from 'text-embedding-3-small'.")
 
-    def has_embedded(self, paper_id : str) -> bool:
-        path = f"../data/embeddings/{paper_id}.pt"
+    def has_embedded(self, paper_name : str) -> bool:
+        path = f"../data/embeddings/{paper_name}.pt"
+        if '/' in paper_name:
+            Warning("Should Input Paper Name, not Paper ID, deprecated arxiv naming")
+            paper_name = paper_id2paper_name(paper_name)
         if os.path.exists(path):
-            print(f"Embedding for paper {paper_id} already exists.")
+            print(f"Embedding for paper {paper_name} already exists.")
             return True
         return False
     
@@ -256,27 +260,32 @@ class EmbeddingGenerator:
         
         return embedding_chunks
 
-    def paper_id2embedding_chunks(self, paper_id : str, max_tokens : int = 8192):
+    def paper_name2embedding_chunks(self, paper_name : str, max_tokens : int = 8192):
         """
-        Generate embedding chunks for a paper given its ID.
+        Generate embedding chunks for a paper given its name.
         
         Parameters:
-        paper_id (str): The unique identifier of the paper.
+        paper_name (str): The name of the paper.
         max_tokens (int): The maximum number of tokens allowed for the embeddings (default 8192).
         
         Returns:
         List[torch.Tensor]: A list of embedding chunks for the paper.
         """
-        if self.has_embedded(paper_id):
-            return torch.load(f"../data/embeddings/{paper_id}.pt", weights_only=True)
-        text = self.paper_id2text(paper_id)
+        if self.has_embedded(paper_name=paper_name):
+                return torch.load(f"../data/embeddings/{paper_name}.pt", weights_only=True)
+        text = self.paper_id2text(paper_name)
         token_chunks = self.text2token_chunks(text, self.tokenizer, max_tokens)
         embedding_chunks = self.token_chunks2embedding_chunks(token_chunks)
-        torch.save(embedding_chunks, f"../data/embeddings/{paper_id}.pt")
+        save_path = f"../data/embeddings/{paper_name}.pt"
+        torch.save(embedding_chunks, save_path)
+        print(f"Embeddings for paper {paper_name} generated and saved to {save_path}")
         return embedding_chunks
     
-    def __call__(self, paper_id : str, max_tokens : int = 8192):
-        return self.paper_id2embedding_chunks(paper_id, max_tokens)
+    def __call__(self, paper_name : str, max_tokens : int = 8192):
+        if '/' in paper_name:
+            Warning("Should Input Paper Name, not Paper ID, deprecated arxiv naming triggered")
+            paper_name = paper_id2paper_name(paper_name)
+        return self.paper_name2embedding_chunks(paper_name, max_tokens)
 
 def paper_id2paper_name(paper_id : str) -> str:
     return paper_id.replace('/', '_')
