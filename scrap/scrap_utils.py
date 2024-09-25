@@ -6,9 +6,15 @@ import re
 import requests
 import matplotlib.pyplot as plt
 from tqdm import tqdm
-
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import concurrent.futures
 import threading
+import tiktoken
+import fitz
+
+from openai import OpenAI
+import torch
+
 class Collaboration_Graph_Scraper:
     """
     Firstly read from cache graph if exists, otherwise start from scratch.
@@ -184,7 +190,110 @@ class Collaboration_Graph_Scraper:
             pickle.dump((self.graph, self.paper_id2author_ls), f)
         print(f"Graph saved to {save_path}")
 
+class EmbeddingGenerator:
+    def __init__(self, model_name : str = 'text-embedding-3-small') -> None:
+        self.tokenizer = tiktoken.encoding_for_model(model_name)
+        self.model_name = model_name
+        if self.model_name == "text-embedding-3-small":
+            self.embed_dim = 1536
+        else:
+            raise ValueError(f"Unsupported model name: {model_name}. Choose from 'text-embedding-3-small'.")
 
+    def has_embedded(self, paper_id : str) -> bool:
+        path = f"../data/embeddings/{paper_id}.pt"
+        if os.path.exists(path):
+            print(f"Embedding for paper {paper_id} already exists.")
+            return True
+        return False
+    
+    def paper_id2text(self, paper_id : str) -> str:
+        """
+        Retrieve the text content of a paper given its ID.
+        
+        Parameters:
+        paper_id (str): The unique identifier of the paper.
+        
+        Returns:
+        str: The text content of the paper.
+        """
+        path = f"../data/pdf/{paper_id.split('/')[-1]}.pdf"
+        if not os.path.exists(path):
+            download_pdf(paper_id)
+        doc = fitz.open(path)
+        pages = [doc[i] for i in range(len(doc))]
+        text = "".join([page.get_text() for page in pages])
+        return text
+
+    def text2token_chunks(self, text: str, tokenizer: tiktoken.core.Encoding, max_tokens: int = 8192):
+        """
+        Truncate the input text to fit within the maximum token limit.
+        
+        Parameters:
+        text (str): The input string to be truncated.
+        max_tokens (int): The maximum number of tokens allowed for the embeddings (default 8192).
+        
+        Returns:
+        List[str]: A list of truncated text chunks that fit within the token limit.
+        """
+        tokens = tokenizer.encode(text)
+        
+        # If the text fits within the limit, return it as a single chunk
+        if len(tokens) <= max_tokens:
+            return [text]
+        
+        truncated_texts = []
+        current_chunk = []
+        current_length = 0
+        
+        for token in tokens:
+            if current_length + 1 > max_tokens:
+                truncated_texts.append(tokenizer.decode(current_chunk))
+                current_chunk = []
+                current_length = 0
+            
+            current_chunk.append(token)
+            current_length += 1
+        
+        if current_chunk:
+            truncated_texts.append(tokenizer.decode(current_chunk))
+        
+        return truncated_texts
+
+    def token_chunks2embedding_chunks(self, token_chunks: list[str]):
+        client = OpenAI()
+
+        # Generate embeddings for each chunk
+        embedding_chunks = torch.zeros((len(token_chunks), self.embed_dim))
+        for i, chunk in enumerate(token_chunks):
+            crnt_embedding = client.embeddings.create(model=self.model_name, input=chunk)
+            embedding_chunks[i] = torch.tensor(crnt_embedding.data[0].embedding)
+        
+        return embedding_chunks
+
+    def paper_id2embedding_chunks(self, paper_id : str, max_tokens : int = 8192):
+        """
+        Generate embedding chunks for a paper given its ID.
+        
+        Parameters:
+        paper_id (str): The unique identifier of the paper.
+        max_tokens (int): The maximum number of tokens allowed for the embeddings (default 8192).
+        
+        Returns:
+        List[torch.Tensor]: A list of embedding chunks for the paper.
+        """
+        if self.has_embedded(paper_id):
+            return torch.load(f"../data/embeddings/{paper_id}.pt", weights_only=True)
+        text = self.paper_id2text(paper_id)
+        token_chunks = self.text2token_chunks(text, self.tokenizer, max_tokens)
+        embedding_chunks = self.token_chunks2embedding_chunks(token_chunks)
+        torch.save(embedding_chunks, f"../data/embeddings/{paper_id}.pt")
+        return embedding_chunks
+    
+    def __call__(self, paper_id : str, max_tokens : int = 8192):
+        return self.paper_id2embedding_chunks(paper_id, max_tokens)
+
+def paper_id2paper_name(paper_id : str) -> str:
+    return paper_id.replace('/', '_')
 
 def query_generator_author(author_name_ls : list) -> str:
     """
@@ -259,9 +368,8 @@ def url_generator(**kwargs) -> str:
 
 def download_pdf(paper_id : str = None) -> None:
     url = f"http://export.arxiv.org/pdf/{paper_id}"
-    if '/' in paper_id:
-        paper_id = paper_id.split('/')[-1]
-    save_path = f"../data/pdf/{paper_id}.pdf"
+    paper_name = paper_id.replace('/', '_')
+    save_path = f"../data/pdf/{paper_name}.pdf"
     response = requests.get(url)
     if response.status_code == 200:
         with open(save_path, 'wb') as f:
@@ -270,7 +378,18 @@ def download_pdf(paper_id : str = None) -> None:
         print(f"Failed to download PDF for paper {paper_id}, status code: {response.status_code}")
         return None
 
-    
+def parallel_download(paper_ids: list, max_workers: int = 5):
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        # Submit tasks to the executor
+        futures = [executor.submit(download_pdf, paper_id) for paper_id in paper_ids]
+        
+        # Wait for all tasks to complete
+        for future in as_completed(futures):
+            try:
+                future.result()  # You can check for exceptions here
+            except Exception as e:
+                print(f"Error downloading file: {e}")
+
 
 
 def visualize_collaboration_graph_matplotlib(
