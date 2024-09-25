@@ -241,23 +241,9 @@ class EmbeddingGenerator:
         if len(tokens) <= max_tokens:
             return [text]
         
-        truncated_texts = []
-        current_chunk = []
-        current_length = 0
-        
-        for token in tokens:
-            if current_length + 1 > max_tokens:
-                truncated_texts.append(tokenizer.decode(current_chunk))
-                current_chunk = []
-                current_length = 0
-            
-            current_chunk.append(token)
-            current_length += 1
-        
-        if current_chunk:
-            truncated_texts.append(tokenizer.decode(current_chunk))
-        
-        return truncated_texts
+        truncated_chunks = [ tokenizer.decode(tokens[i:i+max_tokens]) for i in range(0, len(tokens), max_tokens) ]
+        truncated_chunks.append(tokenizer.decode(tokens[len(truncated_chunks)*max_tokens:]))
+        return truncated_chunks
 
     def token_chunks2embedding_chunks(self, token_chunks: list[str]):
         client = OpenAI()
