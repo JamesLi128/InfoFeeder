@@ -37,6 +37,7 @@ class Collaboration_Graph_Scraper:
         # self.max_papers = max_papers
         self.authors_to_explore = queue.Queue()
         self.depth_queue = queue.Queue()
+        self.num_updates = 0
 
         self._load_graph()
         if anchor_author not in self.graph:
@@ -92,7 +93,8 @@ class Collaboration_Graph_Scraper:
                             if collaborator_name not in self.author2paper_id:
                                 self.author2paper_id[collaborator_name] = set()
                             self.author2paper_id[collaborator_name].add(paper_id)
-        self.fully_explored_authors.add(author_name)
+            self.fully_explored_authors.add(author_name)
+            self.num_updates += 1
 
     def build_collaboration_graph_from_author(self, max_workers : int = 8) -> None:
         start_time = time.time()
@@ -102,6 +104,10 @@ class Collaboration_Graph_Scraper:
             futures = []
 
             while (not self.authors_to_explore.empty()) or any([future.running() for future in futures]):
+                if (self.num_updates + 1) % 20 == 0:
+                    print(f"Number of updates: {self.num_updates}")
+                    print(f"Number of authors to explore: {self.authors_to_explore.qsize()}")
+                    self.save_graph()
                 try:
                     crnt_author = self.authors_to_explore.get(timeout=2)
                     crnt_depth = self.depth_queue.get()
