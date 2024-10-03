@@ -478,27 +478,45 @@ def url_generator(**kwargs) -> str:
     max_results = f"{kwargs.get('max_results', 200)}"
     return f"http://export.arxiv.org/api/query?search_query={search_query}&start={start}&max_results={max_results}&sortBy=lastUpdatedDate&sortOrder=descending"
 
-def download_pdf(paper_id : str = None) -> None:
+
+def download_pdf(paper_id: str = None) -> None:
     url = f"http://export.arxiv.org/pdf/{paper_id}"
     paper_name = paper_id.replace('/', '_')
     save_path = f"../data/pdf/{paper_name}.pdf"
-    response = requests.get(url)
-    if response.status_code == 200:
-        with open(save_path, 'wb') as f:
-            f.write(response.content)
-    else:
-        print(f"Failed to download PDF for paper {paper_id}, status code: {response.status_code}")
+    
+    # Check if the file already exists
+    if os.path.exists(save_path):
+        print(f"PDF for paper {paper_id} already exists.")
         return None
+    
+    try:
+        # Request the PDF file from arXiv
+        response = requests.get(url)
+        if response.status_code == 200:
+            # Save the PDF content to a file
+            with open(save_path, 'wb') as f:
+                f.write(response.content)
+            print(f"Successfully downloaded {paper_id}")
+        else:
+            print(f"Failed to download PDF for paper {paper_id}, status code: {response.status_code}")
+    except Exception as e:
+        print(f"Error downloading PDF for paper {paper_id}: {e}")
+    
+    return None
 
-def parallel_download(paper_ids: list, max_workers: int = 5):
+def parallel_download(paper_ids: list, max_workers: int = 5, delay: float = 1.0):
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
-        # Submit tasks to the executor
-        futures = [executor.submit(download_pdf, paper_id) for paper_id in paper_ids]
+        futures = []
         
+        # Submit tasks to the executor with a delay between each submission
+        for paper_id in paper_ids:
+            futures.append(executor.submit(download_pdf, paper_id))
+            time.sleep(delay)  # Delay between submissions to avoid overwhelming the server
+            
         # Wait for all tasks to complete
         for future in as_completed(futures):
             try:
-                future.result()  # You can check for exceptions here
+                future.result()  # Raise any exception caught during the download
             except Exception as e:
                 print(f"Error downloading file: {e}")
 
