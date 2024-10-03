@@ -15,3 +15,6 @@ Pipeline should look like:
 this collaboration graph can be used as a part of recommendation system, it searches and feed the works of close collaborators
 
 paper qa
+
+to discuss: database for the pdf, cause don't want to upload all of pdfs and weights to github
+some updates
