@@ -13,7 +13,7 @@ import tiktoken
 import fitz
 import queue
 from openai import OpenAI
-import torch
+# import torch
 import time
 class Collaboration_Graph_Scraper:
     def __init__(self, cache_path : str = None, 
@@ -608,12 +608,12 @@ def visualize_collaboration_graph_matplotlib(
     )
     
     # Draw labels
-    nx.draw_networkx_labels(
-        G,
-        pos,
-        font_size=font_size,
-        font_weight=font_weight
-    )
+    # nx.draw_networkx_labels(
+    #     G,
+    #     pos,
+    #     font_size=font_size,
+    #     font_weight=font_weight
+    # )
     
     # Prepare edge widths based on weight
     weights = [G[u][v]['weight'] for u, v in G.edges()]
