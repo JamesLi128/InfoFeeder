@@ -1,2926 +1,1 @@
-nohup: ignoring input
-Author Amitabh Basu at Depth 0:   0%|          | 0/46 [00:00<?, ?it/s]Author Amitabh Basu at Depth 0: 100%|██████████| 46/46 [00:00<00:00, 84845.20it/s]
-Author Barbara Fiedorowicz at Depth 1:   0%|          | 0/1 [00:00<?, ?it/s]Author Barbara Fiedorowicz at Depth 1: 100%|██████████| 1/1 [00:00<00:00, 24244.53it/s]
-Author Sammy Khalife at Depth 1:   0%|          | 0/4 [00:00<?, ?it/s]Author Sammy Khalife at Depth 1: 100%|██████████| 4/4 [00:00<00:00, 68478.43it/s]
-Author Sammy Khalife at Depth 1:   0%|          | 0/4 [00:00<?, ?it/s]Author Sammy Khalife at Depth 1: 100%|██████████| 4/4 [00:00<00:00, 96978.13it/s]
-Author Hayden S. Helm at Depth 1:   0%|          | 0/18 [00:00<?, ?it/s]Author Hayden S. Helm at Depth 1: 100%|██████████| 18/18 [00:00<00:00, 35378.38it/s]
-Author Hongyu Cheng at Depth 1:   0%|          | 0/185 [00:00<?, ?it/s]Author Hongyu Cheng at Depth 1: 100%|██████████| 185/185 [00:00<00:00, 67158.23it/s]
-Author Hongyu Cheng at Depth 1:   0%|          | 0/185 [00:00<?, ?it/s]Author Hongyu Cheng at Depth 1: 100%|██████████| 185/185 [00:00<00:00, 66961.19it/s]
-Author Carey E. Priebe at Depth 1:   0%|          | 0/98 [00:00<?, ?it/s]Author Carey E. Priebe at Depth 1: 100%|██████████| 98/98 [00:00<00:00, 65038.26it/s]
-Author Marta Zlatic at Depth 1:   0%|          | 0/2 [00:00<?, ?it/s]Author Marta Zlatic at Depth 1: 100%|██████████| 2/2 [00:00<00:00, 31895.85it/s]
-Author Patrick Bourke at Depth 1:   0%|          | 0/2 [00:00<?, ?it/s]Author Patrick Bourke at Depth 1: 100%|██████████| 2/2 [00:00<00:00, 40329.85it/s]
-Author Piali Choudhury at Depth 1:   0%|          | 0/9 [00:00<?, ?it/s]Author Piali Choudhury at Depth 1: 100%|██████████| 9/9 [00:00<00:00, 44567.57it/s]
-Author Jonathan Larson at Depth 1:   0%|          | 0/13 [00:00<?, ?it/s]Author Jonathan Larson at Depth 1: 100%|██████████| 13/13 [00:00<00:00, 39368.92it/s]
-Author Hayden S. Helm at Depth 1:   0%|          | 0/18 [00:00<?, ?it/s]Author Hayden S. Helm at Depth 1: 100%|██████████| 18/18 [00:00<00:00, 87992.39it/s]
-Author Benjamin D. Pedigo at Depth 1:   0%|          | 0/4 [00:00<?, ?it/s]Author Benjamin D. Pedigo at Depth 1: 100%|██████████| 4/4 [00:00<00:00, 35246.25it/s]
-Author Hongyi Jiang at Depth 1:   0%|          | 0/200 [00:00<?, ?it/s]Author Hongyi Jiang at Depth 1: 100%|██████████| 200/200 [00:00<00:00, 89316.52it/s]
-Author Raman Arora at Depth 1:   0%|          | 0/64 [00:00<?, ?it/s]Author Raman Arora at Depth 1: 100%|██████████| 64/64 [00:00<00:00, 72237.74it/s]
-Author Piali~Choudhury at Depth 1:   0%|          | 0/200 [00:00<?, ?it/s]Author Piali~Choudhury at Depth 1: 100%|██████████| 200/200 [00:00<00:00, 90161.31it/s]
-Author Anirbit Mukherjee at Depth 1:   0%|          | 0/100 [00:00<?, ?it/s]Author Anirbit Mukherjee at Depth 1: 100%|██████████| 100/100 [00:00<00:00, 171335.95it/s]
-Author Tejaswini Ganapathy at Depth 1:   0%|          | 0/1 [00:00<?, ?it/s]Author Tejaswini Ganapathy at Depth 1: 100%|██████████| 1/1 [00:00<00:00, 19691.57it/s]
-Number of updates: 19
-Number of authors to explore: 0
-Graph saved to ../data/collaboration_graph.pkl
-Author Sang Chin at Depth 1:   0%|          | 0/11 [00:00<?, ?it/s]Author Sang Chin at Depth 1: 100%|██████████| 11/11 [00:00<00:00, 37358.17it/s]
-Author Trac D. Tran at Depth 1:   0%|          | 0/200 [00:00<?, ?it/s]Author Trac D. Tran at Depth 1: 100%|██████████| 200/200 [00:00<00:00, 159661.36it/s]
-Author Michele Conforti at Depth 1:   0%|          | 0/12 [00:00<?, ?it/s]Author Michele Conforti at Depth 1: 100%|██████████| 12/12 [00:00<00:00, 33487.46it/s]
-Author Marco Di Summa at Depth 1:   0%|          | 0/6 [00:00<?, ?it/s]Author Marco Di Summa at Depth 1: 100%|██████████| 6/6 [00:00<00:00, 39138.14it/s]
-Author Robert Hildebrand at Depth 1:   0%|          | 0/3 [00:00<?, ?it/s]Author Robert Hildebrand at Depth 1: 100%|██████████| 3/3 [00:00<00:00, 54708.31it/s]
-Author Ali Geisa at Depth 2:   0%|          | 0/7 [00:00<?, ?it/s]Author Ali Geisa at Depth 2: 100%|██████████| 7/7 [00:00<00:00, 41586.58it/s]
-Author Ronak Mehta at Depth 2:   0%|          | 0/40 [00:00<?, ?it/s]Author Ronak Mehta at Depth 2: 100%|██████████| 40/40 [00:00<00:00, 55315.58it/s]
-Author Tyler M. Tomita at Depth 2:   0%|          | 0/6 [00:00<?, ?it/s]Author Tyler M. Tomita at Depth 2: 100%|██████████| 6/6 [00:00<00:00, 55067.45it/s]
-Author Eric Eaton at Depth 2:   0%|          | 0/33 [00:00<?, ?it/s]Author Eric Eaton at Depth 2: 100%|██████████| 33/33 [00:00<00:00, 24894.25it/s]
-Author Gennadiy Averkov at Depth 1:   0%|          | 0/29 [00:00<?, ?it/s]Author Gennadiy Averkov at Depth 1: 100%|██████████| 29/29 [00:00<00:00, 58254.22it/s]
-Author Jeffery Dick at Depth 2:   0%|          | 0/10 [00:00<?, ?it/s]Author Jeffery Dick at Depth 2: 100%|██████████| 10/10 [00:00<00:00, 34778.64it/s]
-Author Haoyin Xu at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Haoyin Xu at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 117685.30it/s]
-Author Ashwin De Silva at Depth 2:   0%|          | 0/99 [00:00<?, ?it/s]Author Ashwin De Silva at Depth 2: 100%|██████████| 99/99 [00:00<00:00, 173087.16it/s]
-Author Brandon Duderstadt at Depth 2:   0%|          | 0/6 [00:00<?, ?it/s]Author Brandon Duderstadt at Depth 2: 100%|██████████| 6/6 [00:00<00:00, 20781.03it/s]
-Author Al-Fahad M. Al-Qadhi at Depth 2: 0it [00:00, ?it/s]Author Al-Fahad M. Al-Qadhi at Depth 2: 0it [00:00, ?it/s]
-Author Ningyuan Huang at Depth 2:   0%|          | 0/30 [00:00<?, ?it/s]Author Ningyuan Huang at Depth 2: 100%|██████████| 30/30 [00:00<00:00, 64002.60it/s]
-Author Cong Mu at Depth 2:   0%|          | 0/18 [00:00<?, ?it/s]Author Cong Mu at Depth 2: 100%|██████████| 18/18 [00:00<00:00, 95808.97it/s]
-Author Li Chen at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Li Chen at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 53914.83it/s]
-Author Kate Lytvynets at Depth 2:   0%|          | 0/3 [00:00<?, ?it/s]Author Kate Lytvynets at Depth 2: 100%|██████████| 3/3 [00:00<00:00, 51358.82it/s]
-Author Kate Lytvynets at Depth 2:   0%|          | 0/3 [00:00<?, ?it/s]Author Kate Lytvynets at Depth 2: 100%|██████████| 3/3 [00:00<00:00, 52428.80it/s]
-Number of updates: 39
-Number of authors to explore: 0
-Graph saved to ../data/collaboration_graph.pkl
-Author Guodong Chen at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Guodong Chen at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 96034.44it/s]
-Author Ronak D. Mehta at Depth 2:   0%|          | 0/40 [00:00<?, ?it/s]Author Ronak D. Mehta at Depth 2: 100%|██████████| 40/40 [00:00<00:00, 75915.00it/s]
-Author Tyler M. Tomita at Depth 2:   0%|          | 0/6 [00:00<?, ?it/s]Author Tyler M. Tomita at Depth 2: 100%|██████████| 6/6 [00:00<00:00, 35444.82it/s]
-Author Ali Geisa at Depth 2:   0%|          | 0/7 [00:00<?, ?it/s]Author Ali Geisa at Depth 2: 100%|██████████| 7/7 [00:00<00:00, 62601.55it/s]
-Author Haoyin Xu at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Haoyin Xu at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 114786.64it/s]
-Author Bryan Tower at Depth 2:   0%|          | 0/2 [00:00<?, ?it/s]Author Bryan Tower at Depth 2: 100%|██████████| 2/2 [00:00<00:00, 33026.02it/s]
-Author Kate Lytvynets at Depth 2:   0%|          | 0/3 [00:00<?, ?it/s]Author Kate Lytvynets at Depth 2: 100%|██████████| 3/3 [00:00<00:00, 50533.78it/s]
-Author Christopher White at Depth 2:   0%|          | 0/52 [00:00<?, ?it/s]Author Christopher White at Depth 2: 100%|██████████| 52/52 [00:00<00:00, 131072.00it/s]
-Author Ali Geisa at Depth 2:   0%|          | 0/7 [00:00<?, ?it/s]Author Ali Geisa at Depth 2: 100%|██████████| 7/7 [00:00<00:00, 44620.26it/s]
-Author Ronak D. Mehta at Depth 2:   0%|          | 0/40 [00:00<?, ?it/s]Author Ronak D. Mehta at Depth 2: 100%|██████████| 40/40 [00:00<00:00, 74268.33it/s]
-Author Brandon Duderstadt at Depth 2:   0%|          | 0/6 [00:00<?, ?it/s]Author Brandon Duderstadt at Depth 2: 100%|██████████| 6/6 [00:00<00:00, 75800.67it/s]
-Author Jaewon Chung at Depth 2:   0%|          | 0/98 [00:00<?, ?it/s]Author Jaewon Chung at Depth 2: 100%|██████████| 98/98 [00:00<00:00, 60742.10it/s]
-Author Christoper M. White at Depth 2:   0%|          | 0/52 [00:00<?, ?it/s]Author Christoper M. White at Depth 2: 100%|██████████| 52/52 [00:00<00:00, 158852.01it/s]
-Author Michael Trosset at Depth 2:   0%|          | 0/9 [00:00<?, ?it/s]Author Michael Trosset at Depth 2: 100%|██████████| 9/9 [00:00<00:00, 104857.60it/s]
-Author Jelle Zorn at Depth 2:   0%|          | 0/1 [00:00<?, ?it/s]Author Jelle Zorn at Depth 2: 100%|██████████| 1/1 [00:00<00:00, 26214.40it/s]
-Author Sambit Panda at Depth 2:   0%|          | 0/29 [00:00<?, ?it/s]Author Sambit Panda at Depth 2: 100%|██████████| 29/29 [00:00<00:00, 91799.86it/s]
-Author Antoine Lutz at Depth 2:   0%|          | 0/4 [00:00<?, ?it/s]Author Antoine Lutz at Depth 2: 100%|██████████| 4/4 [00:00<00:00, 66052.03it/s]
-Author Ronan Perry at Depth 2:   0%|          | 0/7 [00:00<?, ?it/s]Author Ronan Perry at Depth 2: 100%|██████████| 7/7 [00:00<00:00, 29011.98it/s]
-Author Robert Osazuwa Ness at Depth 2:   0%|          | 0/8 [00:00<?, ?it/s]Author Robert Osazuwa Ness at Depth 2: 100%|██████████| 8/8 [00:00<00:00, 41734.37it/s]
-Author Katie Matton at Depth 2:   0%|          | 0/3 [00:00<?, ?it/s]Author Katie Matton at Depth 2: 100%|██████████| 3/3 [00:00<00:00, 15160.13it/s]
-Author Hayden Helm at Depth 2:   0%|          | 0/18 [00:00<?, ?it/s]Author Hayden Helm at Depth 2: 100%|██████████| 18/18 [00:00<00:00, 55594.60it/s]
-Number of updates: 59
-Number of authors to explore: 0
-Graph saved to ../data/collaboration_graph.pkl
-Author Cencheng Shen at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Cencheng Shen at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 174182.06it/s]
-Author Junaid Bajwa at Depth 2:   0%|          | 0/1 [00:00<?, ?it/s]Author Junaid Bajwa at Depth 2: 100%|██████████| 1/1 [00:00<00:00, 26214.40it/s]
-Author Sheng Zhang at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Sheng Zhang at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 59629.00it/s]
-Author Eric Horvitz at Depth 2:   0%|          | 0/73 [00:00<?, ?it/s]Author Eric Horvitz at Depth 2: 100%|██████████| 73/73 [00:00<00:00, 52599.93it/s]
-Author Cencheng Shen at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Cencheng Shen at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 183317.48it/s]
-Author Zhirui Li at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Zhirui Li at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 160149.06it/s]
-Author Ben Johnson at Depth 2:   0%|          | 0/13 [00:00<?, ?it/s]Author Ben Johnson at Depth 2: 100%|██████████| 13/13 [00:00<00:00, 63773.04it/s]
-Author Daniel L. Sussman at Depth 2:   0%|          | 0/16 [00:00<?, ?it/s]Author Daniel L. Sussman at Depth 2: 100%|██████████| 16/16 [00:00<00:00, 58203.70it/s]
-Author Hayden Helm at Depth 2:   0%|          | 0/18 [00:00<?, ?it/s]Author Hayden Helm at Depth 2: 100%|██████████| 18/18 [00:00<00:00, 90851.35it/s]
-Author Ha Trinh at Depth 2:   0%|          | 0/9 [00:00<?, ?it/s]Author Ha Trinh at Depth 2: 100%|██████████| 9/9 [00:00<00:00, 95325.09it/s]
-Author Cencheng Shen at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Cencheng Shen at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 180013.05it/s]
-Author Cencheng Shen at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Cencheng Shen at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 178976.06it/s]
-Author Ha Trinh at Depth 2:   0%|          | 0/9 [00:00<?, ?it/s]Author Ha Trinh at Depth 2: 100%|██████████| 9/9 [00:00<00:00, 120989.54it/s]
-Author Ha Trinh at Depth 2:   0%|          | 0/9 [00:00<?, ?it/s]Author Ha Trinh at Depth 2: 100%|██████████| 9/9 [00:00<00:00, 94846.07it/s]
-Author Cencheng Shen at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Cencheng Shen at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 178253.46it/s]
-Author Xihan Qin at Depth 2:   0%|          | 0/75 [00:00<?, ?it/s]Author Xihan Qin at Depth 2: 100%|██████████| 75/75 [00:00<00:00, 179345.95it/s]
-Author Hayden Helm at Depth 2:   0%|          | 0/18 [00:00<?, ?it/s]Author Hayden Helm at Depth 2: 100%|██████████| 18/18 [00:00<00:00, 113530.03it/s]
-Author Michael A. Powell at Depth 2:   0%|          | 0/7 [00:00<?, ?it/s]Author Michael A. Powell at Depth 2: 100%|██████████| 7/7 [00:00<00:00, 72673.58it/s]
-Author Eric Bridgeford at Depth 2:   0%|          | 0/9 [00:00<?, ?it/s]Author Eric Bridgeford at Depth 2: 100%|██████████| 9/9 [00:00<00:00, 49734.83it/s]
-Number of updates: 79
-Number of authors to explore: 0
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 79
-Number of authors to explore: 0
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 79
-Number of authors to explore: 0
-Graph saved to ../data/collaboration_graph.pkl
-Author Fereshteh Amini at Depth 2:   0%|          | 0/2 [00:00<?, ?it/s]Author Fereshteh Amini at Depth 2: 100%|██████████| 2/2 [00:00<00:00, 41943.04it/s]
-Author Jeffrey Weston at Depth 2:   0%|          | 0/87 [00:00<?, ?it/s]Author Jeffrey Weston at Depth 2: 100%|██████████| 87/87 [00:00<00:00, 171638.97it/s]
-Author Joshua Vogelstein at Depth 2:   0%|          | 0/52 [00:00<?, ?it/s]Author Joshua Vogelstein at Depth 2: 100%|██████████| 52/52 [00:00<00:00, 129669.33it/s]
-Author Neha Parikh Shah at Depth 2:   0%|          | 0/179 [00:00<?, ?it/s]Author Neha Parikh Shah at Depth 2: 100%|██████████| 179/179 [00:00<00:00, 141603.25it/s]
-Author Rahul Ramesh at Depth 2:   0%|          | 0/14 [00:00<?, ?it/s]Author Rahul Ramesh at Depth 2: 100%|██████████| 14/14 [00:00<00:00, 28798.56it/s]
-Author Rahul Ramesh at Depth 2:   0%|          | 0/14 [00:00<?, ?it/s]Author Rahul Ramesh at Depth 2: 100%|██████████| 14/14 [00:00<00:00, 78189.42it/s]
-Author Pratik Chaudhari at Depth 2:   0%|          | 0/49 [00:00<?, ?it/s]Author Pratik Chaudhari at Depth 2: 100%|██████████| 49/49 [00:00<00:00, 54790.96it/s]
-Author Noah J. Cowan at Depth 2:   0%|          | 0/2 [00:00<?, ?it/s]Author Noah J. Cowan at Depth 2: 100%|██████████| 2/2 [00:00<00:00, 25343.23it/s]
-Author Michael Platt at Depth 2:   0%|          | 0/1 [00:00<?, ?it/s]Author Michael Platt at Depth 2: 100%|██████████| 1/1 [00:00<00:00, 9039.45it/s]
-Author Leyla Isik at Depth 2:   0%|          | 0/8 [00:00<?, ?it/s]Author Leyla Isik at Depth 2: 100%|██████████| 8/8 [00:00<00:00, 25970.92it/s]
-Author Chen Li at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Chen Li at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 64069.41it/s]
-Author Adam Charles at Depth 2:   0%|          | 0/16 [00:00<?, ?it/s]Author Adam Charles at Depth 2: 100%|██████████| 16/16 [00:00<00:00, 37056.25it/s]
-Author Brian Caffo at Depth 2:   0%|          | 0/7 [00:00<?, ?it/s]Author Brian Caffo at Depth 2: 100%|██████████| 7/7 [00:00<00:00, 26618.43it/s]
-Author Javier J. How at Depth 2:   0%|          | 0/67 [00:00<?, ?it/s]Author Javier J. How at Depth 2: 100%|██████████| 67/67 [00:00<00:00, 200013.07it/s]
-Author Kaleab Alemayehu Kinfu at Depth 2:   0%|          | 0/4 [00:00<?, ?it/s]Author Kaleab Alemayehu Kinfu at Depth 2: 100%|██████████| 4/4 [00:00<00:00, 41630.81it/s]
-Author Eva Yezerets at Depth 2:   0%|          | 0/4 [00:00<?, ?it/s]Author Eva Yezerets at Depth 2: 100%|██████████| 4/4 [00:00<00:00, 24564.01it/s]
-Author Dinesh Jayaraman at Depth 2:   0%|          | 0/38 [00:00<?, ?it/s]Author Dinesh Jayaraman at Depth 2: 100%|██████████| 38/38 [00:00<00:00, 43846.92it/s]
-Author Jong M. Shin at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Jong M. Shin at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 172250.68it/s]
-Author Ralph Etienne-Cummings at Depth 2: 0it [00:00, ?it/s]Author Ralph Etienne-Cummings at Depth 2: 0it [00:00, ?it/s]
-Author Randal Burns at Depth 2:   0%|          | 0/11 [00:00<?, ?it/s]Author Randal Burns at Depth 2: 100%|██████████| 11/11 [00:00<00:00, 48719.48it/s]
-Author Onyema Osuagwu at Depth 2:   0%|          | 0/1 [00:00<?, ?it/s]Author Onyema Osuagwu at Depth 2: 100%|██████████| 1/1 [00:00<00:00, 13357.66it/s]
-Author Elizabeth L. Ogburn at Depth 2:   0%|          | 0/4 [00:00<?, ?it/s]Author Elizabeth L. Ogburn at Depth 2: 100%|██████████| 4/4 [00:00<00:00, 17278.29it/s]
-Author Brett Mensh at Depth 2:   0%|          | 0/1 [00:00<?, ?it/s]Author Brett Mensh at Depth 2: 100%|██████████| 1/1 [00:00<00:00, 13842.59it/s]
-Author Maxim Bichuch at Depth 2:   0%|          | 0/2 [00:00<?, ?it/s]Author Maxim Bichuch at Depth 2: 100%|██████████| 2/2 [00:00<00:00, 15621.24it/s]
-Author Huang at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Huang at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 162381.11it/s]
-Author Alysson R. Muotri at Depth 2:   0%|          | 0/1 [00:00<?, ?it/s]Author Alysson R. Muotri at Depth 2: 100%|██████████| 1/1 [00:00<00:00, 16644.06it/s]
-Author Julia Brown at Depth 2:   0%|          | 0/63 [00:00<?, ?it/s]Author Julia Brown at Depth 2: 100%|██████████| 63/63 [00:00<00:00, 110192.31it/s]
-Author Chris White at Depth 2:   0%|          | 0/52 [00:00<?, ?it/s]Author Chris White at Depth 2: 100%|██████████| 52/52 [00:00<00:00, 106652.23it/s]
-Author Timothy Verstynen at Depth 2:   0%|          | 0/8 [00:00<?, ?it/s]Author Timothy Verstynen at Depth 2: 100%|██████████| 8/8 [00:00<00:00, 24564.01it/s]
-Author Andrei A. Rusu at Depth 2:   0%|          | 0/20 [00:00<?, ?it/s]Author Andrei A. Rusu at Depth 2: 100%|██████████| 20/20 [00:00<00:00, 17126.60it/s]
-Author Konrad P. Kording at Depth 2:   0%|          | 0/27 [00:00<?, ?it/s]Author Konrad P. Kording at Depth 2: 100%|██████████| 27/27 [00:00<00:00, 38545.34it/s]
-Author Pratik Chaudhari at Depth 2:   0%|          | 0/49 [00:00<?, ?it/s]Author Pratik Chaudhari at Depth 2: 100%|██████████| 49/49 [00:00<00:00, 170698.42it/s]
-Author Keith Levin at Depth 2:   0%|          | 0/12 [00:00<?, ?it/s]Author Keith Levin at Depth 2: 100%|██████████| 12/12 [00:00<00:00, 6888.14it/s]
-Author Joshua Agterberg at Depth 2:   0%|          | 0/5 [00:00<?, ?it/s]Author Joshua Agterberg at Depth 2: 100%|██████████| 5/5 [00:00<00:00, 48099.82it/s]
-Author Cencheng Shen at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Cencheng Shen at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 181140.32it/s]
-Author Da Zheng at Depth 2:   0%|          | 0/54 [00:00<?, ?it/s]Author Da Zheng at Depth 2: 100%|██████████| 54/54 [00:00<00:00, 48572.25it/s]
-Author Soledad Villar at Depth 2:   0%|          | 0/46 [00:00<?, ?it/s]Author Soledad Villar at Depth 2: 100%|██████████| 46/46 [00:00<00:00, 77051.91it/s]
-Author Qizhe Wang at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Qizhe Wang at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 75099.44it/s]
-Author Chengyue Huang at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Chengyue Huang at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 167738.61it/s]
-Author Lin Yang at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Lin Yang at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 61917.69it/s]
-Number of updates: 119
-Number of authors to explore: 459
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 458
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 457
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 456
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 455
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 454
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 453
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 452
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 451
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 450
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 449
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 448
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 447
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 446
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 445
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 444
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 443
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 442
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 441
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 440
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 439
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 438
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 437
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 436
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 435
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 434
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 433
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 432
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 431
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 430
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 429
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 428
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 427
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 426
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 425
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 424
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 423
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 422
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 421
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 420
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 419
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 418
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 417
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 416
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 415
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 414
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 413
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 412
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 411
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 410
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 409
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 408
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 407
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 406
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 405
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 404
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 403
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 402
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 401
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 400
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 399
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 398
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 397
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 396
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 395
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 394
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 393
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 392
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 391
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 390
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 389
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 388
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 387
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 386
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 385
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 384
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 383
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 382
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 381
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 380
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 379
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 378
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 377
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 376
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 375
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 374
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 373
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 372
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 371
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 370
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 369
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 368
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 367
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 366
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 365
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 364
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 363
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 362
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 361
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 360
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 359
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 358
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 357
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 356
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 355
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 354
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 353
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 352
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 351
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 350
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 349
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 348
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 347
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 346
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 345
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 344
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 343
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 342
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 341
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 340
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 339
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 338
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 337
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 336
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 335
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 334
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 333
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 332
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 331
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 330
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 329
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 328
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 327
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 326
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 325
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 324
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 323
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 322
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 321
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 320
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 319
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 318
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 317
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 316
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 315
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 314
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 313
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 312
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 311
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 310
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 309
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 308
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 307
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 306
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 305
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 304
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 303
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 302
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 301
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 300
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 299
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 298
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 297
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 296
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 295
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 294
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 293
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 292
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 291
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 290
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 289
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 288
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 287
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 286
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 285
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 284
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 283
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 282
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 281
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 280
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 279
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 278
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 277
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 276
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 275
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 274
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 273
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 272
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 271
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 270
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 269
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 268
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 267
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 266
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 265
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 264
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 263
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 262
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 261
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 260
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 259
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 258
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 257
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 256
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 255
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 254
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 253
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 252
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 251
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 250
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 249
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 248
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 247
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 246
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 245
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 244
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 243
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 242
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 241
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 240
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 239
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 238
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 237
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 236
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 235
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 234
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 233
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 232
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 231
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 230
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 229
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 228
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 227
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 226
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 225
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 224
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 223
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 222
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 221
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 220
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 219
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 218
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 217
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 216
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 215
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 214
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 213
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 212
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 211
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 210
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 209
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 208
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 207
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 206
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 205
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 204
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 203
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 202
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 201
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 200
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 199
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 198
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 197
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 196
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 195
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 194
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 193
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 192
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 191
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 190
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 189
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 188
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 187
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 186
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 185
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 184
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 183
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 182
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 181
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 180
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 179
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 178
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 177
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 176
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 175
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 174
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 173
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 172
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 171
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 170
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 169
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 168
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 167
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 166
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 165
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 164
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 163
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 162
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 161
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 160
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 159
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 158
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 157
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 156
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 155
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 154
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 153
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 152
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 151
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 150
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 149
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 148
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 147
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 146
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 145
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 144
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 143
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 142
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 141
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 140
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 139
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 138
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 137
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 136
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 135
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 134
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 133
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 132
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 131
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 130
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 129
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 128
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 127
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 126
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 125
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 124
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 123
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 122
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 121
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 120
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 119
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 118
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 117
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 116
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 115
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 114
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 113
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 112
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 111
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 110
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 109
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 108
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 107
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 106
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 105
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 104
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 103
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 102
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 101
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 100
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 99
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 98
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 97
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 96
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 95
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 94
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 93
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 92
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 91
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 90
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 89
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 88
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 87
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 86
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 85
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 84
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 83
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 82
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 81
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 80
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 79
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 78
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 77
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 76
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 75
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 74
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 73
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 72
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 71
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 70
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 69
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 68
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 67
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 66
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 65
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 64
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 63
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 62
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 61
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 60
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 59
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 58
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 57
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 56
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 55
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 54
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 53
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 52
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 51
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 50
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 49
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 48
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 47
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 46
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 45
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 44
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 43
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 42
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 41
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 40
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 39
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 38
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 37
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 36
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 35
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 34
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 33
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 32
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 31
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 30
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 29
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 28
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 27
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 26
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 25
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 24
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 23
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 22
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 21
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 20
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 19
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 18
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 17
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 16
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 15
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 14
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 13
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 12
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 11
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 10
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 9
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 8
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 7
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 6
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 5
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 4
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 3
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 2
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 1
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 0
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 119
-Number of authors to explore: 0
-Graph saved to ../data/collaboration_graph.pkl
-Author Mingyue Gao at Depth 2:   0%|          | 0/146 [00:00<?, ?it/s]Author Mingyue Gao at Depth 2: 100%|██████████| 146/146 [00:00<00:00, 151501.33it/s]
-Number of updates: 119
-Number of authors to explore: 7
-Graph saved to ../data/collaboration_graph.pkl
-Author Minh Tang at Depth 2:   0%|          | 0/128 [00:00<?, ?it/s]Author Minh Tang at Depth 2: 100%|██████████| 128/128 [00:00<00:00, 130371.76it/s]
-Author Joshua Cape at Depth 2:   0%|          | 0/7 [00:00<?, ?it/s]Author Joshua Cape at Depth 2: 100%|██████████| 7/7 [00:00<00:00, 39042.72it/s]
-Author Ali Saad-Eldin at Depth 2: 0it [00:00, ?it/s]Author Ali Saad-Eldin at Depth 2: 0it [00:00, ?it/s]
-Author Michael Ainsworth at Depth 2:   0%|          | 0/4 [00:00<?, ?it/s]Author Michael Ainsworth at Depth 2: 100%|██████████| 4/4 [00:00<00:00, 56299.38it/s]
-Author Yu-Chung Peng at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Yu-Chung Peng at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 159813.45it/s]
-Author Angelo Mele at Depth 2:   0%|          | 0/4 [00:00<?, ?it/s]Author Angelo Mele at Depth 2: 100%|██████████| 4/4 [00:00<00:00, 63791.70it/s]
-Author Madi Kusmanov at Depth 2:   0%|          | 0/1 [00:00<?, ?it/s]Author Madi Kusmanov at Depth 2: 100%|██████████| 1/1 [00:00<00:00, 22550.02it/s]
-Author Tianyi Chen at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Tianyi Chen at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 76931.47it/s]
-Author Lingxin Hao at Depth 2:   0%|          | 0/9 [00:00<?, ?it/s]Author Lingxin Hao at Depth 2: 100%|██████████| 9/9 [00:00<00:00, 66225.85it/s]
-Author Joshua Cape at Depth 2:   0%|          | 0/7 [00:00<?, ?it/s]Author Joshua Cape at Depth 2: 100%|██████████| 7/7 [00:00<00:00, 80438.71it/s]
-Author Jesús Arroyo at Depth 2:   0%|          | 0/14 [00:00<?, ?it/s]Author Jesús Arroyo at Depth 2: 100%|██████████| 14/14 [00:00<00:00, 65977.82it/s]
-Author Angelo Mele at Depth 2:   0%|          | 0/4 [00:00<?, ?it/s]Author Angelo Mele at Depth 2: 100%|██████████| 4/4 [00:00<00:00, 65793.00it/s]
-Author Lingxin Hao at Depth 2:   0%|          | 0/9 [00:00<?, ?it/s]Author Lingxin Hao at Depth 2: 100%|██████████| 9/9 [00:00<00:00, 89030.04it/s]
-Author Joshua Cape at Depth 2:   0%|          | 0/7 [00:00<?, ?it/s]Author Joshua Cape at Depth 2: 100%|██████████| 7/7 [00:00<00:00, 62203.66it/s]
-Author David J. Marchette at Depth 2:   0%|          | 0/3 [00:00<?, ?it/s]Author David J. Marchette at Depth 2: 100%|██████████| 3/3 [00:00<00:00, 27962.03it/s]
-Author Congyuan Yang at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Congyuan Yang at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 166341.62it/s]
-Author Jesús Arroyo at Depth 2:   0%|          | 0/14 [00:00<?, ?it/s]Author Jesús Arroyo at Depth 2: 100%|██████████| 14/14 [00:00<00:00, 113578.83it/s]
-Author Daniel L. Sussman at Depth 2:   0%|          | 0/16 [00:00<?, ?it/s]Author Daniel L. Sussman at Depth 2: 100%|██████████| 16/16 [00:00<00:00, 95189.88it/s]
-Author Joshua Agterberg at Depth 2:   0%|          | 0/5 [00:00<?, ?it/s]Author Joshua Agterberg at Depth 2: 100%|██████████| 5/5 [00:00<00:00, 81601.25it/s]
-Number of updates: 139
-Number of authors to explore: 0
-Graph saved to ../data/collaboration_graph.pkl
-Author Joshua Agterberg at Depth 2:   0%|          | 0/5 [00:00<?, ?it/s]Author Joshua Agterberg at Depth 2: 100%|██████████| 5/5 [00:00<00:00, 59918.63it/s]
-Author Minh Tang at Depth 2:   0%|          | 0/128 [00:00<?, ?it/s]Author Minh Tang at Depth 2: 100%|██████████| 128/128 [00:00<00:00, 142142.15it/s]
-Author Donniell E. Fishkind at Depth 2:   0%|          | 0/12 [00:00<?, ?it/s]Author Donniell E. Fishkind at Depth 2: 100%|██████████| 12/12 [00:00<00:00, 72005.22it/s]
-Author Lingyao Meng at Depth 2:   0%|          | 0/93 [00:00<?, ?it/s]Author Lingyao Meng at Depth 2: 100%|██████████| 93/93 [00:00<00:00, 186458.07it/s]
-Author Ao Sun at Depth 2:   0%|          | 0/58 [00:00<?, ?it/s]Author Ao Sun at Depth 2: 100%|██████████| 58/58 [00:00<00:00, 101109.57it/s]
-Author Cencheng Shen at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Cencheng Shen at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 179320.39it/s]
-Author Yuexiao Dong at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Yuexiao Dong at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 144282.90it/s]
-Author Heather G. Patsolic at Depth 2:   0%|          | 0/3 [00:00<?, ?it/s]Author Heather G. Patsolic at Depth 2: 100%|██████████| 3/3 [00:00<00:00, 40853.61it/s]
-Author Shangsi Wang at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Shangsi Wang at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 79906.73it/s]
-Author Jesús Arroyo at Depth 2:   0%|          | 0/14 [00:00<?, ?it/s]Author Jesús Arroyo at Depth 2: 100%|██████████| 14/14 [00:00<00:00, 115363.96it/s]
-Author James Browne at Depth 2:   0%|          | 0/4 [00:00<?, ?it/s]Author James Browne at Depth 2: 100%|██████████| 4/4 [00:00<00:00, 42259.99it/s]
-Author Cencheng Shen at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Cencheng Shen at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 176046.34it/s]
-Author Jesse L. Patsolic at Depth 2:   0%|          | 0/2 [00:00<?, ?it/s]Author Jesse L. Patsolic at Depth 2: 100%|██████████| 2/2 [00:00<00:00, 36631.48it/s]
-Author Benjamin Falk at Depth 2:   0%|          | 0/2 [00:00<?, ?it/s]Author Benjamin Falk at Depth 2: 100%|██████████| 2/2 [00:00<00:00, 36314.32it/s]
-Author Randal Burns at Depth 2:   0%|          | 0/11 [00:00<?, ?it/s]Author Randal Burns at Depth 2: 100%|██████████| 11/11 [00:00<00:00, 73701.83it/s]
-Author Jason Yim at Depth 2:   0%|          | 0/21 [00:00<?, ?it/s]Author Jason Yim at Depth 2: 100%|██████████| 21/21 [00:00<00:00, 37369.70it/s]
-Author Fred Roosta at Depth 2:   0%|          | 0/21 [00:00<?, ?it/s]Author Fred Roosta at Depth 2: 100%|██████████| 21/21 [00:00<00:00, 39657.98it/s]
-Author Keith Levin at Depth 2:   0%|          | 0/12 [00:00<?, ?it/s]Author Keith Levin at Depth 2: 100%|██████████| 12/12 [00:00<00:00, 6516.27it/s]
-Author Mauro Maggioni at Depth 2:   0%|          | 0/34 [00:00<?, ?it/s]Author Mauro Maggioni at Depth 2: 100%|██████████| 34/34 [00:00<00:00, 15709.00it/s]
-Author James Browne at Depth 2:   0%|          | 0/4 [00:00<?, ?it/s]Author James Browne at Depth 2: 100%|██████████| 4/4 [00:00<00:00, 49200.05it/s]
-Author Meghana Madhyastha at Depth 2:   0%|          | 0/4 [00:00<?, ?it/s]Author Meghana Madhyastha at Depth 2: 100%|██████████| 4/4 [00:00<00:00, 36954.22it/s]
-Number of updates: 159
-Number of authors to explore: 2
-Graph saved to ../data/collaboration_graph.pkl
-Author Michael W. Mahoney at Depth 2:   0%|          | 0/173 [00:00<?, ?it/s]Author Michael W. Mahoney at Depth 2: 100%|██████████| 173/173 [00:00<00:00, 53523.24it/s]
-Author Percy Li at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Percy Li at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 78973.90it/s]
-Author Eric Bridgeford at Depth 2:   0%|          | 0/9 [00:00<?, ?it/s]Author Eric Bridgeford at Depth 2: 100%|██████████| 9/9 [00:00<00:00, 58525.17it/s]
-Author Joshua Cape at Depth 2:   0%|          | 0/7 [00:00<?, ?it/s]Author Joshua Cape at Depth 2: 100%|██████████| 7/7 [00:00<00:00, 63687.91it/s]
-Author Keith Levin at Depth 2:   0%|          | 0/12 [00:00<?, ?it/s]Author Keith Levin at Depth 2: 100%|██████████| 12/12 [00:00<00:00, 7489.83it/s]
-Author Minh Tang at Depth 2:   0%|          | 0/128 [00:00<?, ?it/s]Author Minh Tang at Depth 2: 100%|██████████| 128/128 [00:00<00:00, 144943.55it/s]
-Author Michael Ketcha at Depth 2:   0%|          | 0/1 [00:00<?, ?it/s]Author Michael Ketcha at Depth 2: 100%|██████████| 1/1 [00:00<00:00, 30393.51it/s]
-Author Runze Tang at Depth 2:   0%|          | 0/124 [00:00<?, ?it/s]Author Runze Tang at Depth 2: 100%|██████████| 124/124 [00:00<00:00, 166696.70it/s]
-Author Alexandra Badea at Depth 2:   0%|          | 0/3 [00:00<?, ?it/s]Author Alexandra Badea at Depth 2: 100%|██████████| 3/3 [00:00<00:00, 71089.90it/s]
-Author Evan D. Calabrese at Depth 2:   0%|          | 0/9 [00:00<?, ?it/s]Author Evan D. Calabrese at Depth 2: 100%|██████████| 9/9 [00:00<00:00, 18743.17it/s]
-Author Daniel S. Margulies at Depth 2:   0%|          | 0/1 [00:00<?, ?it/s]Author Daniel S. Margulies at Depth 2: 100%|██████████| 1/1 [00:00<00:00, 25420.02it/s]
-Author Daniel L. Sussman at Depth 2:   0%|          | 0/16 [00:00<?, ?it/s]Author Daniel L. Sussman at Depth 2: 100%|██████████| 16/16 [00:00<00:00, 79137.81it/s]
-Author Eric Bridgeford at Depth 2:   0%|          | 0/9 [00:00<?, ?it/s]Author Eric Bridgeford at Depth 2: 100%|██████████| 9/9 [00:00<00:00, 77353.97it/s]
-Author Qing Wang at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Qing Wang at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 68133.59it/s]
-Author Mauro Maggioni at Depth 2:   0%|          | 0/34 [00:00<?, ?it/s]Author Mauro Maggioni at Depth 2: 100%|██████████| 34/34 [00:00<00:00, 18885.75it/s]
-Author Cencheng Shen at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Cencheng Shen at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 182758.34it/s]
-Author Cencheng Shen at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Cencheng Shen at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 183437.74it/s]
-Author Donniell E. Fishkind at Depth 2:   0%|          | 0/12 [00:00<?, ?it/s]Author Donniell E. Fishkind at Depth 2: 100%|██████████| 12/12 [00:00<00:00, 94786.53it/s]
-Author Sancar Adali at Depth 2:   0%|          | 0/10 [00:00<?, ?it/s]Author Sancar Adali at Depth 2: 100%|██████████| 10/10 [00:00<00:00, 46655.22it/s]
-Number of updates: 179
-Number of authors to explore: 9
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 179
-Number of authors to explore: 8
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 179
-Number of authors to explore: 7
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 179
-Number of authors to explore: 6
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 179
-Number of authors to explore: 5
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 179
-Number of authors to explore: 4
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 179
-Number of authors to explore: 3
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 179
-Number of authors to explore: 2
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 179
-Number of authors to explore: 1
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 179
-Number of authors to explore: 0
-Graph saved to ../data/collaboration_graph.pkl
-Author Heather G. Patsolic at Depth 2:   0%|          | 0/3 [00:00<?, ?it/s]Author Heather G. Patsolic at Depth 2: 100%|██████████| 3/3 [00:00<00:00, 51781.53it/s]
-Author Lingyao Meng at Depth 2:   0%|          | 0/93 [00:00<?, ?it/s]Author Lingyao Meng at Depth 2: 100%|██████████| 93/93 [00:00<00:00, 198509.04it/s]
-Author Farbod Roosta-Khorasani at Depth 2: 0it [00:00, ?it/s]Author Farbod Roosta-Khorasani at Depth 2: 0it [00:00, ?it/s]
-Author Digvijay Singh at Depth 2:   0%|          | 0/36 [00:00<?, ?it/s]Author Digvijay Singh at Depth 2: 100%|██████████| 36/36 [00:00<00:00, 95869.81it/s]
-Author Keith Levin at Depth 2:   0%|          | 0/12 [00:00<?, ?it/s]Author Keith Levin at Depth 2: 100%|██████████| 12/12 [00:00<00:00, 7518.92it/s]
-Author Michael W. Mahoney at Depth 2:   0%|          | 0/173 [00:00<?, ?it/s]Author Michael W. Mahoney at Depth 2: 100%|██████████| 173/173 [00:00<00:00, 199838.77it/s]
-Author Donniell E. Fishkind at Depth 2:   0%|          | 0/12 [00:00<?, ?it/s]Author Donniell E. Fishkind at Depth 2: 100%|██████████| 12/12 [00:00<00:00, 67923.95it/s]
-Author Keith Levin at Depth 2:   0%|          | 0/12 [00:00<?, ?it/s]Author Keith Levin at Depth 2: 100%|██████████| 12/12 [00:00<00:00, 7503.23it/s]
-Author Yichen Qin at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Yichen Qin at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 153328.61it/s]
-Author Minh Tang at Depth 2:   0%|          | 0/128 [00:00<?, ?it/s]Author Minh Tang at Depth 2: 100%|██████████| 128/128 [00:00<00:00, 133284.73it/s]
-Author Minh Tang at Depth 2:   0%|          | 0/128 [00:00<?, ?it/s]Author Minh Tang at Depth 2: 100%|██████████| 128/128 [00:00<00:00, 144320.14it/s]
-Author Ben Cocanougher at Depth 2:   0%|          | 0/1 [00:00<?, ?it/s]Author Ben Cocanougher at Depth 2: 100%|██████████| 1/1 [00:00<00:00, 16384.00it/s]
-Author Yichen Qin at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Yichen Qin at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 154145.68it/s]
-Author Keith Levin at Depth 2:   0%|          | 0/12 [00:00<?, ?it/s]Author Keith Levin at Depth 2: 100%|██████████| 12/12 [00:00<00:00, 7421.36it/s]
-Author Cencheng Shen at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Cencheng Shen at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 180827.94it/s]
-Author Donniell E. Fishkind at Depth 2:   0%|          | 0/12 [00:00<?, ?it/s]Author Donniell E. Fishkind at Depth 2: 100%|██████████| 12/12 [00:00<00:00, 71799.78it/s]
-Author Minh Tang at Depth 2:   0%|          | 0/128 [00:00<?, ?it/s]Author Minh Tang at Depth 2: 100%|██████████| 128/128 [00:00<00:00, 135436.66it/s]
-Author Minh Tang at Depth 2:   0%|          | 0/128 [00:00<?, ?it/s]Author Minh Tang at Depth 2: 100%|██████████| 128/128 [00:00<00:00, 142974.94it/s]
-Author Shakira Suwan at Depth 2:   0%|          | 0/1 [00:00<?, ?it/s]Author Shakira Suwan at Depth 2: 100%|██████████| 1/1 [00:00<00:00, 21290.88it/s]
-Author Dominic S. Lee at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Dominic S. Lee at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 123945.15it/s]
-Number of updates: 199
-Number of authors to explore: 0
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 199
-Number of authors to explore: 0
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 199
-Number of authors to explore: 0
-Graph saved to ../data/collaboration_graph.pkl
-Author Daniel L. Sussman at Depth 2:   0%|          | 0/16 [00:00<?, ?it/s]Author Daniel L. Sussman at Depth 2: 100%|██████████| 16/16 [00:00<00:00, 72082.56it/s]
-Author Minh Tang at Depth 2:   0%|          | 0/128 [00:00<?, ?it/s]Author Minh Tang at Depth 2: 100%|██████████| 128/128 [00:00<00:00, 144126.42it/s]
-Author Daniel L. Sussman at Depth 2:   0%|          | 0/16 [00:00<?, ?it/s]Author Daniel L. Sussman at Depth 2: 100%|██████████| 16/16 [00:00<00:00, 77582.50it/s]
-Author Donniell E. Fishkind at Depth 2:   0%|          | 0/12 [00:00<?, ?it/s]Author Donniell E. Fishkind at Depth 2: 100%|██████████| 12/12 [00:00<00:00, 93553.25it/s]
-Author Donniell E. Fishkind at Depth 2:   0%|          | 0/12 [00:00<?, ?it/s]Author Donniell E. Fishkind at Depth 2: 100%|██████████| 12/12 [00:00<00:00, 94430.86it/s]
-Author Cencheng Shen at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Cencheng Shen at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 186496.40it/s]
-Author Henry Pao at Depth 2:   0%|          | 0/6 [00:00<?, ?it/s]Author Henry Pao at Depth 2: 100%|██████████| 6/6 [00:00<00:00, 58254.22it/s]
-Author Donniell Fishkind at Depth 2:   0%|          | 0/12 [00:00<?, ?it/s]Author Donniell Fishkind at Depth 2: 100%|██████████| 12/12 [00:00<00:00, 69042.04it/s]
-Author Marcelo Fiori at Depth 2:   0%|          | 0/14 [00:00<?, ?it/s]Author Marcelo Fiori at Depth 2: 100%|██████████| 14/14 [00:00<00:00, 33825.03it/s]
-Author Donniell E. Fishkind at Depth 2:   0%|          | 0/12 [00:00<?, ?it/s]Author Donniell E. Fishkind at Depth 2: 100%|██████████| 12/12 [00:00<00:00, 68385.39it/s]
-Author Guillermo Sapiro at Depth 2:   0%|          | 0/57 [00:00<?, ?it/s]Author Guillermo Sapiro at Depth 2: 100%|██████████| 57/57 [00:00<00:00, 67630.93it/s]
-Author Jordan Yoder at Depth 2:   0%|          | 0/4 [00:00<?, ?it/s]Author Jordan Yoder at Depth 2: 100%|██████████| 4/4 [00:00<00:00, 53773.13it/s]
-Author Daniel L. Sussman at Depth 2:   0%|          | 0/16 [00:00<?, ?it/s]Author Daniel L. Sussman at Depth 2: 100%|██████████| 16/16 [00:00<00:00, 77048.06it/s]
-Author Minh Tang at Depth 2:   0%|          | 0/128 [00:00<?, ?it/s]Author Minh Tang at Depth 2: 100%|██████████| 128/128 [00:00<00:00, 144281.35it/s]
-Author Cencheng Shen at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Cencheng Shen at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 181728.94it/s]
-Author Ming Sun at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Ming Sun at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 106037.26it/s]
-Author Minh Tang at Depth 2:   0%|          | 0/128 [00:00<?, ?it/s]Author Minh Tang at Depth 2: 100%|██████████| 128/128 [00:00<00:00, 143817.55it/s]
-Author David J. Marchette at Depth 2:   0%|          | 0/3 [00:00<?, ?it/s]Author David J. Marchette at Depth 2: 100%|██████████| 3/3 [00:00<00:00, 61984.79it/s]
-Author Daniel L. Sussman at Depth 2:   0%|          | 0/16 [00:00<?, ?it/s]Author Daniel L. Sussman at Depth 2: 100%|██████████| 16/16 [00:00<00:00, 73423.26it/s]
-Author Minh Tang at Depth 2:   0%|          | 0/128 [00:00<?, ?it/s]Author Minh Tang at Depth 2: 100%|██████████| 128/128 [00:00<00:00, 67319.24it/s]
-Author Minh Tang at Depth 2:   0%|          | 0/128 [00:00<?, ?it/s]Author Minh Tang at Depth 2: 100%|██████████| 128/128 [00:00<00:00, 68027.23it/s]
-Author Daniel L. Sussman at Depth 2:   0%|          | 0/16 [00:00<?, ?it/s]Author Daniel L. Sussman at Depth 2: 100%|██████████| 16/16 [00:00<00:00, 75658.25it/s]
-Author Jordan Yoder at Depth 2:   0%|          | 0/4 [00:00<?, ?it/s]Author Jordan Yoder at Depth 2: 100%|██████████| 4/4 [00:00<00:00, 52593.15it/s]
-Author Minh Tang at Depth 2:   0%|          | 0/128 [00:00<?, ?it/s]Author Minh Tang at Depth 2: 100%|██████████| 128/128 [00:00<00:00, 145493.47it/s]
-Author Nam H. Lee at Depth 2:   0%|          | 0/78 [00:00<?, ?it/s]Author Nam H. Lee at Depth 2: 100%|██████████| 78/78 [00:00<00:00, 81361.78it/s]
-Author Minh Tang at Depth 2:   0%|          | 0/128 [00:00<?, ?it/s]Author Minh Tang at Depth 2: 100%|██████████| 128/128 [00:00<00:00, 143280.20it/s]
-Author Carey E Priebe at Depth 2:   0%|          | 0/98 [00:00<?, ?it/s]Author Carey E Priebe at Depth 2: 100%|██████████| 98/98 [00:00<00:00, 154005.92it/s]
-Author Abdou Youssef at Depth 2:   0%|          | 0/11 [00:00<?, ?it/s]Author Abdou Youssef at Depth 2: 100%|██████████| 11/11 [00:00<00:00, 39265.82it/s]
-Author Minh Tang at Depth 2:   0%|          | 0/128 [00:00<?, ?it/s]Author Minh Tang at Depth 2: 100%|██████████| 128/128 [00:00<00:00, 140028.93it/s]
-Author Daniel L. Sussman at Depth 2:   0%|          | 0/16 [00:00<?, ?it/s]Author Daniel L. Sussman at Depth 2: 100%|██████████| 16/16 [00:00<00:00, 104857.60it/s]
-Author Ming Sun at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Ming Sun at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 143961.01it/s]
-Author Runze Tang at Depth 2:   0%|          | 0/124 [00:00<?, ?it/s]Author Runze Tang at Depth 2: 100%|██████████| 124/124 [00:00<00:00, 176902.62it/s]
-Author Daniel L. Sussman at Depth 2:   0%|          | 0/16 [00:00<?, ?it/s]Author Daniel L. Sussman at Depth 2: 100%|██████████| 16/16 [00:00<00:00, 98400.09it/s]
-Author Minh Tang at Depth 2:   0%|          | 0/128 [00:00<?, ?it/s]Author Minh Tang at Depth 2: 100%|██████████| 128/128 [00:00<00:00, 144087.74it/s]
-Author Minh Tang at Depth 2:   0%|          | 0/128 [00:00<?, ?it/s]Author Minh Tang at Depth 2: 100%|██████████| 128/128 [00:00<00:00, 144553.29it/s]
-Author Donniell E. Fishkind at Depth 2:   0%|          | 0/12 [00:00<?, ?it/s]Author Donniell E. Fishkind at Depth 2: 100%|██████████| 12/12 [00:00<00:00, 97165.34it/s]
-Author Shuvendu K. Lahiri at Depth 2:   0%|          | 0/23 [00:00<?, ?it/s]Author Shuvendu K. Lahiri at Depth 2: 100%|██████████| 23/23 [00:00<00:00, 58430.64it/s]
-Author Sarah Fakhoury at Depth 2:   0%|          | 0/5 [00:00<?, ?it/s]Author Sarah Fakhoury at Depth 2: 100%|██████████| 5/5 [00:00<00:00, 41610.16it/s]
-Author Aaditya Naik at Depth 2:   0%|          | 0/39 [00:00<?, ?it/s]Author Aaditya Naik at Depth 2: 100%|██████████| 39/39 [00:00<00:00, 109489.86it/s]
-Author Georgios Sakkas at Depth 2:   0%|          | 0/1 [00:00<?, ?it/s]Author Georgios Sakkas at Depth 2: 100%|██████████| 1/1 [00:00<00:00, 22795.13it/s]
-Number of updates: 239
-Number of authors to explore: 0
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 239
-Number of authors to explore: 0
-Graph saved to ../data/collaboration_graph.pkl
-Author Madanlal Musuvathi at Depth 2:   0%|          | 0/12 [00:00<?, ?it/s]Author Madanlal Musuvathi at Depth 2: 100%|██████████| 12/12 [00:00<00:00, 36157.79it/s]
-Author Curtis von Veh at Depth 2:   0%|          | 0/1 [00:00<?, ?it/s]Author Curtis von Veh at Depth 2: 100%|██████████| 1/1 [00:00<00:00, 23045.63it/s]
-Author Jeevana Priya Inala at Depth 2:   0%|          | 0/11 [00:00<?, ?it/s]Author Jeevana Priya Inala at Depth 2: 100%|██████████| 11/11 [00:00<00:00, 27028.32it/s]
-Author Saikat Chakraborty at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Saikat Chakraborty at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 187078.68it/s]
-Author Darren Edge at Depth 2:   0%|          | 0/2 [00:00<?, ?it/s]Author Darren Edge at Depth 2: 100%|██████████| 2/2 [00:00<00:00, 18682.87it/s]
-Author Chenglong Wang at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Chenglong Wang at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 71642.39it/s]
-Author Jianfeng Gao at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Jianfeng Gao at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 75784.70it/s]
-Author Newman Cheng at Depth 2:   0%|          | 0/71 [00:00<?, ?it/s]Author Newman Cheng at Depth 2: 100%|██████████| 71/71 [00:00<00:00, 75219.90it/s]
-Author Joshua Bradley at Depth 2:   0%|          | 0/8 [00:00<?, ?it/s]Author Joshua Bradley at Depth 2: 100%|██████████| 8/8 [00:00<00:00, 76959.71it/s]
-Author Alex Chao at Depth 2:   0%|          | 0/3 [00:00<?, ?it/s]Author Alex Chao at Depth 2: 100%|██████████| 3/3 [00:00<00:00, 27654.75it/s]
-Author Apurva Mody at Depth 2:   0%|          | 0/1 [00:00<?, ?it/s]Author Apurva Mody at Depth 2: 100%|██████████| 1/1 [00:00<00:00, 25890.77it/s]
-Author Steven Truitt at Depth 2:   0%|          | 0/1 [00:00<?, ?it/s]Author Steven Truitt at Depth 2: 100%|██████████| 1/1 [00:00<00:00, 19328.59it/s]
-Author Ida Momennejad at Depth 2:   0%|          | 0/17 [00:00<?, ?it/s]Author Ida Momennejad at Depth 2: 100%|██████████| 17/17 [00:00<00:00, 19850.55it/s]
-Author Xin Jin at Depth 2:   0%|          | 0/192 [00:00<?, ?it/s]Author Xin Jin at Depth 2: 100%|██████████| 192/192 [00:00<00:00, 82283.27it/s]
-Author Hosein Hasanbeig at Depth 2:   0%|          | 0/6 [00:00<?, ?it/s]Author Hosein Hasanbeig at Depth 2: 100%|██████████| 6/6 [00:00<00:00, 33332.22it/s]
-Author Zhiqiang Lin at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Zhiqiang Lin at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 95990.48it/s]
-Author Felipe Vieira at Depth 2:   0%|          | 0/4 [00:00<?, ?it/s]Author Felipe Vieira at Depth 2: 100%|██████████| 4/4 [00:00<00:00, 57065.36it/s]
-Author Nebojsa Jojic at Depth 2:   0%|          | 0/22 [00:00<?, ?it/s]Author Nebojsa Jojic at Depth 2: 100%|██████████| 22/22 [00:00<00:00, 23605.70it/s]
-Author Hiteshi Sharma at Depth 2:   0%|          | 0/53 [00:00<?, ?it/s]Author Hiteshi Sharma at Depth 2: 100%|██████████| 53/53 [00:00<00:00, 50191.49it/s]
-Author Hamid Palangi at Depth 2:   0%|          | 0/25 [00:00<?, ?it/s]Author Hamid Palangi at Depth 2: 100%|██████████| 25/25 [00:00<00:00, 34133.33it/s]
-Number of updates: 259
-Number of authors to explore: 73
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 72
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 71
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 70
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 69
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 68
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 67
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 66
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 65
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 64
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 63
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 62
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 61
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 60
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 59
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 58
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 57
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 56
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 55
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 54
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 53
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 52
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 51
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 50
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 49
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 48
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 47
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 46
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 45
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 44
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 43
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 42
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 41
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 40
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 39
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 38
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 37
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 36
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 35
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 34
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 33
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 32
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 31
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 30
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 29
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 28
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 27
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 26
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 25
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 24
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 23
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 22
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 21
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 20
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 19
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 18
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 17
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 16
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 15
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 14
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 13
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 12
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 11
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 10
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 9
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 8
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 7
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 6
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 5
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 4
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 3
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 2
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 1
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 0
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 0
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 259
-Number of authors to explore: 0
-Graph saved to ../data/collaboration_graph.pkl
-Author Vivek Kurien George at Depth 2:   0%|          | 0/5 [00:00<?, ?it/s]Author Vivek Kurien George at Depth 2: 100%|██████████| 5/5 [00:00<00:00, 34836.41it/s]
-Author Vikash Morar at Depth 2:   0%|          | 0/1 [00:00<?, ?it/s]Author Vikash Morar at Depth 2: 100%|██████████| 1/1 [00:00<00:00, 31775.03it/s]
-Author Gabriel A. Silva at Depth 2:   0%|          | 0/17 [00:00<?, ?it/s]Author Gabriel A. Silva at Depth 2: 100%|██████████| 17/17 [00:00<00:00, 89352.34it/s]
-Author Arkin Gupta at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Arkin Gupta at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 78825.48it/s]
-Author Thomas L. Athey at Depth 2:   0%|          | 0/1 [00:00<?, ?it/s]Author Thomas L. Athey at Depth 2: 100%|██████████| 1/1 [00:00<00:00, 31068.92it/s]
-Author Tingshan Liu at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Tingshan Liu at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 64867.06it/s]
-Author Michael Menart at Depth 2:   0%|          | 0/6 [00:00<?, ?it/s]Author Michael Menart at Depth 2: 100%|██████████| 6/6 [00:00<00:00, 71902.35it/s]
-Author Enayat Ullah at Depth 2:   0%|          | 0/14 [00:00<?, ?it/s]Author Enayat Ullah at Depth 2: 100%|██████████| 14/14 [00:00<00:00, 72583.75it/s]
-Author Raef Bassily at Depth 2:   0%|          | 0/27 [00:00<?, ?it/s]Author Raef Bassily at Depth 2: 100%|██████████| 27/27 [00:00<00:00, 39389.99it/s]
-Author Cristóbal Guzmán at Depth 2: 0it [00:00, ?it/s]Author Cristóbal Guzmán at Depth 2: 0it [00:00, ?it/s]
-Author Haque Ishfaq at Depth 2:   0%|          | 0/6 [00:00<?, ?it/s]Author Haque Ishfaq at Depth 2: 100%|██████████| 6/6 [00:00<00:00, 20410.24it/s]
-Author Thanh Nguyen-Tang at Depth 2: 0it [00:00, ?it/s]Author Thanh Nguyen-Tang at Depth 2: 0it [00:00, ?it/s]
-Author Songtao Feng at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Songtao Feng at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 131937.84it/s]
-Author Ming Yin at Depth 2:   0%|          | 0/145 [00:00<?, ?it/s]Author Ming Yin at Depth 2: 100%|██████████| 145/145 [00:00<00:00, 127419.67it/s]
-Author Mengdi Wang at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Mengdi Wang at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 46829.72it/s]
-Author Doina Precup at Depth 2:   0%|          | 0/10 [00:00<?, ?it/s]Author Doina Precup at Depth 2: 100%|██████████| 10/10 [00:00<00:00, 13357.66it/s]
-Author Raef Bassily at Depth 2:   0%|          | 0/27 [00:00<?, ?it/s]Author Raef Bassily at Depth 2: 100%|██████████| 27/27 [00:00<00:00, 133545.06it/s]
-Author Cristóbal Guzmán at Depth 2: 0it [00:00, ?it/s]Author Cristóbal Guzmán at Depth 2: 0it [00:00, ?it/s]
-Author Michael Menart at Depth 2:   0%|          | 0/6 [00:00<?, ?it/s]Author Michael Menart at Depth 2: 100%|██████████| 6/6 [00:00<00:00, 80145.94it/s]
-Author Enayat Ullah at Depth 2:   0%|          | 0/14 [00:00<?, ?it/s]Author Enayat Ullah at Depth 2: 100%|██████████| 14/14 [00:00<00:00, 78713.48it/s]
-Number of updates: 279
-Number of authors to explore: 0
-Graph saved to ../data/collaboration_graph.pkl
-Author Enayat Ullah at Depth 2:   0%|          | 0/14 [00:00<?, ?it/s]Author Enayat Ullah at Depth 2: 100%|██████████| 14/14 [00:00<00:00, 62335.73it/s]
-Author Michael Menart at Depth 2:   0%|          | 0/6 [00:00<?, ?it/s]Author Michael Menart at Depth 2: 100%|██████████| 6/6 [00:00<00:00, 81442.80it/s]
-Author Raef Bassily at Depth 2:   0%|          | 0/27 [00:00<?, ?it/s]Author Raef Bassily at Depth 2: 100%|██████████| 27/27 [00:00<00:00, 128688.87it/s]
-Author Cristóbal Guzmán at Depth 2: 0it [00:00, ?it/s]Author Cristóbal Guzmán at Depth 2: 0it [00:00, ?it/s]
-Author Yunjuan Wang at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Yunjuan Wang at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 150387.38it/s]
-Author Natalia Ponomareva at Depth 2:   0%|          | 0/18 [00:00<?, ?it/s]Author Natalia Ponomareva at Depth 2: 100%|██████████| 18/18 [00:00<00:00, 27951.67it/s]
-Author Alexey Kurakin at Depth 2:   0%|          | 0/26 [00:00<?, ?it/s]Author Alexey Kurakin at Depth 2: 100%|██████████| 26/26 [00:00<00:00, 27262.98it/s]
-Author Ibrahim Hammoud at Depth 2:   0%|          | 0/3 [00:00<?, ?it/s]Author Ibrahim Hammoud at Depth 2: 100%|██████████| 3/3 [00:00<00:00, 25317.73it/s]
-Author Thanh Nguyen-Tang at Depth 2: 0it [00:00, ?it/s]Author Thanh Nguyen-Tang at Depth 2: 0it [00:00, ?it/s]
-Author Ryan W. Gardner at Depth 2:   0%|          | 0/8 [00:00<?, ?it/s]Author Ryan W. Gardner at Depth 2: 100%|██████████| 8/8 [00:00<00:00, 50840.05it/s]
-Author Ashley Llorens at Depth 2:   0%|          | 0/8 [00:00<?, ?it/s]Author Ashley Llorens at Depth 2: 100%|██████████| 8/8 [00:00<00:00, 39336.97it/s]
-Author I-Jeng Wang at Depth 2:   0%|          | 0/17 [00:00<?, ?it/s]Author I-Jeng Wang at Depth 2: 100%|██████████| 17/17 [00:00<00:00, 33071.97it/s]
-Author Enayat Ullah at Depth 2:   0%|          | 0/14 [00:00<?, ?it/s]Author Enayat Ullah at Depth 2: 100%|██████████| 14/14 [00:00<00:00, 124936.71it/s]
-Author Raef Bassily at Depth 2:   0%|          | 0/27 [00:00<?, ?it/s]Author Raef Bassily at Depth 2: 100%|██████████| 27/27 [00:00<00:00, 98732.53it/s]
-Author Tomás González at Depth 2: 0it [00:00, ?it/s]Author Tomás González at Depth 2: 0it [00:00, ?it/s]
-Author Cristóbal Guzmán at Depth 2: 0it [00:00, ?it/s]Author Cristóbal Guzmán at Depth 2: 0it [00:00, ?it/s]
-Author Michael Menart at Depth 2:   0%|          | 0/6 [00:00<?, ?it/s]Author Michael Menart at Depth 2: 100%|██████████| 6/6 [00:00<00:00, 68947.46it/s]
-Author Ming Yin at Depth 2:   0%|          | 0/145 [00:00<?, ?it/s]Author Ming Yin at Depth 2: 100%|██████████| 145/145 [00:00<00:00, 212351.28it/s]
-Author Sunil Gupta at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Sunil Gupta at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 108886.40it/s]
-Author Enayat Ullah at Depth 2:   0%|          | 0/14 [00:00<?, ?it/s]Author Enayat Ullah at Depth 2: 100%|██████████| 14/14 [00:00<00:00, 134679.49it/s]
-Author Svetha Venkatesh at Depth 2:   0%|          | 0/149 [00:00<?, ?it/s]Author Svetha Venkatesh at Depth 2: 100%|██████████| 149/149 [00:00<00:00, 95397.85it/s]
-Author Yunjuan Wang at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Yunjuan Wang at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 141222.36it/s]
-Author Teodor V. Marinov at Depth 2:   0%|          | 0/14 [00:00<?, ?it/s]Author Teodor V. Marinov at Depth 2: 100%|██████████| 14/14 [00:00<00:00, 57966.69it/s]
-Author Enayat Ullah at Depth 2:   0%|          | 0/14 [00:00<?, ?it/s]Author Enayat Ullah at Depth 2: 100%|██████████| 14/14 [00:00<00:00, 131659.77it/s]
-Author Tung Mai at Depth 2:   0%|          | 0/49 [00:00<?, ?it/s]Author Tung Mai at Depth 2: 100%|██████████| 49/49 [00:00<00:00, 71163.75it/s]
-Author Mehryar Mohri at Depth 2:   0%|          | 0/86 [00:00<?, ?it/s]Author Mehryar Mohri at Depth 2: 100%|██████████| 86/86 [00:00<00:00, 60766.53it/s]
-Author Jeremias Sulam at Depth 2:   0%|          | 0/28 [00:00<?, ?it/s]Author Jeremias Sulam at Depth 2: 100%|██████████| 28/28 [00:00<00:00, 51713.13it/s]
-Author Anup Rao at Depth 2:   0%|          | 0/97 [00:00<?, ?it/s]Author Anup Rao at Depth 2: 100%|██████████| 97/97 [00:00<00:00, 39676.95it/s]
-Author Ramchandran Muthukumar at Depth 2:   0%|          | 0/3 [00:00<?, ?it/s]Author Ramchandran Muthukumar at Depth 2: 100%|██████████| 3/3 [00:00<00:00, 67650.06it/s]
-Author Ryan Rossi at Depth 2:   0%|          | 0/106 [00:00<?, ?it/s]Author Ryan Rossi at Depth 2: 100%|██████████| 106/106 [00:00<00:00, 113417.40it/s]
-Author Teodor V. Marinov at Depth 2:   0%|          | 0/14 [00:00<?, ?it/s]Author Teodor V. Marinov at Depth 2: 100%|██████████| 14/14 [00:00<00:00, 92472.84it/s]
-Author Enayat Ullah at Depth 2:   0%|          | 0/14 [00:00<?, ?it/s]Author Enayat Ullah at Depth 2: 100%|██████████| 14/14 [00:00<00:00, 109145.46it/s]
-Author Daniel Rothchild at Depth 2:   0%|          | 0/6 [00:00<?, ?it/s]Author Daniel Rothchild at Depth 2: 100%|██████████| 6/6 [00:00<00:00, 16810.84it/s]
-Author Ashwinee Panda at Depth 2:   0%|          | 0/23 [00:00<?, ?it/s]Author Ashwinee Panda at Depth 2: 100%|██████████| 23/23 [00:00<00:00, 53297.79it/s]
-Author Enayat Ullah at Depth 2:   0%|          | 0/14 [00:00<?, ?it/s]Author Enayat Ullah at Depth 2: 100%|██████████| 14/14 [00:00<00:00, 103563.06it/s]
-Author Nikita Ivkin at Depth 2:   0%|          | 0/7 [00:00<?, ?it/s]Author Nikita Ivkin at Depth 2: 100%|██████████| 7/7 [00:00<00:00, 14176.79it/s]
-Author Ion Stoica at Depth 2:   0%|          | 0/91 [00:00<?, ?it/s]Author Ion Stoica at Depth 2: 100%|██████████| 91/91 [00:00<00:00, 36920.26it/s]
-Author Joseph Gonzalez at Depth 2:   0%|          | 0/183 [00:00<?, ?it/s]Author Joseph Gonzalez at Depth 2: 100%|██████████| 183/183 [00:00<00:00, 95030.04it/s]
-Author Chaokun Chang at Depth 2:   0%|          | 0/153 [00:00<?, ?it/s]Author Chaokun Chang at Depth 2: 100%|██████████| 153/153 [00:00<00:00, 146446.49it/s]
-Author Zhen Zhang at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Zhen Zhang at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 77101.18it/s]
-Number of updates: 319
-Number of authors to explore: 0
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 319
-Number of authors to explore: 0
-Graph saved to ../data/collaboration_graph.pkl
-Author Teodor V. Marinov at Depth 2:   0%|          | 0/14 [00:00<?, ?it/s]Author Teodor V. Marinov at Depth 2: 100%|██████████| 14/14 [00:00<00:00, 126552.28it/s]
-Author Mehryar Mohri at Depth 2:   0%|          | 0/86 [00:00<?, ?it/s]Author Mehryar Mohri at Depth 2: 100%|██████████| 86/86 [00:00<00:00, 194243.48it/s]
-Author Michael Dinitz at Depth 2:   0%|          | 0/12 [00:00<?, ?it/s]Author Michael Dinitz at Depth 2: 100%|██████████| 12/12 [00:00<00:00, 36846.01it/s]
-Author Haibin Lin at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Haibin Lin at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 66234.57it/s]
-Author Teodor V. Marinov at Depth 2:   0%|          | 0/14 [00:00<?, ?it/s]Author Teodor V. Marinov at Depth 2: 100%|██████████| 14/14 [00:00<00:00, 117206.10it/s]
-Author Yida Wang at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Yida Wang at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 137630.98it/s]
-Author Mehryar Mohri at Depth 2:   0%|          | 0/86 [00:00<?, ?it/s]Author Mehryar Mohri at Depth 2: 100%|██████████| 86/86 [00:00<00:00, 191054.10it/s]
-Author Nikita Ivkin at Depth 2:   0%|          | 0/7 [00:00<?, ?it/s]Author Nikita Ivkin at Depth 2: 100%|██████████| 7/7 [00:00<00:00, 66275.68it/s]
-Author Peter Bartlett at Depth 2:   0%|          | 0/113 [00:00<?, ?it/s]Author Peter Bartlett at Depth 2: 100%|██████████| 113/113 [00:00<00:00, 154685.49it/s]
-Author Daniel Rothchild at Depth 2:   0%|          | 0/6 [00:00<?, ?it/s]Author Daniel Rothchild at Depth 2: 100%|██████████| 6/6 [00:00<00:00, 45019.36it/s]
-Author Enayat Ullah at Depth 2:   0%|          | 0/14 [00:00<?, ?it/s]Author Enayat Ullah at Depth 2: 100%|██████████| 14/14 [00:00<00:00, 106377.28it/s]
-Author Nathan Srebro at Depth 2:   0%|          | 0/133 [00:00<?, ?it/s]Author Nathan Srebro at Depth 2: 100%|██████████| 133/133 [00:00<00:00, 69099.77it/s]
-Author Nils Holzenberger at Depth 2:   0%|          | 0/9 [00:00<?, ?it/s]Author Nils Holzenberger at Depth 2: 100%|██████████| 9/9 [00:00<00:00, 16859.64it/s]
-Author Ion Stoica at Depth 2:   0%|          | 0/91 [00:00<?, ?it/s]Author Ion Stoica at Depth 2: 100%|██████████| 91/91 [00:00<00:00, 142153.32it/s]
-Author Jarvis Haupt at Depth 2:   0%|          | 0/35 [00:00<?, ?it/s]Author Jarvis Haupt at Depth 2: 100%|██████████| 35/35 [00:00<00:00, 60041.16it/s]
-Author Xingguo Li at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Xingguo Li at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 106481.44it/s]
-Author Mingyi Hong at Depth 2:   0%|          | 0/110 [00:00<?, ?it/s]Author Mingyi Hong at Depth 2: 100%|██████████| 110/110 [00:00<00:00, 53086.35it/s]
-Author Haoming Jiang at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Haoming Jiang at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 72098.05it/s]
-Author Han Liu at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Han Liu at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 117487.51it/s]
-Author Nils Holzenberger at Depth 2:   0%|          | 0/9 [00:00<?, ?it/s]Author Nils Holzenberger at Depth 2: 100%|██████████| 9/9 [00:00<00:00, 53773.13it/s]
-Author Shruti Palaskar at Depth 2:   0%|          | 0/8 [00:00<?, ?it/s]Author Shruti Palaskar at Depth 2: 100%|██████████| 8/8 [00:00<00:00, 46733.19it/s]
-Author Pranava Madhyastha at Depth 2:   0%|          | 0/14 [00:00<?, ?it/s]Author Pranava Madhyastha at Depth 2: 100%|██████████| 14/14 [00:00<00:00, 58254.22it/s]
-Author Florian Metze at Depth 2:   0%|          | 0/26 [00:00<?, ?it/s]Author Florian Metze at Depth 2: 100%|██████████| 26/26 [00:00<00:00, 28517.76it/s]
-Author Enayat Ullah at Depth 2:   0%|          | 0/14 [00:00<?, ?it/s]Author Enayat Ullah at Depth 2: 100%|██████████| 14/14 [00:00<00:00, 128490.71it/s]
-Author Tuo Zhao at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Tuo Zhao at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 111788.49it/s]
-Author Teodor V. Marinov at Depth 2:   0%|          | 0/14 [00:00<?, ?it/s]Author Teodor V. Marinov at Depth 2: 100%|██████████| 14/14 [00:00<00:00, 94710.09it/s]
-Author Yotam Barnoy at Depth 2:   0%|          | 0/3 [00:00<?, ?it/s]Author Yotam Barnoy at Depth 2: 100%|██████████| 3/3 [00:00<00:00, 17260.51it/s]
-Author Kapil Katyal at Depth 2:   0%|          | 0/9 [00:00<?, ?it/s]Author Kapil Katyal at Depth 2: 100%|██████████| 9/9 [00:00<00:00, 68759.08it/s]
-Author Chris Paxton at Depth 2:   0%|          | 0/31 [00:00<?, ?it/s]Author Chris Paxton at Depth 2: 100%|██████████| 31/31 [00:00<00:00, 21107.70it/s]
-Author Gregory D. Hager at Depth 2:   0%|          | 0/28 [00:00<?, ?it/s]Author Gregory D. Hager at Depth 2: 100%|██████████| 28/28 [00:00<00:00, 30551.64it/s]
-Author Teodor V. Marinov at Depth 2:   0%|          | 0/14 [00:00<?, ?it/s]Author Teodor V. Marinov at Depth 2: 100%|██████████| 14/14 [00:00<00:00, 124144.30it/s]
-Author Rene Vidal at Depth 2:   0%|          | 0/74 [00:00<?, ?it/s]Author Rene Vidal at Depth 2: 100%|██████████| 74/74 [00:00<00:00, 106294.01it/s]
-Author Nathan Srebro at Depth 2:   0%|          | 0/133 [00:00<?, ?it/s]Author Nathan Srebro at Depth 2: 100%|██████████| 133/133 [00:00<00:00, 230513.40it/s]
-Author Jarvis Haupt at Depth 2:   0%|          | 0/35 [00:00<?, ?it/s]Author Jarvis Haupt at Depth 2: 100%|██████████| 35/35 [00:00<00:00, 139411.81it/s]
-Author Xingguo Li at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Xingguo Li at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 98307.84it/s]
-Author Junwei Lu at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Junwei Lu at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 121275.23it/s]
-Author Han Liu at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Han Liu at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 79785.12it/s]
-Author Zhaoran Wang at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Zhaoran Wang at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 154885.67it/s]
-Author Tuo Zhao at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Tuo Zhao at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 163776.02it/s]
-Author Xingguo Li at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Xingguo Li at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 103269.83it/s]
-Author Jarvis Haupt at Depth 2:   0%|          | 0/35 [00:00<?, ?it/s]Author Jarvis Haupt at Depth 2: 100%|██████████| 35/35 [00:00<00:00, 138360.64it/s]
-Author Han Liu at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Han Liu at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 162853.97it/s]
-Author Tuo Zhao at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Tuo Zhao at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 186953.60it/s]
-Author Xingguo Li at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Xingguo Li at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 96034.44it/s]
-Author Tuo Zhao at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Tuo Zhao at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 185588.67it/s]
-Author Chris Paxton at Depth 2:   0%|          | 0/31 [00:00<?, ?it/s]Author Chris Paxton at Depth 2: 100%|██████████| 31/31 [00:00<00:00, 90989.10it/s]
-Author Han Liu at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Han Liu at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 169844.26it/s]
-Author Mingyi Hong at Depth 2:   0%|          | 0/110 [00:00<?, ?it/s]Author Mingyi Hong at Depth 2: 100%|██████████| 110/110 [00:00<00:00, 130960.39it/s]
-Author Kapil Katyal at Depth 2:   0%|          | 0/9 [00:00<?, ?it/s]Author Kapil Katyal at Depth 2: 100%|██████████| 9/9 [00:00<00:00, 93206.76it/s]
-Author Christian Rupprecht at Depth 2:   0%|          | 0/20 [00:00<?, ?it/s]Author Christian Rupprecht at Depth 2: 100%|██████████| 20/20 [00:00<00:00, 32127.95it/s]
-Author Adrian Benton at Depth 2:   0%|          | 0/10 [00:00<?, ?it/s]Author Adrian Benton at Depth 2: 100%|██████████| 10/10 [00:00<00:00, 61862.89it/s]
-Author Huda Khayrallah at Depth 2:   0%|          | 0/3 [00:00<?, ?it/s]Author Huda Khayrallah at Depth 2: 100%|██████████| 3/3 [00:00<00:00, 17898.88it/s]
-Author Gregory D. Hager at Depth 2:   0%|          | 0/28 [00:00<?, ?it/s]Author Gregory D. Hager at Depth 2: 100%|██████████| 28/28 [00:00<00:00, 91535.86it/s]
-Author Biman Gujral at Depth 2:   0%|          | 0/1 [00:00<?, ?it/s]Author Biman Gujral at Depth 2: 100%|██████████| 1/1 [00:00<00:00, 26546.23it/s]
-Author Dee Ann Reisinger at Depth 2:   0%|          | 0/1 [00:00<?, ?it/s]Author Dee Ann Reisinger at Depth 2: 100%|██████████| 1/1 [00:00<00:00, 40329.85it/s]
-Author Peter Schulam at Depth 2:   0%|          | 0/9 [00:00<?, ?it/s]Author Peter Schulam at Depth 2: 100%|██████████| 9/9 [00:00<00:00, 30516.36it/s]
-Author Mark Dredze at Depth 2:   0%|          | 0/19 [00:00<?, ?it/s]Author Mark Dredze at Depth 2: 100%|██████████| 19/19 [00:00<00:00, 37502.01it/s]
-Author Matthew Gormley at Depth 2:   0%|          | 0/13 [00:00<?, ?it/s]Author Matthew Gormley at Depth 2: 100%|██████████| 13/13 [00:00<00:00, 88516.16it/s]
-Author Karen Livescu at Depth 2:   0%|          | 0/29 [00:00<?, ?it/s]Author Karen Livescu at Depth 2: 100%|██████████| 29/29 [00:00<00:00, 9855.36it/s]
-Author Mo Yu at Depth 2:   0%|          | 0/167 [00:00<?, ?it/s]Author Mo Yu at Depth 2: 100%|██████████| 167/167 [00:00<00:00, 73871.42it/s]
-Number of updates: 379
-Number of authors to explore: 268
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 379
-Number of authors to explore: 267
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 379
-Number of authors to explore: 266
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 379
-Number of authors to explore: 265
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 379
-Number of authors to explore: 264
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 379
-Number of authors to explore: 263
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 379
-Number of authors to explore: 262
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 379
-Number of authors to explore: 261
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 379
-Number of authors to explore: 260
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 379
-Number of authors to explore: 259
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 379
-Number of authors to explore: 258
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 379
-Number of authors to explore: 257
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 379
-Number of authors to explore: 256
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 379
-Number of authors to explore: 255
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 379
-Number of authors to explore: 254
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 379
-Number of authors to explore: 253
-Author Jeff Bilmes at Depth 2:   0%|          | 0/49 [00:00<?, ?it/s]Author Jeff Bilmes at Depth 2: 100%|██████████| 49/49 [00:00<00:00, 60572.03it/s]
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 379
-Number of authors to explore: 252
-Graph saved to ../data/collaboration_graph.pkl
-Author Weiran Wang at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Weiran Wang at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 60510.77it/s]
-Author Karen Livescu at Depth 2:   0%|          | 0/29 [00:00<?, ?it/s]Author Karen Livescu at Depth 2: 100%|██████████| 29/29 [00:00<00:00, 64837.32it/s]
-Author Weiran Wang at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Weiran Wang at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 67205.64it/s]
-Author Nathan Srebro at Depth 2:   0%|          | 0/133 [00:00<?, ?it/s]Author Nathan Srebro at Depth 2: 100%|██████████| 133/133 [00:00<00:00, 228623.95it/s]
-Author Andrew Cotter at Depth 2:   0%|          | 0/19 [00:00<?, ?it/s]Author Andrew Cotter at Depth 2: 100%|██████████| 19/19 [00:00<00:00, 44322.46it/s]
-Author Ofer Dekel at Depth 2:   0%|          | 0/12 [00:00<?, ?it/s]Author Ofer Dekel at Depth 2: 100%|██████████| 12/12 [00:00<00:00, 40201.00it/s]
-Author Nathan Srebro at Depth 2:   0%|          | 0/133 [00:00<?, ?it/s]Author Nathan Srebro at Depth 2: 100%|██████████| 133/133 [00:00<00:00, 234584.71it/s]
-Author Ofer Dekel at Depth 2:   0%|          | 0/12 [00:00<?, ?it/s]Author Ofer Dekel at Depth 2: 100%|██████████| 12/12 [00:00<00:00, 92862.82it/s]
-Author Ambuj Tewari at Depth 2:   0%|          | 0/138 [00:00<?, ?it/s]Author Ambuj Tewari at Depth 2: 100%|██████████| 138/138 [00:00<00:00, 74733.89it/s]
-Author Ambuj Tewari at Depth 2:   0%|          | 0/138 [00:00<?, ?it/s]Author Ambuj Tewari at Depth 2: 100%|██████████| 138/138 [00:00<00:00, 192233.13it/s]
-Author Mohan Ren at Depth 2:   0%|          | 0/71 [00:00<?, ?it/s]Author Mohan Ren at Depth 2: 100%|██████████| 71/71 [00:00<00:00, 210010.99it/s]
-Author Zhihao Fang at Depth 2:   0%|          | 0/162 [00:00<?, ?it/s]Author Zhihao Fang at Depth 2: 100%|██████████| 162/162 [00:00<00:00, 173115.22it/s]
-Author Matteo Tucat at Depth 2:   0%|          | 0/1 [00:00<?, ?it/s]Author Matteo Tucat at Depth 2: 100%|██████████| 1/1 [00:00<00:00, 34379.54it/s]
-Author Dibyakanti Kumar at Depth 2:   0%|          | 0/51 [00:00<?, ?it/s]Author Dibyakanti Kumar at Depth 2: 100%|██████████| 51/51 [00:00<00:00, 149378.15it/s]
-Author Keren Li at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Keren Li at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 134368.22it/s]
-Author Pulkit Gopalani at Depth 2:   0%|          | 0/4 [00:00<?, ?it/s]Author Pulkit Gopalani at Depth 2: 100%|██████████| 4/4 [00:00<00:00, 39290.90it/s]
-Author Pulkit Gopalani at Depth 2:   0%|          | 0/4 [00:00<?, ?it/s]Author Pulkit Gopalani at Depth 2: 100%|██████████| 4/4 [00:00<00:00, 54648.91it/s]
-Author Sayar Karmakar at Depth 2:   0%|          | 0/15 [00:00<?, ?it/s]Author Sayar Karmakar at Depth 2: 100%|██████████| 15/15 [00:00<00:00, 68684.02it/s]
-Author Samyak Jha at Depth 2:   0%|          | 0/188 [00:00<?, ?it/s]Author Samyak Jha at Depth 2: 100%|██████████| 188/188 [00:00<00:00, 190144.48it/s]
-Author Amartya Roy at Depth 2:   0%|          | 0/156 [00:00<?, ?it/s]Author Amartya Roy at Depth 2: 100%|██████████| 156/156 [00:00<00:00, 67074.47it/s]
-Author Dibyakanti Kumar at Depth 2:   0%|          | 0/51 [00:00<?, ?it/s]Author Dibyakanti Kumar at Depth 2: 100%|██████████| 51/51 [00:00<00:00, 148754.87it/s]
-Author Angelo Cangelosi at Depth 2:   0%|          | 0/23 [00:00<?, ?it/s]Author Angelo Cangelosi at Depth 2: 100%|██████████| 23/23 [00:00<00:00, 33461.32it/s]
-Author Procheta Sen at Depth 2:   0%|          | 0/27 [00:00<?, ?it/s]Author Procheta Sen at Depth 2: 100%|██████████| 27/27 [00:00<00:00, 90452.24it/s]
-Author Hongbo Zhu at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Hongbo Zhu at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 175604.10it/s]
-Author Soham Dan at Depth 2:   0%|          | 0/23 [00:00<?, ?it/s]Author Soham Dan at Depth 2: 100%|██████████| 23/23 [00:00<00:00, 24991.97it/s]
-Author Phanideep Gampa at Depth 2:   0%|          | 0/6 [00:00<?, ?it/s]Author Phanideep Gampa at Depth 2: 100%|██████████| 6/6 [00:00<00:00, 31184.42it/s]
-Author Pulkit Gopalani at Depth 2:   0%|          | 0/4 [00:00<?, ?it/s]Author Pulkit Gopalani at Depth 2: 100%|██████████| 4/4 [00:00<00:00, 107546.26it/s]
-Author Avirup Das at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Avirup Das at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 199823.92it/s]
-Author Sayar Karmakar at Depth 2:   0%|          | 0/15 [00:00<?, ?it/s]Author Sayar Karmakar at Depth 2: 100%|██████████| 15/15 [00:00<00:00, 115864.75it/s]
-Author Theodore Papamarkou at Depth 2:   0%|          | 0/22 [00:00<?, ?it/s]Author Theodore Papamarkou at Depth 2: 100%|██████████| 22/22 [00:00<00:00, 9179.73it/s]
-Author Sayar Karmakar at Depth 2:   0%|          | 0/15 [00:00<?, ?it/s]Author Sayar Karmakar at Depth 2: 100%|██████████| 15/15 [00:00<00:00, 171429.32it/s]
-Author Sayar Karmakar at Depth 2:   0%|          | 0/15 [00:00<?, ?it/s]Author Sayar Karmakar at Depth 2: 100%|██████████| 15/15 [00:00<00:00, 104857.60it/s]
-Author Davin Jeong at Depth 2:   0%|          | 0/39 [00:00<?, ?it/s]Author Davin Jeong at Depth 2: 100%|██████████| 39/39 [00:00<00:00, 81911.80it/s]
-Author Soham De at Depth 2:   0%|          | 0/56 [00:00<?, ?it/s]Author Soham De at Depth 2: 100%|██████████| 56/56 [00:00<00:00, 41417.92it/s]
-Author Allison Gunby-Mann at Depth 2: 0it [00:00, ?it/s]Author Allison Gunby-Mann at Depth 2: 0it [00:00, ?it/s]
-Author Sarel Cohen at Depth 2:   0%|          | 0/77 [00:00<?, ?it/s]Author Sarel Cohen at Depth 2: 100%|██████████| 77/77 [00:00<00:00, 157619.04it/s]
-Author Maximilian Katzmann at Depth 2:   0%|          | 0/2 [00:00<?, ?it/s]Author Maximilian Katzmann at Depth 2: 100%|██████████| 2/2 [00:00<00:00, 43464.29it/s]
-Author Chau Pham at Depth 2:   0%|          | 0/25 [00:00<?, ?it/s]Author Chau Pham at Depth 2: 100%|██████████| 25/25 [00:00<00:00, 45909.63it/s]
-Author Arnav Bhakta at Depth 2:   0%|          | 0/4 [00:00<?, ?it/s]Author Arnav Bhakta at Depth 2: 100%|██████████| 4/4 [00:00<00:00, 32140.26it/s]
-Number of updates: 419
-Number of authors to explore: 2
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 419
-Number of authors to explore: 1
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 419
-Number of authors to explore: 0
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 419
-Number of authors to explore: 0
-Graph saved to ../data/collaboration_graph.pkl
-Author Louis Jensen at Depth 2:   0%|          | 0/6 [00:00<?, ?it/s]Author Louis Jensen at Depth 2: 100%|██████████| 6/6 [00:00<00:00, 120989.54it/s]
-Author Tobias Friedrich at Depth 2:   0%|          | 0/20 [00:00<?, ?it/s]Author Tobias Friedrich at Depth 2: 100%|██████████| 20/20 [00:00<00:00, 29006.25it/s]
-Author Jacob Harer at Depth 2:   0%|          | 0/9 [00:00<?, ?it/s]Author Jacob Harer at Depth 2: 100%|██████████| 9/9 [00:00<00:00, 45867.24it/s]
-Author Paul Bendich at Depth 2:   0%|          | 0/11 [00:00<?, ?it/s]Author Paul Bendich at Depth 2: 100%|██████████| 11/11 [00:00<00:00, 21000.16it/s]
-Author Jesse Clarke at Depth 2:   0%|          | 0/8 [00:00<?, ?it/s]Author Jesse Clarke at Depth 2: 100%|██████████| 8/8 [00:00<00:00, 94254.02it/s]
-Author Jonathan deSena at Depth 2:   0%|          | 0/1 [00:00<?, ?it/s]Author Jonathan deSena at Depth 2: 100%|██████████| 1/1 [00:00<00:00, 17697.49it/s]
-Author John Harer at Depth 2:   0%|          | 0/9 [00:00<?, ?it/s]Author John Harer at Depth 2: 100%|██████████| 9/9 [00:00<00:00, 57631.66it/s]
-Author Elizabeth Munch at Depth 2:   0%|          | 0/9 [00:00<?, ?it/s]Author Elizabeth Munch at Depth 2: 100%|██████████| 9/9 [00:00<00:00, 35814.74it/s]
-Author David Porter at Depth 2:   0%|          | 0/1 [00:00<?, ?it/s]Author David Porter at Depth 2: 100%|██████████| 1/1 [00:00<00:00, 21845.33it/s]
-Author Andrew Newman at Depth 2:   0%|          | 0/27 [00:00<?, ?it/s]Author Andrew Newman at Depth 2: 100%|██████████| 27/27 [00:00<00:00, 81355.03it/s]
-Author David Rouse at Depth 2:   0%|          | 0/1 [00:00<?, ?it/s]Author David Rouse at Depth 2: 100%|██████████| 1/1 [00:00<00:00, 23696.63it/s]
-Author Nate Strawn at Depth 2:   0%|          | 0/5 [00:00<?, ?it/s]Author Nate Strawn at Depth 2: 100%|██████████| 5/5 [00:00<00:00, 17050.02it/s]
-Author Sang Peter Chin at Depth 2:   0%|          | 0/11 [00:00<?, ?it/s]Author Sang Peter Chin at Depth 2: 100%|██████████| 11/11 [00:00<00:00, 91542.35it/s]
-Author Luoluo Liu at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Luoluo Liu at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 68094.88it/s]
-Author Sang H. Chin at Depth 2:   0%|          | 0/11 [00:00<?, ?it/s]Author Sang H. Chin at Depth 2: 100%|██████████| 11/11 [00:00<00:00, 94157.84it/s]
-Author Dzung Phan at Depth 2:   0%|          | 0/37 [00:00<?, ?it/s]Author Dzung Phan at Depth 2: 100%|██████████| 37/37 [00:00<00:00, 97114.67it/s]
-Author Dung N. Tran at Depth 2:   0%|          | 0/95 [00:00<?, ?it/s]Author Dung N. Tran at Depth 2: 100%|██████████| 95/95 [00:00<00:00, 43499.88it/s]
-Author Lam Nguyen at Depth 2:   0%|          | 0/116 [00:00<?, ?it/s]Author Lam Nguyen at Depth 2: 100%|██████████| 116/116 [00:00<00:00, 140985.01it/s]
-Author Luoluo Liu at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Luoluo Liu at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 71325.64it/s]
-Author Wentao Zhu at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Wentao Zhu at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 117999.83it/s]
-Number of updates: 439
-Number of authors to explore: 118
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 117
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 116
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 115
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 114
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 113
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 112
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 111
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 110
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 109
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 108
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 107
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 106
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 105
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 104
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 103
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 102
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 101
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 100
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 99
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 98
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 97
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 96
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 95
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 94
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 93
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 92
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 91
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 90
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 89
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 88
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 87
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 86
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 85
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 84
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 83
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 82
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 81
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 80
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 79
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 78
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 77
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 76
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 75
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 74
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 73
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 72
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 71
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 70
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 69
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 68
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 67
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 66
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 65
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 64
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 63
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 62
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 61
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 60
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 59
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 58
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 57
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 56
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 55
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 54
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 53
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 52
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 51
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 50
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 49
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 48
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 47
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 46
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 45
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 44
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 43
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 42
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 41
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 40
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 39
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 38
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 37
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 36
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 35
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 34
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 33
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 32
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 31
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 30
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 29
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 28
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 27
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 26
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 25
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 24
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 23
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 22
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 21
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 20
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 19
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 18
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 17
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 16
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 15
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 14
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 13
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 12
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 11
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 10
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 9
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 8
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 7
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 6
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 5
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 4
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 3
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 2
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 1
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 0
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 0
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 0
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 439
-Number of authors to explore: 0
-Graph saved to ../data/collaboration_graph.pkl
-Author Xiaohui Xie at Depth 2:   0%|          | 0/200 [00:00<?, ?it/s]Author Xiaohui Xie at Depth 2: 100%|██████████| 200/200 [00:00<00:00, 104648.30it/s]
-Author Samuel Fiorini at Depth 2:   0%|          | 0/42 [00:00<?, ?it/s]Author Samuel Fiorini at Depth 2: 100%|██████████| 42/42 [00:00<00:00, 56534.26it/s]
-Author Tony Huynh at Depth 2:   0%|          | 0/76 [00:00<?, ?it/s]Author Tony Huynh at Depth 2: 100%|██████████| 76/76 [00:00<00:00, 94786.53it/s]
-Author Stefan Weltge at Depth 2:   0%|          | 0/20 [00:00<?, ?it/s]Author Stefan Weltge at Depth 2: 100%|██████████| 20/20 [00:00<00:00, 65230.23it/s]
-Author Manuel Aprile at Depth 2:   0%|          | 0/13 [00:00<?, ?it/s]Author Manuel Aprile at Depth 2: 100%|██████████| 13/13 [00:00<00:00, 116260.03it/s]
-Author Samuel Fiorini at Depth 2:   0%|          | 0/42 [00:00<?, ?it/s]Author Samuel Fiorini at Depth 2: 100%|██████████| 42/42 [00:00<00:00, 189828.41it/s]
-Author Tony Huynh at Depth 2:   0%|          | 0/76 [00:00<?, ?it/s]Author Tony Huynh at Depth 2: 100%|██████████| 76/76 [00:00<00:00, 191681.96it/s]
-Author Marco Macchia at Depth 2:   0%|          | 0/6 [00:00<?, ?it/s]Author Marco Macchia at Depth 2: 100%|██████████| 6/6 [00:00<00:00, 70099.79it/s]
-Author Samuel Fiorin at Depth 2:   0%|          | 0/1 [00:00<?, ?it/s]Author Samuel Fiorin at Depth 2: 100%|██████████| 1/1 [00:00<00:00, 28926.23it/s]
-Author Stefan Weltge at Depth 2:   0%|          | 0/20 [00:00<?, ?it/s]Author Stefan Weltge at Depth 2: 100%|██████████| 20/20 [00:00<00:00, 129453.83it/s]
-Author Samuel Fiorini at Depth 2:   0%|          | 0/42 [00:00<?, ?it/s]Author Samuel Fiorini at Depth 2: 100%|██████████| 42/42 [00:00<00:00, 207004.43it/s]
-Author Gwenaël Joret at Depth 2:   0%|          | 0/70 [00:00<?, ?it/s]Author Gwenaël Joret at Depth 2: 100%|██████████| 70/70 [00:00<00:00, 80022.15it/s]
-Author Volker Kaibel at Depth 2:   0%|          | 0/39 [00:00<?, ?it/s]Author Volker Kaibel at Depth 2: 100%|██████████| 39/39 [00:00<00:00, 66985.20it/s]
-Author Bert Gerards at Depth 2:   0%|          | 0/3 [00:00<?, ?it/s]Author Bert Gerards at Depth 2: 100%|██████████| 3/3 [00:00<00:00, 24916.66it/s]
-Author Matthias Walter at Depth 2:   0%|          | 0/52 [00:00<?, ?it/s]Author Matthias Walter at Depth 2: 100%|██████████| 52/52 [00:00<00:00, 142087.17it/s]
-Author Kanstantsin Pashkovich at Depth 2:   0%|          | 0/15 [00:00<?, ?it/s]Author Kanstantsin Pashkovich at Depth 2: 100%|██████████| 15/15 [00:00<00:00, 74017.13it/s]
-Author Stefan Weltge at Depth 2:   0%|          | 0/20 [00:00<?, ?it/s]Author Stefan Weltge at Depth 2: 100%|██████████| 20/20 [00:00<00:00, 130663.68it/s]
-Author Kanstantsin Pashkovich at Depth 2:   0%|          | 0/15 [00:00<?, ?it/s]Author Kanstantsin Pashkovich at Depth 2: 100%|██████████| 15/15 [00:00<00:00, 119382.47it/s]
-Author Yuri Faenza at Depth 2:   0%|          | 0/19 [00:00<?, ?it/s]Author Yuri Faenza at Depth 2: 100%|██████████| 19/19 [00:00<00:00, 67822.79it/s]
-Author Christopher Hojny at Depth 2:   0%|          | 0/5 [00:00<?, ?it/s]Author Christopher Hojny at Depth 2: 100%|██████████| 5/5 [00:00<00:00, 27342.27it/s]
-Number of updates: 459
-Number of authors to explore: 0
-Graph saved to ../data/collaboration_graph.pkl
-Author Nicolas Bonifas at Depth 2:   0%|          | 0/1 [00:00<?, ?it/s]Author Nicolas Bonifas at Depth 2: 100%|██████████| 1/1 [00:00<00:00, 27594.11it/s]
-Author Katherina von Dichter at Depth 2:   0%|          | 0/1 [00:00<?, ?it/s]Author Katherina von Dichter at Depth 2: 100%|██████████| 1/1 [00:00<00:00, 28926.23it/s]
-Author Ivan Soprunov at Depth 2:   0%|          | 0/14 [00:00<?, ?it/s]Author Ivan Soprunov at Depth 2: 100%|██████████| 14/14 [00:00<00:00, 33325.91it/s]
-Author Simon Richard at Depth 2:   0%|          | 0/2 [00:00<?, ?it/s]Author Simon Richard at Depth 2: 100%|██████████| 2/2 [00:00<00:00, 44384.17it/s]
-Author Ivan Soprunov at Depth 2:   0%|          | 0/14 [00:00<?, ?it/s]Author Ivan Soprunov at Depth 2: 100%|██████████| 14/14 [00:00<00:00, 136877.05it/s]
-Author Ivan Soprunov at Depth 2:   0%|          | 0/14 [00:00<?, ?it/s]Author Ivan Soprunov at Depth 2: 100%|██████████| 14/14 [00:00<00:00, 136558.73it/s]
-Author Matthias Schymura at Depth 2:   0%|          | 0/14 [00:00<?, ?it/s]Author Matthias Schymura at Depth 2: 100%|██████████| 14/14 [00:00<00:00, 51554.22it/s]
-Author Matthias Schymura at Depth 2:   0%|          | 0/14 [00:00<?, ?it/s]Author Matthias Schymura at Depth 2: 100%|██████████| 14/14 [00:00<00:00, 135926.52it/s]
-Author Alexander Kasprzyk at Depth 2:   0%|          | 0/29 [00:00<?, ?it/s]Author Alexander Kasprzyk at Depth 2: 100%|██████████| 29/29 [00:00<00:00, 64527.75it/s]
-Author Martin Lehmann at Depth 2:   0%|          | 0/3 [00:00<?, ?it/s]Author Martin Lehmann at Depth 2: 100%|██████████| 3/3 [00:00<00:00, 65879.12it/s]
-Author Benjamin Nill at Depth 2:   0%|          | 0/48 [00:00<?, ?it/s]Author Benjamin Nill at Depth 2: 100%|██████████| 48/48 [00:00<00:00, 63032.75it/s]
-Author Anastasia Chavez at Depth 2:   0%|          | 0/14 [00:00<?, ?it/s]Author Anastasia Chavez at Depth 2: 100%|██████████| 14/14 [00:00<00:00, 69656.29it/s]
-Author Bryan R. Gillespie at Depth 2:   0%|          | 0/3 [00:00<?, ?it/s]Author Bryan R. Gillespie at Depth 2: 100%|██████████| 3/3 [00:00<00:00, 30992.39it/s]
-Author Ivan Soprunov at Depth 2:   0%|          | 0/14 [00:00<?, ?it/s]Author Ivan Soprunov at Depth 2: 100%|██████████| 14/14 [00:00<00:00, 133455.13it/s]
-Author Christopher Borger at Depth 2:   0%|          | 0/4 [00:00<?, ?it/s]Author Christopher Borger at Depth 2: 100%|██████████| 4/4 [00:00<00:00, 76608.29it/s]
-Author Jesus A. De Loera at Depth 2:   0%|          | 0/72 [00:00<?, ?it/s]Author Jesus A. De Loera at Depth 2: 100%|██████████| 72/72 [00:00<00:00, 159445.56it/s]
-Author Giulia Codenotti at Depth 2:   0%|          | 0/10 [00:00<?, ?it/s]Author Giulia Codenotti at Depth 2: 100%|██████████| 10/10 [00:00<00:00, 45540.76it/s]
-Author Matthias Schymura at Depth 2:   0%|          | 0/14 [00:00<?, ?it/s]Author Matthias Schymura at Depth 2: 100%|██████████| 14/14 [00:00<00:00, 124144.30it/s]
-Author Antonio Macchia at Depth 2:   0%|          | 0/18 [00:00<?, ?it/s]Author Antonio Macchia at Depth 2: 100%|██████████| 18/18 [00:00<00:00, 44779.05it/s]
-Author Francisco Santos at Depth 2:   0%|          | 0/100 [00:00<?, ?it/s]Author Francisco Santos at Depth 2: 100%|██████████| 100/100 [00:00<00:00, 115038.51it/s]
-Number of updates: 479
-Number of authors to explore: 83
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 82
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 81
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 80
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 79
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 78
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 77
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 76
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 75
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 74
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 73
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 72
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 71
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 70
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 69
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 68
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 67
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 66
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 65
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 64
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 63
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 62
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 61
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 60
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 59
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 58
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 57
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 56
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 55
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 54
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 53
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 52
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 51
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 50
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 49
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 48
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 47
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 46
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 45
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 44
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 43
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 42
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 41
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 40
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 39
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 38
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 37
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 36
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 35
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 34
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 33
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 32
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 31
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 30
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 29
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 28
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 27
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 26
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 25
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 24
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 23
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 22
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 21
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 20
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 19
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 18
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 17
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 16
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 15
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 14
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 13
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 12
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 11
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 10
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 9
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 8
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 7
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 6
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 5
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 4
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 3
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 2
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 1
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 0
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 0
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 0
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 0
-Graph saved to ../data/collaboration_graph.pkl
-Number of updates: 479
-Number of authors to explore: 0
-Graph saved to ../data/collaboration_graph.pkl
-Author Johannes Hofscheier at Depth 2:   0%|          | 0/14 [00:00<?, ?it/s]Author Johannes Hofscheier at Depth 2: 100%|██████████| 14/14 [00:00<00:00, 47662.55it/s]
-Number of updates: 479
-Number of authors to explore: 11
-Graph saved to ../data/collaboration_graph.pkl
-Author Benjamin Nill at Depth 2:   0%|          | 0/48 [00:00<?, ?it/s]Author Benjamin Nill at Depth 2: 100%|██████████| 48/48 [00:00<00:00, 164886.64it/s]
-Author Robert Weismantel at Depth 2:   0%|          | 0/18 [00:00<?, ?it/s]Author Robert Weismantel at Depth 2: 100%|██████████| 18/18 [00:00<00:00, 49184.02it/s]
-Traceback (most recent call last):
-  File "/home/jamesli/Documents/InfoFeeder/preprocessing/test.py", line 8, in <module>
-    scraper.build_collaboration_graph_from_author(max_workers=max_num_workers)
-  File "/home/jamesli/Documents/InfoFeeder/preprocessing/utils.py", line 122, in build_collaboration_graph_from_author
-    future.result()
-  File "/home/jamesli/anaconda3/envs/InfoFeeder/lib/python3.11/concurrent/futures/_base.py", line 449, in result
-    return self.__get_result()
-           ^^^^^^^^^^^^^^^^^^^
-  File "/home/jamesli/anaconda3/envs/InfoFeeder/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
-    raise self._exception
-  File "/home/jamesli/anaconda3/envs/InfoFeeder/lib/python3.11/concurrent/futures/thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/jamesli/Documents/InfoFeeder/preprocessing/utils.py", line 73, in author_search_step
-    feed = feedparser.parse(arxiv_query_url)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/jamesli/anaconda3/envs/InfoFeeder/lib/python3.11/site-packages/feedparser/api.py", line 216, in parse
-    data = _open_resource(url_file_stream_or_string, etag, modified, agent, referrer, handlers, request_headers, result)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/jamesli/anaconda3/envs/InfoFeeder/lib/python3.11/site-packages/feedparser/api.py", line 115, in _open_resource
-    return http.get(url_file_stream_or_string, etag, modified, agent, referrer, handlers, request_headers, result)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/jamesli/anaconda3/envs/InfoFeeder/lib/python3.11/site-packages/feedparser/http.py", line 171, in get
-    f = opener.open(request)
-        ^^^^^^^^^^^^^^^^^^^^
-  File "/home/jamesli/anaconda3/envs/InfoFeeder/lib/python3.11/urllib/request.py", line 519, in open
-    response = self._open(req, data)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/jamesli/anaconda3/envs/InfoFeeder/lib/python3.11/urllib/request.py", line 536, in _open
-    result = self._call_chain(self.handle_open, protocol, protocol +
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/jamesli/anaconda3/envs/InfoFeeder/lib/python3.11/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-             ^^^^^^^^^^^
-  File "/home/jamesli/anaconda3/envs/InfoFeeder/lib/python3.11/urllib/request.py", line 1377, in http_open
-    return self.do_open(http.client.HTTPConnection, req)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/jamesli/anaconda3/envs/InfoFeeder/lib/python3.11/urllib/request.py", line 1352, in do_open
-    r = h.getresponse()
-        ^^^^^^^^^^^^^^^
-  File "/home/jamesli/anaconda3/envs/InfoFeeder/lib/python3.11/http/client.py", line 1395, in getresponse
-    response.begin()
-  File "/home/jamesli/anaconda3/envs/InfoFeeder/lib/python3.11/http/client.py", line 325, in begin
-    version, status, reason = self._read_status()
-                              ^^^^^^^^^^^^^^^^^^^
-  File "/home/jamesli/anaconda3/envs/InfoFeeder/lib/python3.11/http/client.py", line 286, in _read_status
-    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/jamesli/anaconda3/envs/InfoFeeder/lib/python3.11/socket.py", line 706, in readinto
-    return self._sock.recv_into(b)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-ConnectionResetError: [Errno 104] Connection reset by peer
+Searching for Amitabh Basu at depth 0

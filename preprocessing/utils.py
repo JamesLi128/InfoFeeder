@@ -15,6 +15,9 @@ import queue
 from openai import OpenAI
 # import torch
 import time
+
+from requests import RequestException
+
 class Collaboration_Graph_Scraper:
     def __init__(self, cache_path : str = None, 
                  save_path : str = '../data/collaboration_graph.pkl',
@@ -63,40 +66,90 @@ class Collaboration_Graph_Scraper:
         final_str = f"^{middle_str}$"
         return re.compile(final_str, re.IGNORECASE)
     
+    def _update_graph_and_author2paper_id(self, author_name : str, collaborator_name : str, paper_id : str) -> None:
+        # update the nodes in the graph
+        if author_name not in self.graph:
+            self.graph.add_node(author_name)
+        if collaborator_name not in self.graph:
+            self.graph.add_node(collaborator_name)
+        # update author2paper_id
+        if author_name not in self.author2paper_id:
+            self.author2paper_id[author_name] = set()
+        if collaborator_name not in self.author2paper_id:
+            self.author2paper_id[collaborator_name] = set()
+
+        if paper_id not in self.author2paper_id[author_name]:
+            self.author2paper_id[author_name].add(paper_id)
+            if self.graph.has_edge(author_name, collaborator_name):
+                self.graph[author_name][collaborator_name]['weight'] += 1
+            else:
+                self.graph.add_edge(author_name, collaborator_name)
+                self.graph[author_name][collaborator_name]['weight'] = 1
+
+        if paper_id not in self.author2paper_id[collaborator_name]:
+            self.author2paper_id[collaborator_name].add(paper_id)
+            if self.graph.has_edge(author_name, collaborator_name):
+                self.graph[author_name][collaborator_name]['weight'] += 1
+            else:
+                self.graph.add_edge(author_name, collaborator_name)
+                self.graph[author_name][collaborator_name]['weight'] = 1
+    
     def author_search_step(self, author_name : str, lock : threading.Lock, depth : int) -> None:
+        """
+        Perform a search for papers by a given author and update the collaboration graph.
 
+        This function queries the arXiv API for papers authored by `author_name`, processes the results to find
+        co-authors, and updates the collaboration graph and related data structures. It uses a lock to ensure
+        thread-safe operations.
+
+        Args:
+            author_name (str): The name of the author to search for.
+            lock (threading.Lock): A threading lock to ensure thread-safe operations.
+            depth (int): The current depth of the search, used to limit the search depth.
+
+        Returns:
+            None
+        """
+        # Wait for 1 second to avoid overwhelming the server
         time.sleep(1)
-
+        
         if depth > self.max_depth:
             return
+        # query generation and parsing
         arxiv_query_url = url_generator(author_ls=[author_name], max_results=self.max_results, category_ls=self.category_ls)
         feed = feedparser.parse(arxiv_query_url)
-        new_authors = []
         crnt_author_re = self._author_re(author_name)
         with lock:
-            for entry in tqdm(feed.entries, desc=f"Author {author_name} at Depth {depth}"):
+            if (self.num_updates + 1) % 1 == 0:
+                print(f"Number of updates: {self.num_updates}")
+                print(f"Number of authors to explore: {self.authors_to_explore.qsize()}")
+                self.save_graph()
+            for entry in feed.entries:
                 paper_id = entry.id.split('/abs/')[-1]
                 for searched_author in entry.authors:
+                    # if current paper is indeed by the author desired, and the paper is not already processed
                     if crnt_author_re.match(searched_author.name) and paper_id not in self.paper_id2author_ls:
-                        collaborator_name_ls = [collab_dict.name for collab_dict in entry.authors if collab_dict.name not in self.processed_authors]
-                        self.paper_id2author_ls[paper_id] = collaborator_name_ls
-                        for collaborator_name in collaborator_name_ls:
-                            self.authors_to_explore.put(collaborator_name)
+                        # get the list of unprocessed collaborators, excluding the author himself
+                        new_collaborator_name_ls = [collab_dict.name for collab_dict in entry.authors if (collab_dict.name not in self.processed_authors) and (collab_dict.name != author_name)]
+                        # get the list of all collaborators
+                        all_collaborator_name_ls = [collab_dict.name for collab_dict in entry.authors]
+                        # update the paper_id to author list mapping
+                        self.paper_id2author_ls[paper_id] = all_collaborator_name_ls
+                        for collaborator_name in new_collaborator_name_ls:
+                            # push the new collaborators to the queue
+                            if collaborator_name not in self.authors_to_explore.queue:
+                                self.authors_to_explore.put(collaborator_name)
+                            # push the corresponding depth
                             self.depth_queue.put(depth+1)
-                            if collaborator_name not in self.graph:
-                                self.graph.add_node(collaborator_name)
-                            if self.graph.has_edge(author_name, collaborator_name):
-                                self.graph[author_name][collaborator_name]['weight'] += 1
-                            else:
-                                self.graph.add_edge(author_name, collaborator_name)
-                                self.graph[author_name][collaborator_name]['weight'] = 1
-                            if collaborator_name not in self.author2paper_id:
-                                self.author2paper_id[collaborator_name] = set()
-                            self.author2paper_id[collaborator_name].add(paper_id)
+                            # update the graph nodes and edges
+                            self._update_graph_and_author2paper_id(author_name, collaborator_name, paper_id)
+            # mark the current author as fully explored
             self.fully_explored_authors.add(author_name)
+            print(f"Author {author_name} fully explored.")
+            # record the number of updates
             self.num_updates += 1
 
-    def build_collaboration_graph_from_author(self, max_workers : int = 8) -> None:
+    def build_collaboration_graph_from_author(self, max_workers : int = 8, max_num_attemps : int = 5) -> None:
         start_time = time.time()
         lock = threading.Lock()
 
@@ -104,19 +157,31 @@ class Collaboration_Graph_Scraper:
             futures = []
 
             while (not self.authors_to_explore.empty()) or any([future.running() for future in futures]):
-                if (self.num_updates + 1) % 20 == 0:
-                    print(f"Number of updates: {self.num_updates}")
-                    print(f"Number of authors to explore: {self.authors_to_explore.qsize()}")
-                    self.save_graph()
-                try:
-                    crnt_author = self.authors_to_explore.get(timeout=2)
-                    crnt_depth = self.depth_queue.get()
-                    self.processed_authors.add(crnt_author)
-                    future = executor.submit(self.author_search_step, crnt_author, lock, crnt_depth)
-                    futures.append(future)
+                crnt_num_attemps = 0
+                while crnt_num_attemps < max_num_attemps:
+                    try:
+                        crnt_author = self.authors_to_explore.get(timeout=2)
+                        crnt_depth = self.depth_queue.get()
+                        if crnt_depth > self.max_depth:
+                            break
+                        self.processed_authors.add(crnt_author)
+                        print(f"Searching for {crnt_author} at depth {crnt_depth}")
+                        future = executor.submit(self.author_search_step, crnt_author, lock, crnt_depth)
+                        futures.append(future)
+                        break
 
-                except queue.Empty:
-                    pass
+                    except queue.Empty:
+                        pass
+                    
+                    except RequestException as e:
+                        crnt_num_attemps += 1
+                        print(f"Request Exception: {e}")
+                        print(f"{crnt_num_attemps}/{max_num_attemps} attemps made on querying {crnt_author}")
+                        time.sleep(2)
+                        if crnt_num_attemps == max_num_attemps:
+                            print(f"Max number of attemps reached for author {crnt_author}, unable to fully explore.")
+                            break
+                crnt_time = time.time() - start_time
 
             for future in futures:
                 future.result()
