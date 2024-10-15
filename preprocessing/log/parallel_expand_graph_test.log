@@ -1,0 +1,16 @@
+nohup: ignoring input
+Expanding collaboration graph...
+Max number of updates reached, waiting for 4 threads to finish.
+Author Miguel Bosch-Calvo fully explored at depth d+0.
+Author Michael Ketcha fully explored at depth d+0.
+Author Julia Hirschberg fully explored at depth d+0.
+Author Ari S. Benjamin fully explored at depth d+0.
+Author Michiel Van de Panne fully explored at depth d+0.
+Author Moses Charikar fully explored at depth d+0.
+Author Rohan Bareja fully explored at depth d+0.
+Author Canwen Xu fully explored at depth d+0.
+Author Anas Belouali fully explored at depth d+0.
+Author Sijia Wang fully explored at depth d+0.
+Max number of updates reached, waiting for 0 threads to finish.
+Graph saved to ../data/test_graph_expand_test.pkl
+Graph expanded in 20.03 seconds.

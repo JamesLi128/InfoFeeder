@@ -16,6 +16,7 @@ from openai import OpenAI
 import torch
 import time
 import tempfile
+import numpy as np
 
 from requests import RequestException
 
@@ -27,6 +28,7 @@ class Collaboration_Graph_Scraper:
                  anchor_category : str = None, 
                  category_ls : list = None,
                  max_depth : int = 3,
+                 max_num_update : int = None,
                  max_results : int = 200) -> None:
         self.cache_path = cache_path
         self.save_path = save_path
@@ -35,6 +37,7 @@ class Collaboration_Graph_Scraper:
         self.anchor_category = anchor_category
         self.category_ls = category_ls
         self.max_depth = max_depth
+        self.max_num_update = max_num_update
         self.max_results = max_results
         # self.max_collaborations = max_collaborations
         # self.max_authors = max_authors
@@ -42,12 +45,21 @@ class Collaboration_Graph_Scraper:
         self.authors_to_explore = queue.Queue()
         self.depth_queue = queue.Queue()
         self.num_updates = 0
+        self.num_finished = 0
 
         self._load_graph()
-        if anchor_author not in self.graph:
-            self.graph.add_node(anchor_author)
-            self.authors_to_explore.put(anchor_author)
-            self.depth_queue.put(0)
+        if cache_path == None:
+            if anchor_author not in self.graph:
+                self.graph.add_node(anchor_author)
+                self.authors_to_explore.put(anchor_author)
+                self.depth_queue.put(0)
+        else:
+            leaf_authors = self._find_leaf_authors()
+            for author in leaf_authors:
+                self.authors_to_explore.put(author)
+                self.depth_queue.put(0)
+            if self.max_depth > 1 and self.max_num_update == None:
+                Warning(f"Expanding graph out of {len(leaf_authors)} leaf authors, max_depth > 1, might take a long time, condider using smaller max_depth or setting max_num_update.")
         
         self.processed_authors = self.fully_explored_authors.copy()
 
@@ -66,6 +78,14 @@ class Collaboration_Graph_Scraper:
         middle_str = r'\s*'.join(split)
         final_str = f"^{middle_str}$"
         return re.compile(final_str, re.IGNORECASE)
+    
+    def _find_leaf_authors(self) -> set:
+        leaf_nodes = {node for node in self.graph.nodes() if self.graph.degree(node) == 1}
+        degree_ls = [self.graph.degree(node) for node in self.graph.nodes()]
+        # plt.hist(degree_ls, bins=100)
+        # plt.title("Distribution of Node Degrees")
+        # plt.show()
+        return leaf_nodes
     
     def _update_graph_and_author2paper_id(self, author_name : str, collaborator_name : str, paper_id : str) -> None:
         # update the nodes in the graph
@@ -112,7 +132,7 @@ class Collaboration_Graph_Scraper:
             None
         """
         # Wait for 1 second to avoid overwhelming the server
-        time.sleep(1)
+        time.sleep(np.random.uniform(0.5, 1.5))
         
         if depth > self.max_depth:
             return
@@ -142,11 +162,71 @@ class Collaboration_Graph_Scraper:
                             self._update_graph_and_author2paper_id(author_name, collaborator_name, paper_id)
             # mark the current author as fully explored
             self.fully_explored_authors.add(author_name)
-            print(f"Author {author_name} fully explored.")
+            print(f"Author {author_name} fully explored at depth d+{depth}.")
             # record the number of updates
-            self.num_updates += 1
+            self.num_finished += 1
+
+    def expand_collaboration_graph(self, max_workers : int = 8, max_num_attemps : int = 5) -> None:
+        try:
+            assert(self.cache_path != None)
+        except AssertionError:
+            raise ValueError("Cache path not provided, unable to expand graph, try build_collaboration_graph_from_author instead.")
+        start_time = time.time()
+        lock = threading.Lock()
+        print("Expanding collaboration graph...")
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+            futures = []
+
+            while (not self.authors_to_explore.empty()) or any([future.running() for future in futures]):
+                crnt_num_attemps = 0
+                if self.num_updates >= self.max_num_update:
+                    while not self.authors_to_explore.empty():
+                        self.authors_to_explore.get()
+                        self.depth_queue.get()
+                    num_unfinished_threads = sum([future.running() for future in futures])
+                    print(f"Max number of updates reached, waiting for {num_unfinished_threads} threads to finish.")
+                    time.sleep(10)
+                    continue
+                while crnt_num_attemps < max_num_attemps:
+                    if (self.num_finished + 1) % 20 == 0:
+                        print(f"Number of updates: {self.num_updates}")
+                        print(f"Number of authors to explore: {self.authors_to_explore.qsize()}")
+                        self.save_graph(lock=lock)
+                    try:
+                        crnt_author = self.authors_to_explore.get(timeout=np.random.uniform(1.5, 2.5))
+                        crnt_depth = self.depth_queue.get()
+                        if crnt_depth > self.max_depth:
+                            break
+                        self.processed_authors.add(crnt_author)
+                        # print(f"Searching for {crnt_author} at depth {crnt_depth}")
+                        self.num_updates += 1
+                        future = executor.submit(self.author_search_step, crnt_author, lock, crnt_depth)
+                        futures.append(future)
+                        break
+
+                    except queue.Empty:
+                        pass
+                    
+                    except RequestException as e:
+                        crnt_num_attemps += 1
+                        print(f"Request Exception: {e}")
+                        print(f"{crnt_num_attemps}/{max_num_attemps} attemps made on querying {crnt_author}")
+                        time.sleep(2)
+                        if crnt_num_attemps == max_num_attemps:
+                            print(f"Max number of attemps reached for author {crnt_author}, unable to fully explore.")
+                            break
+
+            for future in futures: 
+                future.result()
+        self.save_graph(lock=lock)
+        end_time = time.time()
+        print(f"Graph expanded in {end_time - start_time:.2f} seconds.")
 
     def build_collaboration_graph_from_author(self, max_workers : int = 8, max_num_attemps : int = 5) -> None:
+        try:
+            assert(self.anchor_author != None)
+        except AssertionError:
+            raise ValueError("Anchor author not provided, try expand_collaboration_graph instead.")
         start_time = time.time()
         lock = threading.Lock()
         print("Building collaboration graph...")
@@ -174,7 +254,7 @@ class Collaboration_Graph_Scraper:
                     except queue.Empty:
                         pass
                     
-                    except RequestException as e:
+                    except ConnectionResetError as e:
                         crnt_num_attemps += 1
                         print(f"Request Exception: {e}")
                         print(f"{crnt_num_attemps}/{max_num_attemps} attemps made on querying {crnt_author}")
