@@ -13,8 +13,9 @@ import tiktoken
 import fitz
 import queue
 from openai import OpenAI
-# import torch
+import torch
 import time
+import tempfile
 
 from requests import RequestException
 
@@ -120,10 +121,6 @@ class Collaboration_Graph_Scraper:
         feed = feedparser.parse(arxiv_query_url)
         crnt_author_re = self._author_re(author_name)
         with lock:
-            if (self.num_updates + 1) % 1 == 0:
-                print(f"Number of updates: {self.num_updates}")
-                print(f"Number of authors to explore: {self.authors_to_explore.qsize()}")
-                self.save_graph()
             for entry in feed.entries:
                 paper_id = entry.id.split('/abs/')[-1]
                 for searched_author in entry.authors:
@@ -152,20 +149,24 @@ class Collaboration_Graph_Scraper:
     def build_collaboration_graph_from_author(self, max_workers : int = 8, max_num_attemps : int = 5) -> None:
         start_time = time.time()
         lock = threading.Lock()
-
+        print("Building collaboration graph...")
         with ThreadPoolExecutor(max_workers=max_workers) as executor:
             futures = []
 
             while (not self.authors_to_explore.empty()) or any([future.running() for future in futures]):
                 crnt_num_attemps = 0
                 while crnt_num_attemps < max_num_attemps:
+                    if (self.num_updates + 1) % 20 == 0:
+                        print(f"Number of updates: {self.num_updates}")
+                        print(f"Number of authors to explore: {self.authors_to_explore.qsize()}")
+                        self.save_graph(lock=lock)
                     try:
                         crnt_author = self.authors_to_explore.get(timeout=2)
                         crnt_depth = self.depth_queue.get()
                         if crnt_depth > self.max_depth:
                             break
                         self.processed_authors.add(crnt_author)
-                        print(f"Searching for {crnt_author} at depth {crnt_depth}")
+                        # print(f"Searching for {crnt_author} at depth {crnt_depth}")
                         future = executor.submit(self.author_search_step, crnt_author, lock, crnt_depth)
                         futures.append(future)
                         break
@@ -181,202 +182,52 @@ class Collaboration_Graph_Scraper:
                         if crnt_num_attemps == max_num_attemps:
                             print(f"Max number of attemps reached for author {crnt_author}, unable to fully explore.")
                             break
-                crnt_time = time.time() - start_time
 
             for future in futures:
                 future.result()
-        self.save_graph()
+        self.save_graph(lock=lock)
         end_time = time.time()
         print(f"Graph built in {end_time - start_time:.2f} seconds.")
 
-    def save_graph(self, save_path : str = None) -> None:
+    def save_graph(self, save_path: str = None, lock : threading.Lock = None) -> None:
+        """
+        Save the collaboration graph to a pickle file using atomic save to prevent file corruption.
+        
+        If no `save_path` is provided, it uses the default `self.save_path`. 
+        The function first writes to a temporary file and then renames it to ensure the 
+        integrity of the file and avoid simultaneous write issues.
+        """
         if save_path is None:
             save_path = self.save_path
-        with open(save_path, 'wb') as f:
-            pickle.dump((self.graph, self.paper_id2author_ls, self.author2paper_id, self.fully_explored_authors), f)
-        print(f"Graph saved to {save_path}")
 
-
-# class Collaboration_Graph_Scraper:
-#     """
-#     Firstly read from cache graph if exists, otherwise start from scratch.
-#     Need to offer an anchor point, like a paper or an author or a category.
-#     max_depth, max_results per etc. can be configured
-#     if multiple max values are set, the lowest will be used.
-#     """
-#     def __init__(self, cache_path : str = None, 
-#                  save_path : str = '../data/collaboration_graph.pkl',
-#                  anchor_author : str = None, 
-#                  anchor_paper : str = None, 
-#                  anchor_category : str = None, 
-#                  category_ls : list = None,
-#                  max_depth : int = 3,
-#                  max_results : int = 200) -> None:
-#         self.cache_path = cache_path
-#         self.save_path = save_path
-#         self.anchor_author = anchor_author
-#         self.anchor_paper = anchor_paper
-#         self.anchor_category = anchor_category
-#         self.category_ls = category_ls
-#         self.max_depth = max_depth
-#         self.max_results = max_results
-#         # self.max_collaborations = max_collaborations
-#         # self.max_authors = max_authors
-#         # self.max_papers = max_papers
-#         self._load_graph()
-#         if anchor_author not in self.graph:
-#             self.graph.add_node(anchor_author)
-
-#     def _load_graph(self) -> None:
-#         """
-#         Load the collaboration graph from the cache if it exists.
-#         """
-#         if self.cache_path != None and os.path.exists(self.cache_path):
-#             with open(self.cache_path, 'rb') as f:
-#                 self.graph, self.paper_id2author_ls = pickle.load(f)
-#         else:
-#             self.graph = nx.Graph()
-#             self.paper_id2author_ls = {}
-
-#     def _author_re(self, author_name : str) -> re.Pattern:
-#         """
-#         Generate a regex pattern for the given author name.
+        # Use a lock to prevent multiple threads from writing to the file at the same time
         
-#         Args:
-#             author_name (str): The name of the author.
-            
-#         Returns:
-#             re.Pattern: A compiled regex pattern.
-#         """
-#         split = author_name.split(' ')
-#         middle_str = r'\s*'.join(split)
-#         final_str = f"^{middle_str}$"
-#         return re.compile(final_str, re.IGNORECASE)
-        
-#     def search_step(self, unexplored_authors : list, depth : int = 0, func_id=0) -> None:
-#         print(f"current depth: {depth}, unexplored authors: {unexplored_authors}")
-#         """
-#         Perform a search step to find collaborators and papers.
-        
-#         Args:
-#             depth (int): The current depth of the search.
-#         """
-#         # Implement the logic for searching collaborators and papers
-
-#         if depth > self.max_depth:
-#             return
-
-#         else:
-#             new_unexplored_authors = []
-#             for author in tqdm(unexplored_authors, desc=f"Depth {depth}, Func {func_id}"):
-#                 author_re = self._author_re(author_name=author)
-#                 search_url = url_generator(author_ls=[author], max_results=self.max_results, category_ls=self.category_ls)
-#                 feed = feedparser.parse(search_url)
-#                 for entry in feed.entries:
-#                     for searched_author in entry.authors:
-#                         # print(searched_author.name)
-#                         if author_re.match(searched_author.name) is not None:
-#                             paper_id = entry.id.split('/abs/')[-1]
-#                             if paper_id not in self.paper_id2author_ls:
-#                                 author_name_ls = [au_dict.name for au_dict in entry.authors if au_dict.name not in self.graph]
-#                                 self.paper_id2author_ls[paper_id] = author_name_ls
-#                                 new_unexplored_authors.extend(author_name_ls)
-#                                 for co_author in entry.authors:
-#                                     if co_author.name not in self.graph:
-#                                         self.graph.add_node(co_author.name)
-#                                     if self.graph.has_edge(author, co_author.name):
-#                                         self.graph[author][co_author.name]['weight'] += 1
-#                                     else:
-#                                         self.graph.add_edge(author, co_author.name)
-#                                         self.graph[author][co_author.name]['weight'] = 1
-            
-#             self.search_step(depth=depth+1, unexplored_authors=new_unexplored_authors, func_id=func_id+1)
-
-
-#     def parallel_search_step(self, unexplored_authors: list, depth: int = 0, func_id : int=0) -> None:
-#         print(f"Starting search at depth: {depth}, number of authors: {len(unexplored_authors)}")
-
-#         if depth > self.max_depth:
-#             return
-
-#         new_unexplored_authors = []
-#         author_lock = threading.Lock()
-#         graph_lock = threading.Lock()
-#         paper_record_lock = threading.Lock()
-
-#         def process_author(author):
-#             nonlocal new_unexplored_authors
-#             author_re = self._author_re(author_name=author)
-#             search_url = url_generator(author_ls=[author], max_results=self.max_results, category_ls=self.category_ls)
-#             feed = feedparser.parse(search_url)
-#             local_new_authors = []
-
-#             for entry in feed.entries:
-#                 for searched_author in entry.authors:
-#                     if author_re.match(searched_author.name) is not None:
-#                         paper_id = entry.id.split('/abs/')[-1]
-                        
-#                         with paper_record_lock:
-#                             if paper_id in self.paper_id2author_ls:
-#                                 continue
-#                             author_name_ls = [au_dict.name for au_dict in entry.authors if au_dict.name not in self.graph]
-#                             self.paper_id2author_ls[paper_id] = author_name_ls
-
-#                         local_new_authors.extend(author_name_ls)
-
-#                         with graph_lock:
-#                             for co_author in entry.authors:
-#                                 co_name = co_author.name
-#                                 if co_name not in self.graph:
-#                                     self.graph.add_node(co_name)
-#                                 if self.graph.has_edge(author, co_name):
-#                                     self.graph[author][co_name]['weight'] += 1
-#                                 else:
-#                                     self.graph.add_edge(author, co_name)
-#                                     self.graph[author][co_name]['weight'] = 1
-
-#             with author_lock:
-#                 new_unexplored_authors.extend(local_new_authors)
-
-#         # Use ThreadPoolExecutor to process authors in parallel
-#         max_workers = min(8, len(unexplored_authors) or 1)  # Adjust the number of workers as needed
-#         with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
-#             # Using tqdm to show progress
-#             futures = {executor.submit(process_author, author): author for author in unexplored_authors}
-#             for future in tqdm(concurrent.futures.as_completed(futures), total=len(futures),
-#                             desc=f"Depth {depth}, Func {func_id}"):
-#                 try:
-#                     future.result()
-#                 except Exception as exc:
-#                     author = futures[future]
-#                     print(f'Author {author} generated an exception: {exc}')
-
-#         # Remove duplicates by converting to a set
-#         unique_new_authors = list(set(new_unexplored_authors))
-
-#         # Recursive call for the next depth level
-#         self.search_step(depth=depth + 1, unexplored_authors=unique_new_authors, func_id=func_id + 1)
-
-
-
-#     def save_graph(self, save_path : str = None) -> None:
-#         """
-#         Save the collaboration graph to the given path.
-        
-#         Args:
-#             save_path (str): The path to save the graph.
-#         """
-#         if save_path is None:
-#             save_path = self.save_path
-#         with open(save_path, 'wb') as f:
-#             pickle.dump((self.graph, self.paper_id2author_ls), f)
-#         print(f"Graph saved to {save_path}")
-
+        with lock:
+            temp_file = None
+            try:
+                # Write to a temporary file
+                with tempfile.NamedTemporaryFile('wb', delete=False) as temp_file:
+                    pickle.dump((self.graph, self.paper_id2author_ls, self.author2paper_id, self.fully_explored_authors), temp_file)
+                    temp_file.flush()
+                    os.fsync(temp_file.fileno())  # Ensure data is written to disk
+                
+                # Atomically rename the temporary file to the final destination
+                os.replace(temp_file.name, save_path)
+                print(f"Graph saved to {save_path}")
+            except Exception as e:
+                print(f"Failed to save graph: {e}")
+                if temp_file:
+                    try:
+                        os.remove(temp_file.name)
+                    except OSError:
+                        pass
 
 class EmbeddingGenerator:
-    def __init__(self, model_name : str = 'text-embedding-3-small') -> None:
+    def __init__(self, model_name : str = 'text-embedding-3-small', root_path="../data/") -> None:
         self.tokenizer = tiktoken.encoding_for_model(model_name)
         self.model_name = model_name
+        self.root_path = root_path
+        self.pdf_downloader = PDFDownloader(root_path=root_path)
         if self.model_name == "text-embedding-3-small":
             self.embed_dim = 1536
         else:
@@ -392,6 +243,34 @@ class EmbeddingGenerator:
             return True
         return False
     
+    def has_abstract_embedded(self, paper_name : str) -> bool:
+        path = f"../data/embeddings/{paper_name}_abstract.pt"
+        if '/' in paper_name:
+            Warning("Should Input Paper Name, not Paper ID, deprecated arxiv naming")
+            paper_name = paper_id2paper_name(paper_name)
+        if os.path.exists(path):
+            print(f"Embedding for abstract of paper {paper_name} already exists.")
+            return True
+        return False
+    
+    def text2abstract(self, text : str) -> str:
+        # Define regex to match the abstract section
+        abstract_start = re.search(r'\bAbstract\b[:\s]*', text, re.IGNORECASE)
+        if abstract_start:
+            start_pos = abstract_start.end()
+            # Attempt to find the next section, like 'Introduction' or '1.'
+            abstract_end = re.search(r'\bIntroduction\b|^\d+\.', text[start_pos:], re.IGNORECASE | re.MULTILINE)
+            if abstract_end:
+                end_pos = start_pos + abstract_end.start()
+            else:
+                end_pos = len(text)
+            
+            # Extract and clean the abstract text
+            abstract = text[start_pos:end_pos].strip()
+            return abstract
+        else:
+            return "Abstract not found."
+    
     def paper_id2text(self, paper_id : str) -> str:
         """
         Retrieve the text content of a paper given its ID.
@@ -404,7 +283,7 @@ class EmbeddingGenerator:
         """
         path = f"../data/pdf/{paper_id.split('/')[-1]}.pdf"
         if not os.path.exists(path):
-            download_pdf(paper_id)
+            self.pdf_downloader(paper_id)
         doc = fitz.open(path)
         pages = [doc[i] for i in range(len(doc))]
         text = "".join([page.get_text() for page in pages])
@@ -453,9 +332,16 @@ class EmbeddingGenerator:
         Returns:
         List[torch.Tensor]: A list of embedding chunks for the paper.
         """
-        if self.has_embedded(paper_name=paper_name):
-                return torch.load(f"../data/embeddings/{paper_name}.pt", weights_only=True)
         text = self.paper_id2text(paper_name)
+        if not self.has_abstract_embedded(paper_name=paper_name):
+            abstract = self.text2abstract(text)
+            token_chunks = self.text2token_chunks(abstract, self.tokenizer, max_tokens)
+            embedding_chunks = self.token_chunks2embedding_chunks(token_chunks)
+            save_path = f"../data/embeddings/{paper_name}_abstract.pt"
+            torch.save(embedding_chunks, save_path)
+            print(f"Abstract embeddings for paper {paper_name} generated and saved to {save_path}")
+        if self.has_embedded(paper_name=paper_name):
+            return torch.load(f"../data/embeddings/{paper_name}.pt", weights_only=True)
         token_chunks = self.text2token_chunks(text, self.tokenizer, max_tokens)
         embedding_chunks = self.token_chunks2embedding_chunks(token_chunks)
         save_path = f"../data/embeddings/{paper_name}.pt"
@@ -468,6 +354,60 @@ class EmbeddingGenerator:
             Warning("Should Input Paper Name, not Paper ID, deprecated arxiv naming triggered")
             paper_name = paper_id2paper_name(paper_name)
         return self.paper_name2embedding_chunks(paper_name, max_tokens)
+
+class PDFDownloader:
+    def __init__(self, root_path : str = '../data/') -> None:
+        self.root_path = root_path
+
+    def _download_pdf(self, paper_id: str = None) -> None:
+        url = f"http://export.arxiv.org/pdf/{paper_id}"
+        paper_name = paper_id2paper_name(paper_id)
+        save_path = os.path.join(self.root_path, f"pdf/{paper_name}.pdf")
+        
+        # Check if the file already exists
+        if os.path.exists(save_path):
+            print(f"PDF for paper {paper_id} already exists.")
+            return None
+        
+        try:
+            # Request the PDF file from arXiv
+            response = requests.get(url)
+            if response.status_code == 200:
+                # Save the PDF content to a file
+                with open(save_path, 'wb') as f:
+                    f.write(response.content)
+                print(f"Successfully downloaded {paper_id}")
+            else:
+                print(f"Failed to download PDF for paper {paper_id}, status code: {response.status_code}")
+        except Exception as e:
+            print(f"Error downloading PDF for paper {paper_id}: {e}")
+        
+        return None
+
+    def _parallel_download(self, paper_ids: list, max_workers: int = 5, delay: float = 1.0):
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+            futures = []
+            
+            # Submit tasks to the executor with a delay between each submission
+            for paper_id in paper_ids:
+                futures.append(executor.submit(self.download_pdf, paper_id))
+                time.sleep(delay)  # Delay between submissions to avoid overwhelming the server
+                
+            # Wait for all tasks to complete
+            for future in as_completed(futures):
+                try:
+                    future.result()  # Raise any exception caught during the download
+                except Exception as e:
+                    print(f"Error downloading file: {e}")
+
+    def __call__(self, paper_id: str = None, paper_id_ls: list[str] = None, max_workers: int = 5, delay: float = 1.0):
+        if paper_id is not None:
+            self._download_pdf(paper_id)
+        if paper_id_ls is not None:
+            self._parallel_download(paper_id_ls, max_workers, delay)
+
+
+
 
 def paper_id2paper_name(paper_id : str) -> str:
     return paper_id.replace('/', '_')
@@ -542,49 +482,6 @@ def url_generator(**kwargs) -> str:
     start = f"{kwargs.get('start', 0)}"
     max_results = f"{kwargs.get('max_results', 200)}"
     return f"http://export.arxiv.org/api/query?search_query={search_query}&start={start}&max_results={max_results}&sortBy=lastUpdatedDate&sortOrder=descending"
-
-
-def download_pdf(paper_id: str = None) -> None:
-    url = f"http://export.arxiv.org/pdf/{paper_id}"
-    paper_name = paper_id.replace('/', '_')
-    save_path = f"../data/pdf/{paper_name}.pdf"
-    
-    # Check if the file already exists
-    if os.path.exists(save_path):
-        print(f"PDF for paper {paper_id} already exists.")
-        return None
-    
-    try:
-        # Request the PDF file from arXiv
-        response = requests.get(url)
-        if response.status_code == 200:
-            # Save the PDF content to a file
-            with open(save_path, 'wb') as f:
-                f.write(response.content)
-            print(f"Successfully downloaded {paper_id}")
-        else:
-            print(f"Failed to download PDF for paper {paper_id}, status code: {response.status_code}")
-    except Exception as e:
-        print(f"Error downloading PDF for paper {paper_id}: {e}")
-    
-    return None
-
-def parallel_download(paper_ids: list, max_workers: int = 5, delay: float = 1.0):
-    with ThreadPoolExecutor(max_workers=max_workers) as executor:
-        futures = []
-        
-        # Submit tasks to the executor with a delay between each submission
-        for paper_id in paper_ids:
-            futures.append(executor.submit(download_pdf, paper_id))
-            time.sleep(delay)  # Delay between submissions to avoid overwhelming the server
-            
-        # Wait for all tasks to complete
-        for future in as_completed(futures):
-            try:
-                future.result()  # Raise any exception caught during the download
-            except Exception as e:
-                print(f"Error downloading file: {e}")
-
 
 
 def visualize_collaboration_graph_matplotlib(

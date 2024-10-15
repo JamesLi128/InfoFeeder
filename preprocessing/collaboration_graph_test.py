@@ -2,6 +2,7 @@ from preprocessing.utils import url_generator, Collaboration_Graph_Scraper, visu
 
 category_ls = ['cs.LG', 'cs.AI', 'math.CO', 'stat.ML']
 
+save_path = '../data/test_graph.pkl'
 collaboration_graph = Collaboration_Graph_Scraper(anchor_author='Amitabh Basu', category_ls=category_ls, max_depth=2, max_results=20)
 collaboration_graph.search_step(unexplored_authors=['Amitabh Basu'])
 collaboration_graph.save_graph("../data/test_graph.pkl")

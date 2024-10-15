@@ -1,58 +1,114 @@
 nohup: ignoring input
-Generating embeddings:   0%|          | 0/56 [00:00<?, ?it/s]Generating embeddings:   2%|▏         | 1/56 [00:01<01:26,  1.57s/it]Generating embeddings:   4%|▎         | 2/56 [00:03<01:38,  1.83s/it]Generating embeddings:   5%|▌         | 3/56 [00:05<01:27,  1.65s/it]Generating embeddings:   7%|▋         | 4/56 [00:06<01:17,  1.50s/it]Generating embeddings:   9%|▉         | 5/56 [00:07<01:14,  1.46s/it]Generating embeddings:  11%|█         | 6/56 [00:09<01:15,  1.50s/it]Generating embeddings:  12%|█▎        | 7/56 [00:10<01:16,  1.56s/it]Generating embeddings:  14%|█▍        | 8/56 [00:11<01:04,  1.35s/it]Generating embeddings:  16%|█▌        | 9/56 [00:12<00:58,  1.25s/it]Generating embeddings:  18%|█▊        | 10/56 [00:14<00:59,  1.29s/it]Generating embeddings:  20%|█▉        | 11/56 [00:15<01:02,  1.39s/it]Generating embeddings:  21%|██▏       | 12/56 [00:17<01:03,  1.44s/it]Generating embeddings:  23%|██▎       | 13/56 [00:19<01:09,  1.62s/it]Generating embeddings:  25%|██▌       | 14/56 [00:21<01:08,  1.64s/it]Generating embeddings:  27%|██▋       | 15/56 [00:22<01:05,  1.59s/it]Generating embeddings:  29%|██▊       | 16/56 [00:23<00:54,  1.37s/it]Generating embeddings:  30%|███       | 17/56 [00:26<01:13,  1.88s/it]Generating embeddings:  32%|███▏      | 18/56 [00:28<01:13,  1.94s/it]Generating embeddings:  34%|███▍      | 19/56 [00:29<01:05,  1.76s/it]Generating embeddings:  36%|███▌      | 20/56 [00:30<00:55,  1.54s/it]Generating embeddings:  38%|███▊      | 21/56 [00:31<00:41,  1.18s/it]Generating embeddings:  39%|███▉      | 22/56 [00:32<00:40,  1.20s/it]Generating embeddings:  41%|████      | 23/56 [00:33<00:40,  1.22s/it]Generating embeddings:  43%|████▎     | 24/56 [00:35<00:40,  1.28s/it]Generating embeddings:  45%|████▍     | 25/56 [00:36<00:37,  1.22s/it]Generating embeddings:  46%|████▋     | 26/56 [00:38<00:44,  1.48s/it]Generating embeddings:  48%|████▊     | 27/56 [00:39<00:39,  1.35s/it]Generating embeddings:  50%|█████     | 28/56 [00:40<00:37,  1.34s/it]Generating embeddings:  52%|█████▏    | 29/56 [00:42<00:35,  1.30s/it]Generating embeddings:  54%|█████▎    | 30/56 [00:43<00:33,  1.28s/it]Generating embeddings:  55%|█████▌    | 31/56 [00:44<00:34,  1.39s/it]Generating embeddings:  57%|█████▋    | 32/56 [00:47<00:38,  1.62s/it]Generating embeddings:  59%|█████▉    | 33/56 [00:48<00:36,  1.59s/it]Generating embeddings:  61%|██████    | 34/56 [00:52<00:51,  2.32s/it]Generating embeddings:  62%|██████▎   | 35/56 [00:54<00:46,  2.19s/it]Generating embeddings:  64%|██████▍   | 36/56 [00:55<00:37,  1.86s/it]Generating embeddings:  66%|██████▌   | 37/56 [00:56<00:28,  1.52s/it]Generating embeddings:  68%|██████▊   | 38/56 [00:57<00:25,  1.41s/it]Generating embeddings:  70%|██████▉   | 39/56 [00:59<00:25,  1.51s/it]Generating embeddings:  71%|███████▏  | 40/56 [00:59<00:20,  1.28s/it]Generating embeddings:  73%|███████▎  | 41/56 [01:01<00:20,  1.40s/it]Generating embeddings:  75%|███████▌  | 42/56 [01:02<00:18,  1.31s/it]Generating embeddings:  77%|███████▋  | 43/56 [01:05<00:22,  1.70s/it]Generating embeddings:  79%|███████▊  | 44/56 [01:06<00:18,  1.58s/it]Generating embeddings:  80%|████████  | 45/56 [01:08<00:16,  1.53s/it]Generating embeddings:  82%|████████▏ | 46/56 [01:09<00:14,  1.43s/it]Generating embeddings:  84%|████████▍ | 47/56 [01:10<00:13,  1.46s/it]Generating embeddings:  86%|████████▌ | 48/56 [01:11<00:10,  1.35s/it]Generating embeddings:  88%|████████▊ | 49/56 [01:13<00:10,  1.51s/it]Generating embeddings:  89%|████████▉ | 50/56 [01:15<00:09,  1.61s/it]Generating embeddings:  91%|█████████ | 51/56 [01:17<00:08,  1.63s/it]Generating embeddings:  93%|█████████▎| 52/56 [01:19<00:06,  1.70s/it]Generating embeddings:  95%|█████████▍| 53/56 [01:20<00:04,  1.62s/it]Generating embeddings:  96%|█████████▋| 54/56 [01:21<00:02,  1.49s/it]Generating embeddings:  98%|█████████▊| 55/56 [01:22<00:01,  1.33s/it]Generating embeddings: 100%|██████████| 56/56 [01:25<00:00,  1.75s/it]Generating embeddings: 100%|██████████| 56/56 [01:25<00:00,  1.53s/it]
-Embeddings for paper 2010.13152v3 generated and saved to ../data/embeddings/2010.13152v3.pt
-Embeddings for paper 1701.06692v1 generated and saved to ../data/embeddings/1701.06692v1.pt
-Embeddings for paper 2405.13992v1 generated and saved to ../data/embeddings/2405.13992v1.pt
-Embeddings for paper 1305.4893v1 generated and saved to ../data/embeddings/1305.4893v1.pt
-Embeddings for paper 2109.13098v3 generated and saved to ../data/embeddings/2109.13098v3.pt
-Embeddings for paper 2302.14186v3 generated and saved to ../data/embeddings/2302.14186v3.pt
-Embeddings for paper 2007.02156v3 generated and saved to ../data/embeddings/2007.02156v3.pt
-Embeddings for paper 1808.08502v4 generated and saved to ../data/embeddings/1808.08502v4.pt
-Embeddings for paper 2102.09994v3 generated and saved to ../data/embeddings/2102.09994v3.pt
-Embeddings for paper 2002.01648v3 generated and saved to ../data/embeddings/2002.01648v3.pt
-Embeddings for paper 1905.01776v3 generated and saved to ../data/embeddings/1905.01776v3.pt
-Embeddings for paper 1705.00674v5 generated and saved to ../data/embeddings/1705.00674v5.pt
-Embeddings for paper 2108.13637v4 generated and saved to ../data/embeddings/2108.13637v4.pt
-Embeddings for paper 1708.03735v2 generated and saved to ../data/embeddings/1708.03735v2.pt
-Embeddings for paper 2402.02328v3 generated and saved to ../data/embeddings/2402.02328v3.pt
-Embeddings for paper 1907.02844v1 generated and saved to ../data/embeddings/1907.02844v1.pt
-Embeddings for paper 1709.05506v5 generated and saved to ../data/embeddings/1709.05506v5.pt
-Embeddings for paper 1908.06438v2 generated and saved to ../data/embeddings/1908.06438v2.pt
-Embeddings for paper 2003.14250v1 generated and saved to ../data/embeddings/2003.14250v1.pt
-Embeddings for paper 2005.10700v3 generated and saved to ../data/embeddings/2005.10700v3.pt
-Embeddings for paper 2210.15083v1 generated and saved to ../data/embeddings/2210.15083v1.pt
-Embeddings for paper 1209.0367v4 generated and saved to ../data/embeddings/1209.0367v4.pt
-Embeddings for paper 2106.12621v1 generated and saved to ../data/embeddings/2106.12621v1.pt
-Embeddings for paper 2004.07348v6 generated and saved to ../data/embeddings/2004.07348v6.pt
-Embeddings for paper 1405.6070v3 generated and saved to ../data/embeddings/1405.6070v3.pt
-Embeddings for paper 1904.02926v4 generated and saved to ../data/embeddings/1904.02926v4.pt
-Embeddings for paper 1711.03073v2 generated and saved to ../data/embeddings/1711.03073v2.pt
-Embeddings for paper 1908.02572v3 generated and saved to ../data/embeddings/1908.02572v3.pt
-Embeddings for paper 1803.02423v3 generated and saved to ../data/embeddings/1803.02423v3.pt
-Embeddings for paper 1211.3601v4 generated and saved to ../data/embeddings/1211.3601v4.pt
-Embeddings for paper 1404.7421v2 generated and saved to ../data/embeddings/1404.7421v2.pt
-Embeddings for paper 1910.00423v1 generated and saved to ../data/embeddings/1910.00423v1.pt
-Embeddings for paper 1609.05148v8 generated and saved to ../data/embeddings/1609.05148v8.pt
-Embeddings for paper 1709.05454v1 generated and saved to ../data/embeddings/1709.05454v1.pt
-Embeddings for paper 2409.17544v2 generated and saved to ../data/embeddings/2409.17544v2.pt
-Embeddings for paper 2011.06557v1 generated and saved to ../data/embeddings/2011.06557v1.pt
-Embeddings for paper 2305.05126v3 generated and saved to ../data/embeddings/2305.05126v3.pt
-Embeddings for paper 2307.04661v6 generated and saved to ../data/embeddings/2307.04661v6.pt
-Embeddings for paper 1710.09768v3 generated and saved to ../data/embeddings/1710.09768v3.pt
-Embeddings for paper 1808.07801v3 generated and saved to ../data/embeddings/1808.07801v3.pt
-Embeddings for paper 2101.12430v2 generated and saved to ../data/embeddings/2101.12430v2.pt
-Embeddings for paper 1705.03297v1 generated and saved to ../data/embeddings/1705.03297v1.pt
-Embeddings for paper 1403.4628v2 generated and saved to ../data/embeddings/1403.4628v2.pt
-Embeddings for paper 2004.12908v19 generated and saved to ../data/embeddings/2004.12908v19.pt
-Embeddings for paper 1711.05610v4 generated and saved to ../data/embeddings/1711.05610v4.pt
-Embeddings for paper 2111.08117v4 generated and saved to ../data/embeddings/2111.08117v4.pt
-Embeddings for paper 1703.03862v4 generated and saved to ../data/embeddings/1703.03862v4.pt
-Embeddings for paper 2209.12054v3 generated and saved to ../data/embeddings/2209.12054v3.pt
-Embeddings for paper 1812.10519v4 generated and saved to ../data/embeddings/1812.10519v4.pt
-Embeddings for paper 1506.03410v6 generated and saved to ../data/embeddings/1506.03410v6.pt
-Embeddings for paper 1609.01672v3 generated and saved to ../data/embeddings/1609.01672v3.pt
-Embeddings for paper 2105.14835v5 generated and saved to ../data/embeddings/2105.14835v5.pt
-Embeddings for paper 1502.01368v4 generated and saved to ../data/embeddings/1502.01368v4.pt
-Embeddings for paper 1611.01491v6 generated and saved to ../data/embeddings/1611.01491v6.pt
-Embeddings for paper 2111.05366v1 generated and saved to ../data/embeddings/2111.05366v1.pt
-Embeddings for paper 1607.08601v1 generated and saved to ../data/embeddings/1607.08601v1.pt
+Generating embeddings:   0%|          | 0/56 [00:00<?, ?it/s]Abstract embeddings for paper 2010.13152v3 generated and saved to ../data/embeddings/2010.13152v3_abstract.pt
+Embedding for paper 2010.13152v3 already exists.
+Generating embeddings:   2%|▏         | 1/56 [00:00<00:36,  1.52it/s]Abstract embeddings for paper 1701.06692v1 generated and saved to ../data/embeddings/1701.06692v1_abstract.pt
+Embedding for paper 1701.06692v1 already exists.
+Generating embeddings:   4%|▎         | 2/56 [00:01<00:29,  1.82it/s]Abstract embeddings for paper 2405.13992v1 generated and saved to ../data/embeddings/2405.13992v1_abstract.pt
+Embedding for paper 2405.13992v1 already exists.
+Generating embeddings:   5%|▌         | 3/56 [00:01<00:25,  2.06it/s]Abstract embeddings for paper 1305.4893v1 generated and saved to ../data/embeddings/1305.4893v1_abstract.pt
+Embedding for paper 1305.4893v1 already exists.
+Generating embeddings:   7%|▋         | 4/56 [00:02<00:25,  2.04it/s]Abstract embeddings for paper 2109.13098v3 generated and saved to ../data/embeddings/2109.13098v3_abstract.pt
+Embedding for paper 2109.13098v3 already exists.
+Generating embeddings:   9%|▉         | 5/56 [00:02<00:29,  1.71it/s]Abstract embeddings for paper 2302.14186v3 generated and saved to ../data/embeddings/2302.14186v3_abstract.pt
+Embedding for paper 2302.14186v3 already exists.
+Generating embeddings:  11%|█         | 6/56 [00:05<00:57,  1.14s/it]Abstract embeddings for paper 2007.02156v3 generated and saved to ../data/embeddings/2007.02156v3_abstract.pt
+Embedding for paper 2007.02156v3 already exists.
+Generating embeddings:  12%|█▎        | 7/56 [00:05<00:43,  1.12it/s]Abstract embeddings for paper 1808.08502v4 generated and saved to ../data/embeddings/1808.08502v4_abstract.pt
+Embedding for paper 1808.08502v4 already exists.
+Generating embeddings:  14%|█▍        | 8/56 [00:06<00:38,  1.24it/s]Abstract embeddings for paper 2102.09994v3 generated and saved to ../data/embeddings/2102.09994v3_abstract.pt
+Embedding for paper 2102.09994v3 already exists.
+Generating embeddings:  16%|█▌        | 9/56 [00:06<00:29,  1.62it/s]Abstract embeddings for paper 2002.01648v3 generated and saved to ../data/embeddings/2002.01648v3_abstract.pt
+Embedding for paper 2002.01648v3 already exists.
+Generating embeddings:  18%|█▊        | 10/56 [00:07<00:31,  1.45it/s]Abstract embeddings for paper 1905.01776v3 generated and saved to ../data/embeddings/1905.01776v3_abstract.pt
+Embedding for paper 1905.01776v3 already exists.
+Generating embeddings:  20%|█▉        | 11/56 [00:07<00:31,  1.43it/s]Abstract embeddings for paper 1705.00674v5 generated and saved to ../data/embeddings/1705.00674v5_abstract.pt
+Embedding for paper 1705.00674v5 already exists.
+Generating embeddings:  21%|██▏       | 12/56 [00:08<00:26,  1.67it/s]Abstract embeddings for paper 2108.13637v4 generated and saved to ../data/embeddings/2108.13637v4_abstract.pt
+Embedding for paper 2108.13637v4 already exists.
+Generating embeddings:  23%|██▎       | 13/56 [00:08<00:27,  1.58it/s]Abstract embeddings for paper 1708.03735v2 generated and saved to ../data/embeddings/1708.03735v2_abstract.pt
+Embedding for paper 1708.03735v2 already exists.
+Generating embeddings:  25%|██▌       | 14/56 [00:09<00:21,  1.91it/s]Abstract embeddings for paper 2402.02328v3 generated and saved to ../data/embeddings/2402.02328v3_abstract.pt
+Embedding for paper 2402.02328v3 already exists.
+Generating embeddings:  27%|██▋       | 15/56 [00:09<00:18,  2.22it/s]Abstract embeddings for paper 1907.02844v1 generated and saved to ../data/embeddings/1907.02844v1_abstract.pt
+Embedding for paper 1907.02844v1 already exists.
+Generating embeddings:  29%|██▊       | 16/56 [00:09<00:19,  2.10it/s]Abstract embeddings for paper 1709.05506v5 generated and saved to ../data/embeddings/1709.05506v5_abstract.pt
+Embedding for paper 1709.05506v5 already exists.
+Generating embeddings:  30%|███       | 17/56 [00:10<00:18,  2.11it/s]Abstract embeddings for paper 1908.06438v2 generated and saved to ../data/embeddings/1908.06438v2_abstract.pt
+Embedding for paper 1908.06438v2 already exists.
+Generating embeddings:  32%|███▏      | 18/56 [00:11<00:21,  1.75it/s]Abstract embeddings for paper 2003.14250v1 generated and saved to ../data/embeddings/2003.14250v1_abstract.pt
+Embedding for paper 2003.14250v1 already exists.
+Generating embeddings:  34%|███▍      | 19/56 [00:11<00:19,  1.87it/s]Abstract embeddings for paper 2005.10700v3 generated and saved to ../data/embeddings/2005.10700v3_abstract.pt
+Embedding for paper 2005.10700v3 already exists.
+Generating embeddings:  36%|███▌      | 20/56 [00:11<00:15,  2.29it/s]Abstract embeddings for paper 2210.15083v1 generated and saved to ../data/embeddings/2210.15083v1_abstract.pt
+Embedding for paper 2210.15083v1 already exists.
+Generating embeddings:  38%|███▊      | 21/56 [00:12<00:16,  2.11it/s]Abstract embeddings for paper 1209.0367v4 generated and saved to ../data/embeddings/1209.0367v4_abstract.pt
+Embedding for paper 1209.0367v4 already exists.
+Generating embeddings:  39%|███▉      | 22/56 [00:12<00:15,  2.22it/s]Abstract embeddings for paper 2106.12621v1 generated and saved to ../data/embeddings/2106.12621v1_abstract.pt
+Embedding for paper 2106.12621v1 already exists.
+Generating embeddings:  41%|████      | 23/56 [00:13<00:18,  1.75it/s]Abstract embeddings for paper 2004.07348v6 generated and saved to ../data/embeddings/2004.07348v6_abstract.pt
+Embedding for paper 2004.07348v6 already exists.
+Generating embeddings:  43%|████▎     | 24/56 [00:14<00:19,  1.64it/s]Abstract embeddings for paper 1405.6070v3 generated and saved to ../data/embeddings/1405.6070v3_abstract.pt
+Embedding for paper 1405.6070v3 already exists.
+Generating embeddings:  45%|████▍     | 25/56 [00:14<00:16,  1.88it/s]Abstract embeddings for paper 1904.02926v4 generated and saved to ../data/embeddings/1904.02926v4_abstract.pt
+Embedding for paper 1904.02926v4 already exists.
+Generating embeddings:  46%|████▋     | 26/56 [00:15<00:18,  1.65it/s]Abstract embeddings for paper 1711.03073v2 generated and saved to ../data/embeddings/1711.03073v2_abstract.pt
+Embedding for paper 1711.03073v2 already exists.
+Generating embeddings:  48%|████▊     | 27/56 [00:15<00:15,  1.88it/s]Abstract embeddings for paper 1908.02572v3 generated and saved to ../data/embeddings/1908.02572v3_abstract.pt
+Embedding for paper 1908.02572v3 already exists.
+Generating embeddings:  50%|█████     | 28/56 [00:16<00:12,  2.16it/s]Abstract embeddings for paper 1803.02423v3 generated and saved to ../data/embeddings/1803.02423v3_abstract.pt
+Embedding for paper 1803.02423v3 already exists.
+Generating embeddings:  52%|█████▏    | 29/56 [00:16<00:11,  2.33it/s]Abstract embeddings for paper 1211.3601v4 generated and saved to ../data/embeddings/1211.3601v4_abstract.pt
+Embedding for paper 1211.3601v4 already exists.
+Generating embeddings:  54%|█████▎    | 30/56 [00:16<00:10,  2.53it/s]Abstract embeddings for paper 1404.7421v2 generated and saved to ../data/embeddings/1404.7421v2_abstract.pt
+Embedding for paper 1404.7421v2 already exists.
+Generating embeddings:  55%|█████▌    | 31/56 [00:17<00:09,  2.60it/s]Abstract embeddings for paper 1910.00423v1 generated and saved to ../data/embeddings/1910.00423v1_abstract.pt
+Embedding for paper 1910.00423v1 already exists.
+Generating embeddings:  57%|█████▋    | 32/56 [00:17<00:08,  2.90it/s]Abstract embeddings for paper 1609.05148v8 generated and saved to ../data/embeddings/1609.05148v8_abstract.pt
+Embedding for paper 1609.05148v8 already exists.
+Generating embeddings:  59%|█████▉    | 33/56 [00:18<00:11,  2.04it/s]Abstract embeddings for paper 1709.05454v1 generated and saved to ../data/embeddings/1709.05454v1_abstract.pt
+Embedding for paper 1709.05454v1 already exists.
+Generating embeddings:  61%|██████    | 34/56 [00:18<00:10,  2.19it/s]Abstract embeddings for paper 2409.17544v2 generated and saved to ../data/embeddings/2409.17544v2_abstract.pt
+Embedding for paper 2409.17544v2 already exists.
+Generating embeddings:  62%|██████▎   | 35/56 [00:18<00:08,  2.55it/s]Abstract embeddings for paper 2011.06557v1 generated and saved to ../data/embeddings/2011.06557v1_abstract.pt
+Embedding for paper 2011.06557v1 already exists.
+Generating embeddings:  64%|██████▍   | 36/56 [00:19<00:07,  2.73it/s]Abstract embeddings for paper 2305.05126v3 generated and saved to ../data/embeddings/2305.05126v3_abstract.pt
+Embedding for paper 2305.05126v3 already exists.
+Generating embeddings:  66%|██████▌   | 37/56 [00:19<00:05,  3.20it/s]Abstract embeddings for paper 2307.04661v6 generated and saved to ../data/embeddings/2307.04661v6_abstract.pt
+Embedding for paper 2307.04661v6 already exists.
+Generating embeddings:  68%|██████▊   | 38/56 [00:19<00:05,  3.20it/s]Abstract embeddings for paper 1710.09768v3 generated and saved to ../data/embeddings/1710.09768v3_abstract.pt
+Embedding for paper 1710.09768v3 already exists.
+Generating embeddings:  70%|██████▉   | 39/56 [00:20<00:06,  2.63it/s]Abstract embeddings for paper 1808.07801v3 generated and saved to ../data/embeddings/1808.07801v3_abstract.pt
+Embedding for paper 1808.07801v3 already exists.
+Generating embeddings:  71%|███████▏  | 40/56 [00:20<00:05,  3.13it/s]Abstract embeddings for paper 2101.12430v2 generated and saved to ../data/embeddings/2101.12430v2_abstract.pt
+Embedding for paper 2101.12430v2 already exists.
+Generating embeddings:  73%|███████▎  | 41/56 [00:20<00:04,  3.42it/s]Abstract embeddings for paper 1705.03297v1 generated and saved to ../data/embeddings/1705.03297v1_abstract.pt
+Embedding for paper 1705.03297v1 already exists.
+Generating embeddings:  75%|███████▌  | 42/56 [00:21<00:05,  2.70it/s]Abstract embeddings for paper 1403.4628v2 generated and saved to ../data/embeddings/1403.4628v2_abstract.pt
+Embedding for paper 1403.4628v2 already exists.
+Generating embeddings:  77%|███████▋  | 43/56 [00:21<00:05,  2.58it/s]Abstract embeddings for paper 2004.12908v19 generated and saved to ../data/embeddings/2004.12908v19_abstract.pt
+Embedding for paper 2004.12908v19 already exists.
+Generating embeddings:  79%|███████▊  | 44/56 [00:21<00:04,  2.76it/s]Abstract embeddings for paper 1711.05610v4 generated and saved to ../data/embeddings/1711.05610v4_abstract.pt
+Embedding for paper 1711.05610v4 already exists.
+Generating embeddings:  80%|████████  | 45/56 [00:22<00:04,  2.43it/s]Abstract embeddings for paper 2111.08117v4 generated and saved to ../data/embeddings/2111.08117v4_abstract.pt
+Embedding for paper 2111.08117v4 already exists.
+Generating embeddings:  82%|████████▏ | 46/56 [00:22<00:03,  2.63it/s]Abstract embeddings for paper 1703.03862v4 generated and saved to ../data/embeddings/1703.03862v4_abstract.pt
+Embedding for paper 1703.03862v4 already exists.
+Generating embeddings:  84%|████████▍ | 47/56 [00:23<00:03,  2.91it/s]Abstract embeddings for paper 2209.12054v3 generated and saved to ../data/embeddings/2209.12054v3_abstract.pt
+Embedding for paper 2209.12054v3 already exists.
+Generating embeddings:  86%|████████▌ | 48/56 [00:23<00:02,  3.38it/s]Abstract embeddings for paper 1812.10519v4 generated and saved to ../data/embeddings/1812.10519v4_abstract.pt
+Embedding for paper 1812.10519v4 already exists.
+Generating embeddings:  88%|████████▊ | 49/56 [00:23<00:01,  3.57it/s]Abstract embeddings for paper 1506.03410v6 generated and saved to ../data/embeddings/1506.03410v6_abstract.pt
+Embedding for paper 1506.03410v6 already exists.
+Generating embeddings:  89%|████████▉ | 50/56 [00:23<00:01,  3.61it/s]Abstract embeddings for paper 1609.01672v3 generated and saved to ../data/embeddings/1609.01672v3_abstract.pt
+Embedding for paper 1609.01672v3 already exists.
+Generating embeddings:  91%|█████████ | 51/56 [00:23<00:01,  3.74it/s]Abstract embeddings for paper 2105.14835v5 generated and saved to ../data/embeddings/2105.14835v5_abstract.pt
+Embedding for paper 2105.14835v5 already exists.
+Generating embeddings:  93%|█████████▎| 52/56 [00:24<00:01,  3.24it/s]Abstract embeddings for paper 1502.01368v4 generated and saved to ../data/embeddings/1502.01368v4_abstract.pt
+Embedding for paper 1502.01368v4 already exists.
+Generating embeddings:  95%|█████████▍| 53/56 [00:24<00:00,  3.29it/s]Abstract embeddings for paper 1611.01491v6 generated and saved to ../data/embeddings/1611.01491v6_abstract.pt
+Embedding for paper 1611.01491v6 already exists.
+Generating embeddings:  96%|█████████▋| 54/56 [00:24<00:00,  3.52it/s]Abstract embeddings for paper 2111.05366v1 generated and saved to ../data/embeddings/2111.05366v1_abstract.pt
+Embedding for paper 2111.05366v1 already exists.
+Generating embeddings:  98%|█████████▊| 55/56 [00:25<00:00,  3.59it/s]Abstract embeddings for paper 1607.08601v1 generated and saved to ../data/embeddings/1607.08601v1_abstract.pt
+Embedding for paper 1607.08601v1 already exists.
+Generating embeddings: 100%|██████████| 56/56 [00:25<00:00,  3.56it/s]Generating embeddings: 100%|██████████| 56/56 [00:25<00:00,  2.20it/s]
