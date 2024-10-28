@@ -462,7 +462,7 @@ class Affiliation_Builder:
             model = "gpt-4o-mini-2024-07-18"
         )
 
-    def _extract_first_page_text(self): 
+    def _yield_first_page_text(self): 
         paper_id_ls = os.listdir(self.pdf_dir)
         filtered_paper_id_ls = [name for name in paper_id_ls if name not in self.processed_paper_id_set]
         print(f"Found {len(filtered_paper_id_ls)} out of {len(paper_id_ls)} papers to process.")
@@ -472,6 +472,18 @@ class Affiliation_Builder:
             first_page = doc[0]
             yield first_page.get_text(), paper_id
 
+    def _queue_first_page_text(self) -> queue.Queue:
+        paper_id_ls = os.listdir(self.pdf_dir)
+        filtered_paper_id_ls = [name for name in paper_id_ls if name not in self.processed_paper_id_set]
+        print(f"Found {len(filtered_paper_id_ls)} out of {len(paper_id_ls)} papers to process.")
+        paper_path_ls = [os.path.join(self.pdf_dir, paper_name) for paper_name in filtered_paper_id_ls]
+        q = queue.Queue()
+        for paper_path, paper_id in zip(paper_path_ls, filtered_paper_id_ls):
+            doc = fitz.open(paper_path)
+            first_page = doc[0]
+            q.put((first_page.get_text(), paper_id))
+        return q
+
     def _extract_info(self, result : str) -> list:
         lines = result.strip().split('\n')
         matches = []
@@ -479,9 +491,67 @@ class Affiliation_Builder:
             author, departments, institution = line.split('|')
             matches.append((author.strip(), departments.strip(), institution.strip()))
         return matches
+    
+    def _build_affiliation_step(self, first_page: str, paper_id: str, lock : threading.Lock) -> None:
+        random_sleep = np.random.uniform(0.5, 1)
+        time.sleep(random_sleep)
+        thread = self.client.beta.threads.create()
+        message = self.client.beta.threads.messages.create( 
+            thread_id=thread.id,
+            role= "user",
+            content=first_page
+        )
+        run = self.client.beta.threads.runs.create_and_poll( 
+            thread_id=thread.id,
+            assistant_id= self.assistant.id,
+        )
+        if run.status == "completed":
+            messages = self.client.beta.threads.messages.list(
+            thread_id=thread.id
+            )
+            content = messages.data[0].content[0].to_dict()['text']['value']
+            matches = self._extract_info(content)
+            with lock:
+                for match in matches:
+                    author, departments, institution = match
+                    author = author.lower()
+                    department_ls = [dept.strip() for dept in departments.split(',')]
+                    if author not in self.author2affiliation:
+                        self.author2affiliation[author] = {
+                            institution : department_ls
+                        }
+                    else: 
+                        if institution not in self.author2affiliation[author]:
+                            self.author2affiliation[author][institution] = department_ls
+                        else:
+                            for dept in department_ls:
+                                if dept not in self.author2affiliation[author][institution]:
+                                    self.author2affiliation[author][institution].append(dept)
+                self.processed_paper_id_set.add(paper_id)
+        else:
+            print(f"Failed to process the first page of paper {paper_id}.")
+
+    def _build_affiliation_parallel(self, max_workers : int = 8) -> None:
+        lock = threading.Lock()
+        paper_queue = self._queue_first_page_text()
+        total_num_papers = paper_queue.qsize()
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+            futures = []
+            
+            while not paper_queue.empty() or any([future.running() for future in futures]):
+                if len(self.processed_paper_id_set) % 5 == 0:
+                    print(f"Processed papers {len(self.processed_paper_id_set)}/{total_num_papers}")
+
+                try:
+                    random_timeout = np.random.uniform(0.5, 1)
+                    first_page, paper_id = paper_queue.get(timeout=random_timeout)
+                    future = executor.submit(self._build_affiliation_step, first_page, paper_id, lock)
+                    futures.append(future)
+                except queue.Empty:
+                    pass
 
     def _build_affiliation(self) -> None:
-        for first_page, paper_id in self._extract_first_page_text():
+        for first_page, paper_id in self._yield_first_page_text():
             thread = self.client.beta.threads.create()
             message = self.client.beta.threads.messages.create( 
                 thread_id=thread.id,
@@ -519,12 +589,15 @@ class Affiliation_Builder:
 
     def _save_affiliation(self, save_path : str = None) -> None:
         if save_path is None:
-            save_path = os.path.join(self.save_dir, 'author_affiliation.pkl')
+            save_path = os.path.join(self.save_dir, 'author_affiliation_parallel.pkl')
         with open(save_path, 'wb') as f:
             pickle.dump((self.processed_paper_id_set, self.author2affiliation), f)
 
-    def __call__(self, save_path : str = None) -> None:
-        self._build_affiliation()
+    def __call__(self, save_path : str = None, parallel : bool = False, max_workers : int = 8) -> None:
+        if parallel:
+            self._build_affiliation_parallel(max_workers=max_workers)
+        else:
+            self._build_affiliation()
         self._save_affiliation(save_path=save_path)
 
 class PDFDownloader:
