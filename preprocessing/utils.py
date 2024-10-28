@@ -17,7 +17,7 @@ import torch
 import time
 import tempfile
 import numpy as np
-
+from typing import Generator
 from requests import RequestException
 
 class Collaboration_Graph_Scraper:
@@ -434,6 +434,98 @@ class EmbeddingGenerator:
             Warning("Should Input Paper Name, not Paper ID, deprecated arxiv naming triggered")
             paper_name = paper_id2paper_name(paper_name)
         return self.paper_name2embedding_chunks(paper_name, max_tokens)
+
+
+class Affiliation_Builder:
+    '''
+    From downloaded papers, build a dictionary author2affiliation(departments and universities)
+    '''
+    def __init__(self, save_dir : str = '../data/author_affiliation/', 
+                 pdf_dir : str = '../data/pdf/',
+                 from_cache : bool = False, 
+                 cache_path : str = None
+                 ) -> None:
+        if from_cache:
+            assert( cache_path is not None and os.path.exists(cache_path) )
+            with open(cache_path, 'rb') as f:
+                self.processed_paper_id_set, self.author2affiliation = pickle.load(f)
+        else:
+            self.processed_paper_id_set = set()
+            self.author2affiliation = {}
+
+        self.save_dir = save_dir
+        self.pdf_dir = pdf_dir
+        self.client = OpenAI()
+        self.assistant = self.client.beta.assistants.create(
+            name = "Author-Institution Matcher",
+            instructions = "Given a paper's first page text, identify the authors and their institutions. Organise response in the following format: for each row, [Author Name] | [Departments or Affiliations, divide by ',' if more than 1] | [University / College], put value N/A if nothing matches.",
+            model = "gpt-4o-mini-2024-07-18"
+        )
+
+    def _extract_first_page_text(self): 
+        paper_id_ls = os.listdir(self.pdf_dir)
+        filtered_paper_id_ls = [name for name in paper_id_ls if name not in self.processed_paper_id_set]
+        print(f"Found {len(filtered_paper_id_ls)} out of {len(paper_id_ls)} papers to process.")
+        paper_path_ls = [os.path.join(self.pdf_dir, paper_name) for paper_name in filtered_paper_id_ls]
+        for paper_path, paper_id in tqdm(zip(paper_path_ls, filtered_paper_id_ls), desc="Processing paper", total=len(filtered_paper_id_ls)):
+            doc = fitz.open(paper_path)
+            first_page = doc[0]
+            yield first_page.get_text(), paper_id
+
+    def _extract_info(self, result : str) -> list:
+        lines = result.strip().split('\n')
+        matches = []
+        for line in lines:
+            author, departments, institution = line.split('|')
+            matches.append((author.strip(), departments.strip(), institution.strip()))
+        return matches
+
+    def _build_affiliation(self) -> None:
+        for first_page, paper_id in self._extract_first_page_text():
+            thread = self.client.beta.threads.create()
+            message = self.client.beta.threads.messages.create( 
+                thread_id=thread.id,
+                role= "user",
+                content=first_page
+            )
+            run = self.client.beta.threads.runs.create_and_poll( 
+                thread_id=thread.id,
+                assistant_id= self.assistant.id,
+            )
+            if run.status == "completed":
+                messages = self.client.beta.threads.messages.list(
+                thread_id=thread.id
+                )
+                content = messages.data[0].content[0].to_dict()['text']['value']
+                matches = self._extract_info(content)
+                for match in matches:
+                    author, departments, institution = match
+                    author = author.lower()
+                    department_ls = [dept.strip() for dept in departments.split(',')]
+                    if author not in self.author2affiliation:
+                        self.author2affiliation[author] = {
+                            institution : department_ls
+                        }
+                    else: 
+                        if institution not in self.author2affiliation[author]:
+                            self.author2affiliation[author][institution] = department_ls
+                        else:
+                            for dept in department_ls:
+                                if dept not in self.author2affiliation[author][institution]:
+                                    self.author2affiliation[author][institution].append(dept)
+                self.processed_paper_id_set.add(paper_id)
+            else:
+                print(f"Failed to process the first page of paper {paper_id}.")
+
+    def _save_affiliation(self, save_path : str = None) -> None:
+        if save_path is None:
+            save_path = os.path.join(self.save_dir, 'author_affiliation.pkl')
+        with open(save_path, 'wb') as f:
+            pickle.dump((self.processed_paper_id_set, self.author2affiliation), f)
+
+    def __call__(self, save_path : str = None) -> None:
+        self._build_affiliation()
+        self._save_affiliation(save_path=save_path)
 
 class PDFDownloader:
     def __init__(self, root_path : str = '../data/') -> None:
