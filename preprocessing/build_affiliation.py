@@ -1,4 +1,5 @@
 from utils import Affiliation_Builder
 
-builder = Affiliation_Builder()
-builder(parallel=True, max_workers=4)
+cache_path = '../data/author_affiliation/author_affiliation_parallel.pkl'
+builder = Affiliation_Builder(from_cache=True, cache_path=cache_path)
+builder(parallel=True, max_workers=8)  # Build affiliations

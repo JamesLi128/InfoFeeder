@@ -7,7 +7,6 @@ import requests
 import matplotlib.pyplot as plt
 from tqdm import tqdm
 from concurrent.futures import ThreadPoolExecutor, as_completed
-import concurrent.futures
 import threading
 import tiktoken
 import fitz
@@ -17,8 +16,19 @@ import torch
 import time
 import tempfile
 import numpy as np
+from pymupdf import FileDataError
 from typing import Generator
 from requests import RequestException
+
+import builtins
+
+# Redefine print to include flush=True globally
+original_print = print  # Keep a reference to the original print function
+
+def print(*args, **kwargs):
+    kwargs.setdefault("flush", True)
+    original_print(*args, **kwargs)
+
 
 class Collaboration_Graph_Scraper:
     def __init__(self, cache_path : str = None, 
@@ -448,11 +458,11 @@ class Affiliation_Builder:
         if from_cache:
             assert( cache_path is not None and os.path.exists(cache_path) )
             with open(cache_path, 'rb') as f:
-                self.processed_paper_id_set, self.author2affiliation = pickle.load(f)
+                self.processed_paper_name_set, self.author2affiliation = pickle.load(f)
         else:
-            self.processed_paper_id_set = set()
+            self.processed_paper_name_set = set()
             self.author2affiliation = {}
-
+        self.num_paper_processed_at_start = len(self.processed_paper_name_set)
         self.save_dir = save_dir
         self.pdf_dir = pdf_dir
         self.client = OpenAI()
@@ -462,26 +472,40 @@ class Affiliation_Builder:
             model = "gpt-4o-mini-2024-07-18"
         )
 
+    def _exclude_processed_paper(self, paper_name_ls : list) -> list:
+        paper_name_set = set(paper_name_ls) - self.processed_paper_name_set
+        print( f"Found {len(paper_name_set)} / {len(paper_name_ls)} new papers to process.")
+        return list(paper_name_set)
+
     def _yield_first_page_text(self): 
-        paper_id_ls = os.listdir(self.pdf_dir)
-        filtered_paper_id_ls = [name for name in paper_id_ls if name not in self.processed_paper_id_set]
-        print(f"Found {len(filtered_paper_id_ls)} out of {len(paper_id_ls)} papers to process.")
-        paper_path_ls = [os.path.join(self.pdf_dir, paper_name) for paper_name in filtered_paper_id_ls]
-        for paper_path, paper_id in tqdm(zip(paper_path_ls, filtered_paper_id_ls), desc="Processing paper", total=len(filtered_paper_id_ls)):
-            doc = fitz.open(paper_path)
-            first_page = doc[0]
-            yield first_page.get_text(), paper_id
+        paper_name_ls = self._exclude_processed_paper(os.listdir(self.pdf_dir))
+        filtered_paper_name_ls = [name for name in paper_name_ls if name not in self.processed_paper_name_set]
+        print(f"Found {len(filtered_paper_name_ls)} out of {len(paper_name_ls)} papers to process.")
+        paper_path_ls = [os.path.join(self.pdf_dir, paper_name) for paper_name in filtered_paper_name_ls]
+        for paper_path, paper_id in tqdm(zip(paper_path_ls, filtered_paper_name_ls), desc="Processing paper", total=len(filtered_paper_name_ls)):
+            try:
+                doc = fitz.open(paper_path)
+                first_page = doc[0]
+                yield first_page.get_text(), paper_id
+            except FileDataError:
+                print(f"Corruped file {paper_path}, skipping.")
+                continue
 
     def _queue_first_page_text(self) -> queue.Queue:
-        paper_id_ls = os.listdir(self.pdf_dir)
-        filtered_paper_id_ls = [name for name in paper_id_ls if name not in self.processed_paper_id_set]
-        print(f"Found {len(filtered_paper_id_ls)} out of {len(paper_id_ls)} papers to process.")
-        paper_path_ls = [os.path.join(self.pdf_dir, paper_name) for paper_name in filtered_paper_id_ls]
+        paper_name_ls = self._exclude_processed_paper(os.listdir(self.pdf_dir))
+        filtered_paper_name_ls = [name for name in paper_name_ls if name not in self.processed_paper_name_set]
+        print(f"Found {len(filtered_paper_name_ls)} out of {len(paper_name_ls)} papers to process.")
+        paper_path_ls = [os.path.join(self.pdf_dir, paper_name) for paper_name in filtered_paper_name_ls]
         q = queue.Queue()
-        for paper_path, paper_id in zip(paper_path_ls, filtered_paper_id_ls):
-            doc = fitz.open(paper_path)
-            first_page = doc[0]
-            q.put((first_page.get_text(), paper_id))
+        for paper_path, paper_id in zip(paper_path_ls, filtered_paper_name_ls):
+            try:
+                doc = fitz.open(paper_path)
+                first_page = doc[0]
+                q.put((first_page.get_text(), paper_id))
+            except FileDataError:
+                print(f"Corruped file {paper_path}, skipping.")
+                continue
+        print( f"Queue built with {q.qsize()} / {len(paper_name_ls)} papers, {len(paper_name_ls) - q.qsize()} corruped.")
         return q
 
     def _extract_info(self, result : str) -> list:
@@ -492,7 +516,7 @@ class Affiliation_Builder:
             matches.append((author.strip(), departments.strip(), institution.strip()))
         return matches
     
-    def _build_affiliation_step(self, first_page: str, paper_id: str, lock : threading.Lock) -> None:
+    def _build_affiliation_step(self, first_page: str, paper_name: str, lock : threading.Lock) -> None:
         random_sleep = np.random.uniform(0.5, 1)
         time.sleep(random_sleep)
         thread = self.client.beta.threads.create()
@@ -527,23 +551,33 @@ class Affiliation_Builder:
                             for dept in department_ls:
                                 if dept not in self.author2affiliation[author][institution]:
                                     self.author2affiliation[author][institution].append(dept)
-                self.processed_paper_id_set.add(paper_id)
+                self.processed_paper_name_set.add(paper_name)
         else:
-            print(f"Failed to process the first page of paper {paper_id}.")
+            print(f"Failed to process the first page of paper {paper_name}.")
 
     def _build_affiliation_parallel(self, max_workers : int = 8) -> None:
         lock = threading.Lock()
         paper_queue = self._queue_first_page_text()
         total_num_papers = paper_queue.qsize()
+        last_time = time.time()
+        last_time_save = time.time()
         with ThreadPoolExecutor(max_workers=max_workers) as executor:
             futures = []
             
             while not paper_queue.empty() or any([future.running() for future in futures]):
-                if len(self.processed_paper_id_set) % 5 == 0:
-                    print(f"Processed papers {len(self.processed_paper_id_set)}/{total_num_papers}")
+                crnt_time = time.time()
+                time_elapsed = crnt_time - last_time
+                time_elapsed_save = crnt_time - last_time_save
+                if time_elapsed > 5:
+                    print(f"Processed papers {len(self.processed_paper_name_set) - self.num_paper_processed_at_start}/{total_num_papers}")
+                    last_time = time.time()
+                
+                if time_elapsed_save > 60:
+                    self._save_affiliation()
+                    last_time_save = time.time()
 
                 try:
-                    random_timeout = np.random.uniform(0.5, 1)
+                    random_timeout = np.random.uniform(1, 2)
                     first_page, paper_id = paper_queue.get(timeout=random_timeout)
                     future = executor.submit(self._build_affiliation_step, first_page, paper_id, lock)
                     futures.append(future)
@@ -583,28 +617,38 @@ class Affiliation_Builder:
                             for dept in department_ls:
                                 if dept not in self.author2affiliation[author][institution]:
                                     self.author2affiliation[author][institution].append(dept)
-                self.processed_paper_id_set.add(paper_id)
+                self.processed_paper_name_set.add(paper_id)
             else:
-                print(f"Failed to process the first page of paper {paper_id}.")
+                print(f"Failed to process the first page of paper {paper_id}, status: {run.status}.")
 
-    def _save_affiliation(self, save_path : str = None) -> None:
+    def _save_affiliation(self, file_name : str) -> None:
         if save_path is None:
-            save_path = os.path.join(self.save_dir, 'author_affiliation_parallel.pkl')
+            save_path = os.path.join(self.save_dir, file_name)
         with open(save_path, 'wb') as f:
-            pickle.dump((self.processed_paper_id_set, self.author2affiliation), f)
+            pickle.dump((self.processed_paper_name_set, self.author2affiliation), f)
+        print(f"Affiliation data saved to {save_path}.")
 
-    def __call__(self, save_path : str = None, parallel : bool = False, max_workers : int = 8) -> None:
+    def __call__(self, file_name : str = None, parallel : bool = False, max_workers : int = 8) -> None:
         if parallel:
             self._build_affiliation_parallel(max_workers=max_workers)
         else:
             self._build_affiliation()
-        self._save_affiliation(save_path=save_path)
+        if file_name is None:
+            if parallel:
+                file_name = "author_affiliation_parallel.pkl"
+            else:
+                file_name = "author_affiliation.pkl"
+
+        self._save_affiliation(file_name=file_name)
 
 class PDFDownloader:
     def __init__(self, root_path : str = '../data/') -> None:
         self.root_path = root_path
+        self.num_downloaded = 0
+        self.num_failed = 0
+        self.num_existed = 0
 
-    def _download_pdf(self, paper_id: str = None) -> None:
+    def _download_pdf(self, paper_id: str = None, max_attemps : int = 5) -> None:
         url = f"http://export.arxiv.org/pdf/{paper_id}"
         paper_name = paper_id2paper_name(paper_id)
         save_path = os.path.join(self.root_path, f"pdf/{paper_name}.pdf")
@@ -613,46 +657,112 @@ class PDFDownloader:
         if os.path.exists(save_path):
             print(f"PDF for paper {paper_id} already exists.")
             return None
-        
-        try:
-            # Request the PDF file from arXiv
-            response = requests.get(url)
-            if response.status_code == 200:
-                # Save the PDF content to a file
-                with open(save_path, 'wb') as f:
-                    f.write(response.content)
-                print(f"Successfully downloaded {paper_id}")
-            else:
-                print(f"Failed to download PDF for paper {paper_id}, status code: {response.status_code}")
-        except Exception as e:
-            print(f"Error downloading PDF for paper {paper_id}: {e}")
+        crnt_attemps = 0
+        while crnt_attemps < max_attemps:
+            if crnt_attemps > 0:
+                print(f"Retrying download for {paper_id} (Attempt {crnt_attemps + 1} / {max_attemps})...")
+                time.sleep(np.random.uniform(1, 3))
+            try:
+                # Request the PDF file from arXiv
+                response = requests.get(url)
+                if response.status_code == 200:
+                    # Save the PDF content to a file
+                    with open(save_path, 'wb') as f:
+                        f.write(response.content)
+                    print(f"Successfully downloaded {paper_id}")
+                    return None
+                else:
+                    print(f"Failed to download PDF for paper {paper_id}, status code: {response.status_code}")
+            except Exception as e:
+                print(f"Error downloading PDF for paper {paper_id}: {e}")
+                if e == 429:
+                    print("Too many requests, sleeping for 60 seconds...")
+                    time.sleep(60)
+            crnt_attemps += 1
         
         return None
+    
+    def _download_pdf_step(self, paper_id: str = None, max_attemps : int = 5, lock : threading.Lock = None) -> None:
+        print( f"Downloading PDF for paper {paper_id}...")
+        url = f"http://export.arxiv.org/pdf/{paper_id}"
+        paper_name = paper_id2paper_name(paper_id)
+        save_path = os.path.join(self.root_path, f"pdf/{paper_name}.pdf")
 
-    def _parallel_download(self, paper_ids: list, max_workers: int = 5, delay: float = 1.0):
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+        }
+        
+        # Check if the file already exists
+        if os.path.exists(save_path):
+            print(f"PDF for paper {paper_id} already exists.")
+            with lock:
+                self.num_existed += 1
+            return None
+        crnt_attemps = 0
+        while crnt_attemps < max_attemps:
+            if crnt_attemps > 0:
+                print(f"Retrying download for {paper_id} (Attempt {crnt_attemps + 1} / {max_attemps})...")
+                time.sleep(2)
+            try:
+                # Request the PDF file from arXiv
+                response = requests.get(url, headers=headers)
+                if response.status_code == 200:
+                    # Save the PDF content to a file
+                    with open(save_path, 'wb') as f:
+                        f.write(response.content)
+                    with lock:
+                        self.num_downloaded += 1
+                    print(f"Successfully downloaded {paper_id}")
+                    return None
+                else:
+                    print(f"Failed to download PDF for paper {paper_id}, status code: {response.status_code}")
+            except Exception as e:
+                print(f"Error downloading PDF for paper {paper_id}: {e}")
+            crnt_attemps += 1
+        with lock:
+            print(f"Failed to download PDF for paper {paper_id} after {max_attemps} attempts.")
+            self.num_failed += 1
+        return None
+
+
+    def _parallel_download(self, paper_ids: list, max_workers: int = 5, max_attemps: int = 5) -> None:
+        lock = threading.Lock()
+        paper_id_q = queue.Queue()
+        for paper_id in paper_ids:
+            paper_id_q.put(paper_id)
+        last_time = time.time()
         with ThreadPoolExecutor(max_workers=max_workers) as executor:
             futures = []
-            
-            # Submit tasks to the executor with a delay between each submission
-            for paper_id in paper_ids:
-                futures.append(executor.submit(self.download_pdf, paper_id))
-                time.sleep(delay)  # Delay between submissions to avoid overwhelming the server
-                
-            # Wait for all tasks to complete
-            for future in as_completed(futures):
-                try:
-                    future.result()  # Raise any exception caught during the download
-                except Exception as e:
-                    print(f"Error downloading file: {e}")
 
-    def __call__(self, paper_id: str = None, paper_id_ls: list[str] = None, max_workers: int = 5, delay: float = 1.0):
+            while not paper_id_q.empty() or any([future.running() for future in futures]):
+                crnt_time = time.time()
+                time_elapsed = crnt_time - last_time
+                if time_elapsed > 5:
+                    print(f"{self.num_downloaded} PDFs downloaded so far, {self.num_failed} failed, {self.num_existed} already exist, in total {self.num_downloaded + self.num_failed + self.num_existed} / {len(paper_ids)} papers.")
+                    last_time = time.time()
+                
+                try:
+                    paper_id = paper_id_q.get(timeout=5)
+                    future = executor.submit(self._download_pdf_step, paper_id, max_attemps, lock)
+                    futures.append(future)
+                except queue.Empty:
+                    pass
+
+            for future in futures:
+                future.result()
+
+        print(f"{self.num_downloaded} PDFs downloaded so far, {self.num_failed} failed, {self.num_existed} already exist, in total {self.num_downloaded + self.num_failed + self.num_existed} / {len(paper_ids)} papers.")
+        
+
+    def __call__(self, paper_id: str = None, paper_id_ls: list[str] = None, max_workers: int = 5, max_attemps: int = 5) -> None:
         if paper_id is not None:
             self._download_pdf(paper_id)
         if paper_id_ls is not None:
-            self._parallel_download(paper_id_ls, max_workers, delay)
+            self._parallel_download(paper_id_ls, max_workers, max_attemps)
 
 
-
+def paper_name2paper_id(paper_name : str) -> str:
+    return paper_name.replace('_', '/')
 
 def paper_id2paper_name(paper_id : str) -> str:
     return paper_id.replace('/', '_')
