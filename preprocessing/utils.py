@@ -19,6 +19,7 @@ import numpy as np
 from pymupdf import FileDataError
 from typing import Generator
 from requests import RequestException
+from datetime import datetime
 
 import builtins
 
@@ -49,6 +50,17 @@ class Collaboration_Graph_Scraper:
         self.max_depth = max_depth
         self.max_num_update = max_num_update
         self.max_results = max_results
+        self.profile = {
+            "cache_path": cache_path,
+            "save_path": save_path,
+            "anchor_author": anchor_author,
+            "anchor_paper": anchor_paper,
+            "anchor_category": anchor_category,
+            "category_ls": category_ls,
+            "max_depth": max_depth,
+            "max_num_update": max_num_update,
+            "max_results": max_results
+        }
         # self.max_collaborations = max_collaborations
         # self.max_authors = max_authors
         # self.max_papers = max_papers
@@ -76,7 +88,7 @@ class Collaboration_Graph_Scraper:
     def _load_graph(self) -> None:
         if self.cache_path != None and os.path.exists(self.cache_path):
             with open(self.cache_path, 'rb') as f:
-                self.graph, self.paper_id2author_ls, self.author2paper_id, self.fully_explored_authors = pickle.load(f)
+                self.graph, self.paper_id2author_ls, self.author2paper_id, self.fully_explored_authors, self.profile = pickle.load(f)
         else:
             self.graph = nx.Graph()
             self.paper_id2author_ls = {}
@@ -186,7 +198,7 @@ class Collaboration_Graph_Scraper:
         print("Expanding collaboration graph...")
         with ThreadPoolExecutor(max_workers=max_workers) as executor:
             futures = []
-
+            last_time = time.time()
             while (not self.authors_to_explore.empty()) or any([future.running() for future in futures]):
                 crnt_num_attemps = 0
                 if self.num_updates >= self.max_num_update:
@@ -198,10 +210,17 @@ class Collaboration_Graph_Scraper:
                     time.sleep(10)
                     continue
                 while crnt_num_attemps < max_num_attemps:
-                    if (self.num_finished + 1) % 20 == 0:
+                    crnt_time = time.time()
+                    time_ellapsed = crnt_time - last_time
+                    if time_ellapsed > 5:
                         print(f"Number of updates: {self.num_updates}")
                         print(f"Number of authors to explore: {self.authors_to_explore.qsize()}")
                         self.save_graph(lock=lock)
+                        last_time = time.time()
+                    # if (self.num_finished + 1) % 20 == 0:
+                    #     print(f"Number of updates: {self.num_updates}")
+                    #     print(f"Number of authors to explore: {self.authors_to_explore.qsize()}")
+                    #     self.save_graph(lock=lock)
                     try:
                         crnt_author = self.authors_to_explore.get(timeout=np.random.uniform(1.5, 2.5))
                         crnt_depth = self.depth_queue.get()
@@ -242,14 +261,22 @@ class Collaboration_Graph_Scraper:
         print("Building collaboration graph...")
         with ThreadPoolExecutor(max_workers=max_workers) as executor:
             futures = []
-
+            last_time = time.time()
             while (not self.authors_to_explore.empty()) or any([future.running() for future in futures]):
                 crnt_num_attemps = 0
                 while crnt_num_attemps < max_num_attemps:
-                    if (self.num_updates + 1) % 20 == 0:
+                    crnt_time = time.time()
+                    time_ellapsed = crnt_time - last_time
+                    if time_ellapsed > 10:
                         print(f"Number of updates: {self.num_updates}")
                         print(f"Number of authors to explore: {self.authors_to_explore.qsize()}")
                         self.save_graph(lock=lock)
+                        print(f"authors to explore {self.authors_to_explore.qsize()}, has running threads: {sum([future.running() for future in futures])}")
+                        last_time = time.time()
+                    # if (self.num_updates + 1) % 20 == 0:
+                    #     print(f"Number of updates: {self.num_updates}")
+                    #     print(f"Number of authors to explore: {self.authors_to_explore.qsize()}")
+                    #     self.save_graph(lock=lock)
                     try:
                         crnt_author = self.authors_to_explore.get(timeout=2)
                         crnt_depth = self.depth_queue.get()
@@ -262,7 +289,7 @@ class Collaboration_Graph_Scraper:
                         break
 
                     except queue.Empty:
-                        pass
+                        break
                     
                     except ConnectionResetError as e:
                         crnt_num_attemps += 1
@@ -297,7 +324,7 @@ class Collaboration_Graph_Scraper:
             try:
                 # Write to a temporary file
                 with tempfile.NamedTemporaryFile('wb', delete=False) as temp_file:
-                    pickle.dump((self.graph, self.paper_id2author_ls, self.author2paper_id, self.fully_explored_authors), temp_file)
+                    pickle.dump((self.graph, self.paper_id2author_ls, self.author2paper_id, self.fully_explored_authors, self.profile), temp_file)
                     temp_file.flush()
                     os.fsync(temp_file.fileno())  # Ensure data is written to disk
                 
@@ -759,7 +786,6 @@ class PDFDownloader:
             self._download_pdf(paper_id)
         if paper_id_ls is not None:
             self._parallel_download(paper_id_ls, max_workers, max_attemps)
-
 
 def paper_name2paper_id(paper_name : str) -> str:
     return paper_name.replace('_', '/')

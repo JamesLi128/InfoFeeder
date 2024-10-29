@@ -1,0 +1,54 @@
+nohup: ignoring input
+Building collaboration graph...
+Traceback (most recent call last):
+  File "/home/jamesli/Documents/InfoFeeder/preprocessing/collaboration_graph_test.py", line 8, in <module>
+    collaboration_graph.build_collaboration_graph_from_author(max_workers=max_workers)
+  File "/home/jamesli/Documents/InfoFeeder/preprocessing/utils.py", line 304, in build_collaboration_graph_from_author
+    future.result()
+  File "/home/jamesli/anaconda3/envs/InfoFeeder/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/jamesli/anaconda3/envs/InfoFeeder/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/jamesli/anaconda3/envs/InfoFeeder/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jamesli/Documents/InfoFeeder/preprocessing/utils.py", line 163, in author_search_step
+    feed = feedparser.parse(arxiv_query_url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jamesli/anaconda3/envs/InfoFeeder/lib/python3.11/site-packages/feedparser/api.py", line 216, in parse
+    data = _open_resource(url_file_stream_or_string, etag, modified, agent, referrer, handlers, request_headers, result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jamesli/anaconda3/envs/InfoFeeder/lib/python3.11/site-packages/feedparser/api.py", line 115, in _open_resource
+    return http.get(url_file_stream_or_string, etag, modified, agent, referrer, handlers, request_headers, result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jamesli/anaconda3/envs/InfoFeeder/lib/python3.11/site-packages/feedparser/http.py", line 171, in get
+    f = opener.open(request)
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/home/jamesli/anaconda3/envs/InfoFeeder/lib/python3.11/urllib/request.py", line 519, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jamesli/anaconda3/envs/InfoFeeder/lib/python3.11/urllib/request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jamesli/anaconda3/envs/InfoFeeder/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/home/jamesli/anaconda3/envs/InfoFeeder/lib/python3.11/urllib/request.py", line 1377, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jamesli/anaconda3/envs/InfoFeeder/lib/python3.11/urllib/request.py", line 1352, in do_open
+    r = h.getresponse()
+        ^^^^^^^^^^^^^^^
+  File "/home/jamesli/anaconda3/envs/InfoFeeder/lib/python3.11/http/client.py", line 1395, in getresponse
+    response.begin()
+  File "/home/jamesli/anaconda3/envs/InfoFeeder/lib/python3.11/http/client.py", line 325, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/home/jamesli/anaconda3/envs/InfoFeeder/lib/python3.11/http/client.py", line 286, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jamesli/anaconda3/envs/InfoFeeder/lib/python3.11/socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [Errno 104] Connection reset by peer

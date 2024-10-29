@@ -1,0 +1,466 @@
+nohup: ignoring input
+Building collaboration graph...
+Author Amitabh Basu fully explored at depth d+0.
+Author Marco Di Summa fully explored at depth d+1.
+Author Martin Skutella fully explored at depth d+1.
+Author Christoph Hertrich fully explored at depth d+1.
+Author Hayden S. Helm fully explored at depth d+1.
+Author Avanti Athreya fully explored at depth d+1.
+Author Joshua T. Vogelstein fully explored at depth d+1.
+Author Youngser Park fully explored at depth d+1.
+Author Carey E. Priebe fully explored at depth d+1.
+Author Michael Winding fully explored at depth d+1.
+Author Marta Zlatic fully explored at depth d+1.
+Author Albert Cardona fully explored at depth d+1.
+Author Patrick Bourke fully explored at depth d+1.
+Author Jonathan Larson fully explored at depth d+1.
+Author Marah Abdin fully explored at depth d+1.
+Author Piali Choudhury fully explored at depth d+1.
+Author Weiwei Yang fully explored at depth d+1.
+Author Poorya Mianjy fully explored at depth d+1.
+Author Raman Arora fully explored at depth d+1.
+Number of updates: 0
+Number of authors to explore: 41
+Graph saved to ../data/stat.ML_collaboration_graph_20241028_214403.pkl
+authors to explore 41, has running threads: 4
+Author Christopher W. White fully explored at depth d+1.
+Author Anirbit Mukherjee fully explored at depth d+1.
+Author Tejaswini Ganapathy fully explored at depth d+1.
+Author Akshay Rangamani fully explored at depth d+1.
+Author Ashish Arora fully explored at depth d+1.
+Author Sang Chin fully explored at depth d+1.
+Author Trac D. Tran fully explored at depth d+1.
+Author Yixin Tao fully explored at depth d+1.
+Author László A. Végh fully explored at depth d+1.
+Author Leon Sering fully explored at depth d+2.
+Author Vincent Froese fully explored at depth d+2.
+Author Christian Haase fully explored at depth d+2.
+Author Georg Loho fully explored at depth d+2.
+Author Rolf Niedermeier fully explored at depth d+2.
+Author Jayanta Dey fully explored at depth d+2.
+Author Ali Geisa fully explored at depth d+2.
+Author Ronak Mehta fully explored at depth d+2.
+Author Eric Eaton fully explored at depth d+2.
+Author Tyler M. Tomita fully explored at depth d+2.
+Author Jeffery Dick fully explored at depth d+2.
+Author Haoyin Xu fully explored at depth d+2.
+Author Ashwin De Silva fully explored at depth d+2.
+Author Al-Fahad M. Al-Qadhi fully explored at depth d+2.
+Number of updates: 0
+Number of authors to explore: 0
+Graph saved to ../data/stat.ML_collaboration_graph_20241028_214403.pkl
+authors to explore 0, has running threads: 4
+Author Vince Lyzinski fully explored at depth d+2.
+Author Will LeVine fully explored at depth d+2.
+Author Ronak D. Mehta fully explored at depth d+2.
+Author Qingyang Wang fully explored at depth d+2.
+Author Gido M. van de Ven fully explored at depth d+2.
+Author Bryan Tower fully explored at depth d+2.
+Author Chenyu Gao fully explored at depth d+2.
+Author Christopher M. White fully explored at depth d+2.
+Author Sujeeth Bharadwaj fully explored at depth d+2.
+Author Kate Lytvynets fully explored at depth d+2.
+Author Oriana Riva fully explored at depth d+2.
+Author Christopher White fully explored at depth d+2.
+Author Christoper M. White fully explored at depth d+2.
+Author Brandon Duderstadt fully explored at depth d+2.
+Author Jaewon Chung fully explored at depth d+2.
+Author Benjamin D. Pedigo fully explored at depth d+2.
+Author Eric W. Bridgeford fully explored at depth d+2.
+Author Cong Mu fully explored at depth d+2.
+Author Bijan K. Varjavand fully explored at depth d+2.
+Author Angelo Mele fully explored at depth d+2.
+Author Konstantinos Pantazis fully explored at depth d+2.
+Author Lingxin Hao fully explored at depth d+2.
+Author Joshua Cape fully explored at depth d+2.
+Number of updates: 0
+Number of authors to explore: 6
+Graph saved to ../data/stat.ML_collaboration_graph_20241028_214403.pkl
+authors to explore 6, has running threads: 4
+Author Jesús Arroyo fully explored at depth d+2.
+Author John M. Conroy fully explored at depth d+2.
+Author Evan S. Hill fully explored at depth d+2.
+Author William N. Frost fully explored at depth d+2.
+Author Minh Tang fully explored at depth d+2.
+Author Donniell E. Fishkind fully explored at depth d+2.
+Author Eric Bridgeford fully explored at depth d+2.
+Author Keith Levin fully explored at depth d+2.
+Author Yichen Qin fully explored at depth d+2.
+Author Daniel L. Sussman fully explored at depth d+2.
+Author Katharina Eichler fully explored at depth d+2.
+Author Ben Cocanougher fully explored at depth d+2.
+Author Sambit Panda fully explored at depth d+2.
+Author Daniel Sussman fully explored at depth d+2.
+Author David J. Marchette fully explored at depth d+2.
+Author Carey Priebe fully explored at depth d+2.
+Author Jelle Zorn fully explored at depth d+2.
+Author Ronan Perry fully explored at depth d+2.
+Author Antoine Lutz fully explored at depth d+2.
+Author Cencheng Shen fully explored at depth d+2.
+Author Satish Palaniappan fully explored at depth d+2.
+Number of updates: 0
+Number of authors to explore: 0
+Graph saved to ../data/stat.ML_collaboration_graph_20241028_214403.pkl
+authors to explore 0, has running threads: 4
+Author Junhao Xiong fully explored at depth d+2.
+Author Tiffany Chu fully explored at depth d+2.
+Author Jacob Desman fully explored at depth d+2.
+Author Brian Gilbert fully explored at depth d+2.
+Author Adam Li fully explored at depth d+2.
+Author Ting Xu fully explored at depth d+2.
+Author Alexandra Badea fully explored at depth d+2.
+Author Brian Caffo fully explored at depth d+2.
+Author Pratik Chaudhari fully explored at depth d+2.
+Author Chester Huynh fully explored at depth d+2.
+Author Rahul Ramesh fully explored at depth d+2.
+Author Jesus Arroyo fully explored at depth d+2.
+Author Ali Saad-Eldin fully explored at depth d+2.
+Author Jesse Patsolic fully explored at depth d+2.
+Author Benjamin Falk fully explored at depth d+2.
+Author Kaleab A. Kinfu fully explored at depth d+2.
+Author Michael Ainsworth fully explored at depth d+2.
+Author Yu-Chung Peng fully explored at depth d+2.
+Author Madi Kusmanov fully explored at depth d+2.
+Number of updates: 0
+Number of authors to explore: 0
+Graph saved to ../data/stat.ML_collaboration_graph_20241028_214403.pkl
+authors to explore 0, has running threads: 4
+Author Florian Engert fully explored at depth d+2.
+Author Richard Guo fully explored at depth d+2.
+Author Eva Yezerets fully explored at depth d+2.
+Author Mike Powell fully explored at depth d+2.
+Author Hayden Helm fully explored at depth d+2.
+Author Thomas L. Athey fully explored at depth d+2.
+Author Gavin Mischler fully explored at depth d+2.
+Author Theodore Lee fully explored at depth d+2.
+Author Tingshan Liu fully explored at depth d+2.
+Author Arman Koul fully explored at depth d+2.
+Author Alexander Chang fully explored at depth d+2.
+Author Hugo Richard fully explored at depth d+2.
+Author Cameron Franz fully explored at depth d+2.
+Author Pierre Ablin fully explored at depth d+2.
+Author Iain Carmichael fully explored at depth d+2.
+Author Alexandre Gramfort fully explored at depth d+2.
+Author Randal Burns fully explored at depth d+2.
+Author Da Zheng fully explored at depth d+2.
+Author Christopher Douville fully explored at depth d+2.
+Author Mauro Maggioni fully explored at depth d+2.
+Author Guilherme França fully explored at depth d+2.
+Author Maria L. Rizzo fully explored at depth d+2.
+Author Heather Patsolic fully explored at depth d+2.
+Author Sancar Adali fully explored at depth d+2.
+Number of updates: 0
+Number of authors to explore: 4
+Graph saved to ../data/stat.ML_collaboration_graph_20241028_214403.pkl
+authors to explore 4, has running threads: 4
+Author James Browne fully explored at depth d+2.
+Author Carey E. Friebe fully explored at depth d+2.
+Author Gongkai Li fully explored at depth d+2.
+Author Jesse L. Patsolic fully explored at depth d+2.
+Author Jason Yim fully explored at depth d+2.
+Author Meghana Madhyastha fully explored at depth d+2.
+Author Shangsi Wang fully explored at depth d+2.
+Author Veronika Strnadova-Neeley fully explored at depth d+2.
+Author Percy Li fully explored at depth d+2.
+Author Runze Tang fully explored at depth d+2.
+Author Michael Ketcha fully explored at depth d+2.
+Author Evan D. Calabrese fully explored at depth d+2.
+Author Daniel S. Margulies fully explored at depth d+2.
+Author Norbert Binkiewicz fully explored at depth d+2.
+Author Qing Wang fully explored at depth d+2.
+Author Henry Pao fully explored at depth d+2.
+Author Karl Rohe fully explored at depth d+2.
+Author Marcelo Fiori fully explored at depth d+2.
+Number of updates: 0
+Number of authors to explore: 8
+Graph saved to ../data/stat.ML_collaboration_graph_20241028_214403.pkl
+authors to explore 8, has running threads: 4
+Author Donniell Fishkind fully explored at depth d+2.
+Author Guillermo Sapiro fully explored at depth d+2.
+Author Li Chen fully explored at depth d+2.
+Author Ha Trinh fully explored at depth d+2.
+Author Aranyak Acharyya fully explored at depth d+2.
+Author Xihan Qin fully explored at depth d+2.
+Author Tiona Zuzul fully explored at depth d+2.
+Author Nicholas Caurvina fully explored at depth d+2.
+Author Emily Cox Pahnke fully explored at depth d+2.
+Author Neha Parikh Shah fully explored at depth d+2.
+Author Fereshteh Amini fully explored at depth d+2.
+Author Jeffrey Weston fully explored at depth d+2.
+Author Joshua Vogelstein fully explored at depth d+2.
+Author Joshua Agterberg fully explored at depth d+2.
+Author Michael W. Trosset fully explored at depth d+2.
+Author Heather G. Patsolic fully explored at depth d+2.
+Author Nam H. Lee fully explored at depth d+2.
+Author Congyuan Yang fully explored at depth d+2.
+Author I-Jeng Wang fully explored at depth d+2.
+Author Michael Rosen fully explored at depth d+2.
+Author Care E. Priebe fully explored at depth d+2.
+Author Abdou Youssef fully explored at depth d+2.
+Author Michael Trosset fully explored at depth d+2.
+Author Ben Johnson fully explored at depth d+2.
+Author Ningyuan Huang fully explored at depth d+2.
+Number of updates: 0
+Number of authors to explore: 1
+Graph saved to ../data/stat.ML_collaboration_graph_20241028_214403.pkl
+authors to explore 1, has running threads: 4
+Author Qizhe Wang fully explored at depth d+2.
+Author Zhirui Li fully explored at depth d+2.
+Author Soledad Villar fully explored at depth d+2.
+Author Chengyue Huang fully explored at depth d+2.
+Author Mingyue Gao fully explored at depth d+2.
+Author Lin Yang fully explored at depth d+2.
+Author Vladimir Braverman fully explored at depth d+2.
+Author Patrick Rubin-Delanchy fully explored at depth d+2.
+Author Tianyi Chen fully explored at depth d+2.
+Author Fred Roosta fully explored at depth d+2.
+Author Yuexiao Dong fully explored at depth d+2.
+Author Lingyao Meng fully explored at depth d+2.
+Author Digvijay Singh fully explored at depth d+2.
+Author Michael W. Mahoney fully explored at depth d+2.
+Author Farbod Roosta-Khorasani fully explored at depth d+2.
+Author Shakira Suwan fully explored at depth d+2.
+Author Jordan Yoder fully explored at depth d+2.
+Author Ming Sun fully explored at depth d+2.
+Author Dominic S. Lee fully explored at depth d+2.
+Author Carey E Priebe fully explored at depth d+2.
+Author Enayat Ullah fully explored at depth d+2.
+Number of updates: 0
+Number of authors to explore: 2
+Graph saved to ../data/stat.ML_collaboration_graph_20241028_214403.pkl
+authors to explore 2, has running threads: 4
+Author Peter Bartlett fully explored at depth d+2.
+Author Teodor V. Marinov fully explored at depth d+2.
+Author Nathan Srebro fully explored at depth d+2.
+Author Michael Menart fully explored at depth d+2.
+Author Rene Vidal fully explored at depth d+2.
+Author Raef Bassily fully explored at depth d+2.
+Author Hussein Hazimeh fully explored at depth d+2.
+Author Cristóbal Guzmán fully explored at depth d+2.
+Author Natalia Ponomareva fully explored at depth d+2.
+Author Ibrahim Hammoud fully explored at depth d+2.
+Author Alexey Kurakin fully explored at depth d+2.
+Author Thanh Nguyen-Tang fully explored at depth d+2.
+Author Yunjuan Wang fully explored at depth d+2.
+Author Tomás González fully explored at depth d+2.
+Author Mehryar Mohri fully explored at depth d+2.
+Author Tung Mai fully explored at depth d+2.
+Author Anup Rao fully explored at depth d+2.
+Author Ryan Rossi fully explored at depth d+2.
+Author Jeremias Sulam fully explored at depth d+2.
+Number of updates: 0
+Number of authors to explore: 19
+Graph saved to ../data/stat.ML_collaboration_graph_20241028_214403.pkl
+authors to explore 19, has running threads: 4
+Author Daniel Rothchild fully explored at depth d+2.
+Author Ramchandran Muthukumar fully explored at depth d+2.
+Author Ashwinee Panda fully explored at depth d+2.
+Author Ion Stoica fully explored at depth d+2.
+Author Nikita Ivkin fully explored at depth d+2.
+Author Michael Dinitz fully explored at depth d+2.
+Author Joseph Gonzalez fully explored at depth d+2.
+Author Nils Holzenberger fully explored at depth d+2.
+Author Haoming Jiang fully explored at depth d+2.
+Author Jarvis Haupt fully explored at depth d+2.
+Author Xingguo Li fully explored at depth d+2.
+Author Tuo Zhao fully explored at depth d+2.
+Author Mingyi Hong fully explored at depth d+2.
+Author Han Liu fully explored at depth d+2.
+Author Shruti Palaskar fully explored at depth d+2.
+Author Florian Metze fully explored at depth d+2.
+Author Pranava Madhyastha fully explored at depth d+2.
+Author Huda Khayrallah fully explored at depth d+2.
+Author Junwei Lu fully explored at depth d+2.
+Author Adrian Benton fully explored at depth d+2.
+Number of updates: 0
+Number of authors to explore: 1
+Graph saved to ../data/stat.ML_collaboration_graph_20241028_214403.pkl
+authors to explore 1, has running threads: 4
+Author Dee Ann Reisinger fully explored at depth d+2.
+Author Biman Gujral fully explored at depth d+2.
+Author Andrew Cotter fully explored at depth d+2.
+Author Peter Schulam fully explored at depth d+2.
+Author Sheng Zhang fully explored at depth d+2.
+Author Ofer Dekel fully explored at depth d+2.
+Author Zhaoran Wang fully explored at depth d+2.
+Author Pulkit Gopalani fully explored at depth d+2.
+Author Ambuj Tewari fully explored at depth d+2.
+Author Samyak Jha fully explored at depth d+2.
+Author Sayar Karmakar fully explored at depth d+2.
+Author Dibyakanti Kumar fully explored at depth d+2.
+Author Soham Dan fully explored at depth d+2.
+Author Avirup Das fully explored at depth d+2.
+Author Phanideep Gampa fully explored at depth d+2.
+Author Theodore Papamarkou fully explored at depth d+2.
+Author Soham De fully explored at depth d+2.
+Author Tomaso Poggio fully explored at depth d+2.
+Author Lorenzo Rosasco fully explored at depth d+2.
+Number of updates: 0
+Number of authors to explore: 69
+Graph saved to ../data/stat.ML_collaboration_graph_20241028_214403.pkl
+authors to explore 69, has running threads: 4
+Author Nam H. Nguyen fully explored at depth d+2.
+Author Dzung Phan fully explored at depth d+2.
+Author Abhishek Kumar fully explored at depth d+2.
+Author Jacob A. Harer fully explored at depth d+2.
+Author Sang H. Chin fully explored at depth d+2.
+Author Louis Y. Kim fully explored at depth d+2.
+Author Onur Ozdemir fully explored at depth d+2.
+Author Rebecca L. Russell fully explored at depth d+2.
+Author Leonard R. Kosta fully explored at depth d+2.
+Author Lei H. Hamilton fully explored at depth d+2.
+Author Gabriel I. Centeno fully explored at depth d+2.
+Author Jonathan R. Key fully explored at depth d+2.
+Author Paul M. Ellingwood fully explored at depth d+2.
+Author Alan Mackay fully explored at depth d+2.
+Author Marc W. McConley fully explored at depth d+2.
+Author Erik Antelman fully explored at depth d+2.
+Author Jeffrey M. Opper fully explored at depth d+2.
+Author Louis Jensen fully explored at depth d+2.
+Author Peter Chin fully explored at depth d+2.
+Author Tomo Lazovich fully explored at depth d+2.
+Author Jacob Harer fully explored at depth d+2.
+Author John Harer fully explored at depth d+2.
+Author Jesse Clarke fully explored at depth d+2.
+Author Paul Bendich fully explored at depth d+2.
+Author Jonathan deSena fully explored at depth d+2.
+Author Elizabeth Munch fully explored at depth d+2.
+Number of updates: 0
+Number of authors to explore: 8
+Graph saved to ../data/stat.ML_collaboration_graph_20241028_214403.pkl
+authors to explore 8, has running threads: 4
+Author Andrew Newman fully explored at depth d+2.
+Author David Rouse fully explored at depth d+2.
+Author David Porter fully explored at depth d+2.
+Author Nate Strawn fully explored at depth d+2.
+Author Adam Watkins fully explored at depth d+2.
+Author Sang Peter Chin fully explored at depth d+2.
+Author Luoluo Liu fully explored at depth d+2.
+Author Dung N. Tran fully explored at depth d+2.
+Author Lam Nguyen fully explored at depth d+2.
+Author Xiang Xiang fully explored at depth d+2.
+Author Xiang Xiang fully explored at depth d+2.
+Author Nasser M. Nasrabadi fully explored at depth d+2.
+Author Minh Dao fully explored at depth d+2.
+Author Hojjat S. Mousavi fully explored at depth d+2.
+Author Vishal Monga fully explored at depth d+2.
+Author Xiaoxia Sun fully explored at depth d+2.
+Author Qing Qu fully explored at depth d+2.
+Author Brijnesh Jain fully explored at depth d+2.
+Author Malte Renken fully explored at depth d+2.
+Author Mohammad Ariful Haque fully explored at depth d+2.
+Author Md Sanzid Bin Hossain fully explored at depth d+2.
+Author Lang Liu fully explored at depth d+2.
+Number of updates: 0
+Number of authors to explore: 7
+Graph saved to ../data/stat.ML_collaboration_graph_20241028_214403.pkl
+authors to explore 7, has running threads: 4
+Author Soumik Pal fully explored at depth d+2.
+Author Zaid Harchaoui fully explored at depth d+2.
+Author Jelena Diakonikolas fully explored at depth d+2.
+Author Vincent Roulet fully explored at depth d+2.
+Author Krishna Pillutla fully explored at depth d+2.
+Author Seong Jae Hwang fully explored at depth d+2.
+Author Hyunwoo J. Kim fully explored at depth d+2.
+Author Sathya N. Ravi fully explored at depth d+2.
+Author Vikas Singh fully explored at depth d+2.
+Author Ming Yuan fully explored at depth d+2.
+Author Sterling C. Johnson fully explored at depth d+2.
+Author Mohammad Rostami fully explored at depth d+2.
+Author Shulei Wang fully explored at depth d+2.
+Author Soheil Kolouri fully explored at depth d+2.
+Author Zak Murez fully explored at depth d+2.
+Author Yuri Owekcho fully explored at depth d+2.
+Author Jorge A. Mendez fully explored at depth d+2.
+Author José Marcio Luna fully explored at depth d+2.
+Author Kuyngnam Kim fully explored at depth d+2.
+Author Eric Diffenderfer fully explored at depth d+2.
+Number of updates: 0
+Author Boyu Wang fully explored at depth d+2.
+Number of authors to explore: 34
+Author Lyle H. Ungar fully explored at depth d+2.
+Graph saved to ../data/stat.ML_collaboration_graph_20241028_214403.pkl
+authors to explore 41, has running threads: 4
+Author Shane T. Jensen fully explored at depth d+2.
+Author Efstathios D. Gennatas fully explored at depth d+2.
+Author Charles B. Simone II fully explored at depth d+2.
+Author Mateo Wirth fully explored at depth d+2.
+Author Timothy D. Solberg fully explored at depth d+2.
+Author Gilmer Valdes fully explored at depth d+2.
+Author David Isele fully explored at depth d+2.
+Author Pawel Ladosz fully explored at depth d+2.
+Author Eseoghene Ben-Iwhiwhu fully explored at depth d+2.
+Author Nicholas Ketz fully explored at depth d+2.
+Author Yang Hu fully explored at depth d+2.
+Author Jeffrey L. Krichmar fully explored at depth d+2.
+Author Praveen Pilly fully explored at depth d+2.
+Author Tong Qi fully explored at depth d+2.
+Author Andrea Soltoggio fully explored at depth d+2.
+Author Ayushi Saxena fully explored at depth d+2.
+Author Sheyda Peyman fully explored at depth d+2.
+Author Gregory Sell fully explored at depth d+2.
+Author Timm Hess fully explored at depth d+2.
+Author Aren Jansen fully explored at depth d+2.
+Author Tinne Tuytelaars fully explored at depth d+2.
+Author Nicholas Soures fully explored at depth d+2.
+Author Michał Zając fully explored at depth d+2.
+Author Dhireesha Kudithipudi fully explored at depth d+2.
+Number of updates: 0
+Number of authors to explore: 10
+Graph saved to ../data/stat.ML_collaboration_graph_20241028_214403.pkl
+authors to explore 10, has running threads: 4
+Author Yilun Du fully explored at depth d+2.
+Author Igor Mordatch fully explored at depth d+2.
+Author Shuang Li fully explored at depth d+2.
+Author Sanjeev P. Khudanpur fully explored at depth d+2.
+Author Patrick J. Wolfe fully explored at depth d+2.
+Author Andreas S. Tolias fully explored at depth d+2.
+Author Zhe Li fully explored at depth d+2.
+Author Bharadwaj Pudipeddi fully explored at depth d+2.
+Author Maral Mesmakhosroshahi fully explored at depth d+2.
+Author Jinwen Xi fully explored at depth d+2.
+Author Xianshi Yu fully explored at depth d+2.
+Author Jonquil Z. Liao fully explored at depth d+2.
+Author Emily C. Hector fully explored at depth d+2.
+Author Chris McKennan fully explored at depth d+2.
+Author Alexander Modell fully explored at depth d+2.
+Author Weiqiong Huang fully explored at depth d+2.
+Author Ian Gallagher fully explored at depth d+2.
+Author Carson James fully explored at depth d+2.
+Author Dongbang Yuan fully explored at depth d+2.
+Author Irina Gaynanova fully explored at depth d+2.
+Number of updates: 0
+Number of authors to explore: 13
+Graph saved to ../data/stat.ML_collaboration_graph_20241028_214403.pkl
+authors to explore 13, has running threads: 4
+Author Elizaveta Levina fully explored at depth d+2.
+Author Elizabeth Hou fully explored at depth d+2.
+Author John Koo fully explored at depth d+2.
+Author Xinjie Du fully explored at depth d+2.
+Author Asad Lodhia fully explored at depth d+2.
+Author Xiaorui Zhu fully explored at depth d+2.
+Author Yin-Jen Chen fully explored at depth d+2.
+Author Yichi Zhang fully explored at depth d+2.
+Author Peng Wang fully explored at depth d+2.
+Author Alexander Volfovsky fully explored at depth d+2.
+Author Edoardo M. Airoldi fully explored at depth d+2.
+Author Prakash Ishwar fully explored at depth d+2.
+Author Christy Lin fully explored at depth d+2.
+Author Andrew Jones fully explored at depth d+2.
+Author Julius von Kügelgen fully explored at depth d+2.
+Author Anna Bertiger fully explored at depth d+2.
+Number of updates: 0
+Number of authors to explore: 0
+Graph saved to ../data/stat.ML_collaboration_graph_20241028_214403.pkl
+authors to explore 0, has running threads: 4
+Author Bernhard Schölkopf fully explored at depth d+2.
+Author Mohamed Anany fully explored at depth d+2.
+Author Huitong Qiu fully explored at depth d+2.
+Author Yoon Tae Park fully explored at depth d+2.
+Author Fang Han fully explored at depth d+2.
+Author Daiwei Chen fully explored at depth d+2.
+Author Sai Spandana Chintapalli fully explored at depth d+2.
+Author Wei-Kai Chang fully explored at depth d+2.
+Author Rongguang Wang fully explored at depth d+2.
+Graph saved to ../data/stat.ML_collaboration_graph_20241028_214403.pkl
+Graph built in 196.50 seconds.

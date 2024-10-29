@@ -1,0 +1,32 @@
+nohup: ignoring input
+Building collaboration graph...
+Author Amitabh Basu fully explored at depth d+0.
+Author Poorya Mianjy fully explored at depth d+1.
+Author Raman Arora fully explored at depth d+1.
+Author Anirbit Mukherjee fully explored at depth d+1.
+Author Rene Vidal fully explored at depth d+2.
+Author Enayat Ullah fully explored at depth d+2.
+Author Teodor V. Marinov fully explored at depth d+2.
+Author Thanh Nguyen-Tang fully explored at depth d+2.
+Author Pranava Madhyastha fully explored at depth d+2.
+Author Florian Metze fully explored at depth d+2.
+Author Nils Holzenberger fully explored at depth d+2.
+Author Shruti Palaskar fully explored at depth d+2.
+Author Yotam Barnoy fully explored at depth d+2.
+Author Kapil Katyal fully explored at depth d+2.
+Author Gregory D. Hager fully explored at depth d+2.
+Author Chris Paxton fully explored at depth d+2.
+Author Adrian Benton fully explored at depth d+2.
+Author Huda Khayrallah fully explored at depth d+2.
+Author Dee Ann Reisinger fully explored at depth d+2.
+Author Biman Gujral fully explored at depth d+2.
+Author Mo Yu fully explored at depth d+2.
+Author Mark Dredze fully explored at depth d+2.
+Author Matthew Gormley fully explored at depth d+2.
+Number of updates: 0
+Number of authors to explore: 0
+Graph saved to ../data/cs.AI_collaboration_graph_20241028_214220.pkl
+authors to explore 0, has running threads: 1
+Author Sheng Zhang fully explored at depth d+2.
+Graph saved to ../data/cs.AI_collaboration_graph_20241028_214220.pkl
+Graph built in 13.94 seconds.

@@ -1,0 +1,123 @@
+nohup: ignoring input
+Building collaboration graph...
+Author Amitabh Basu fully explored at depth d+0.
+Author Christoph Hertrich fully explored at depth d+1.
+Author Hongyi Jiang fully explored at depth d+1.
+Author Martin Skutella fully explored at depth d+1.
+Author Marco Di Summa fully explored at depth d+1.
+Author Michele Conforti fully explored at depth d+1.
+Author Robert Hildebrand fully explored at depth d+1.
+Author Matthias Köppe fully explored at depth d+1.
+Author Gennadiy Averkov fully explored at depth d+1.
+Author Marie-Charlotte Brandenburg fully explored at depth d+1.
+Author Moritz Grillo fully explored at depth d+2.
+Author Georg Loho fully explored at depth d+2.
+Author Christian Haase fully explored at depth d+2.
+Author Felix Schröder fully explored at depth d+2.
+Author Joseph Cheriyan fully explored at depth d+2.
+Author Raphael Steiner fully explored at depth d+2.
+Author Khai Van Tran fully explored at depth d+2.
+Author Miriam Schlöter fully explored at depth d+2.
+Author Jannik Matuschke fully explored at depth d+2.
+Author R. Ravi fully explored at depth d+2.
+Author Yann Disser fully explored at depth d+2.
+Author José A. Soto fully explored at depth d+2.
+Author Fabrizio Grandoni fully explored at depth d+2.
+Author Gianpaolo Oriolo fully explored at depth d+2.
+Author Volker Kaibel fully explored at depth d+2.
+Author Manuel Aprile fully explored at depth d+2.
+Author Christopher Hojny fully explored at depth d+2.
+Number of updates: 0
+Number of authors to explore: 2
+Graph saved to ../data/math.CO_collaboration_graph_20241028_214314.pkl
+authors to explore 2, has running threads: 4
+Author Alberto Del Pia fully explored at depth d+2.
+Author Yuri Faenza fully explored at depth d+2.
+Author Roland Grappe fully explored at depth d+2.
+Author Nicolas Bonifas fully explored at depth d+2.
+Author Nicolai Hähnle fully explored at depth d+2.
+Author Friedrich Eisenbrand fully explored at depth d+2.
+Author Martin Niemeier fully explored at depth d+2.
+Author Samuel Fiorini fully explored at depth d+2.
+Author Tony Huynh fully explored at depth d+2.
+Author Marco Macchia fully explored at depth d+2.
+Author Stefan Weltge fully explored at depth d+2.
+Author Samuel Fiorin fully explored at depth d+2.
+Author Gwenaël Joret fully explored at depth d+2.
+Author Matthias Walter fully explored at depth d+2.
+Author Kanstantsin Pashkovich fully explored at depth d+2.
+Author Ivan Soprunov fully explored at depth d+2.
+Author Bert Gerards fully explored at depth d+2.
+Author Simon Richard fully explored at depth d+2.
+Author Katherina von Dichter fully explored at depth d+2.
+Author Matthias Schymura fully explored at depth d+2.
+Author Alexander Kasprzyk fully explored at depth d+2.
+Author Martin Lehmann fully explored at depth d+2.
+Author Benjamin Nill fully explored at depth d+2.
+Author Anastasia Chavez fully explored at depth d+2.
+Author Bryan R. Gillespie fully explored at depth d+2.
+Author Jesus A. De Loera fully explored at depth d+2.
+Number of updates: 0
+Number of authors to explore: 19
+Graph saved to ../data/math.CO_collaboration_graph_20241028_214314.pkl
+authors to explore 19, has running threads: 4
+Author Giulia Codenotti fully explored at depth d+2.
+Author Christopher Borger fully explored at depth d+2.
+Author Antonio Macchia fully explored at depth d+2.
+Author Johannes Hofscheier fully explored at depth d+2.
+Author Francisco Santos fully explored at depth d+2.
+Author Jan Krümpelmann fully explored at depth d+2.
+Author Bernardo González Merino fully explored at depth d+2.
+Author Barbara Langfeld fully explored at depth d+2.
+Author Ingo Paschke fully explored at depth d+2.
+Author Matthias Henze fully explored at depth d+2.
+Author Guido Montúfar fully explored at depth d+2.
+Author Christian Wagner fully explored at depth d+2.
+Author Ben Smith fully explored at depth d+2.
+Author Robert Weismantel fully explored at depth d+2.
+Author Benjamin Hollering fully explored at depth d+2.
+Author Irem Portakal fully explored at depth d+2.
+Author Jesús A. De Loera fully explored at depth d+2.
+Author Chiara Meroni fully explored at depth d+2.
+Author Sophia Elia fully explored at depth d+2.
+Author Katalin Berlow fully explored at depth d+2.
+Author Leon Zhang fully explored at depth d+2.
+Author Isabelle Shankar fully explored at depth d+2.
+Author Ngoc Mai Tran fully explored at depth d+2.
+Author Rainer Sinn fully explored at depth d+2.
+Number of updates: 0
+Number of authors to explore: 9
+Graph saved to ../data/math.CO_collaboration_graph_20241028_214314.pkl
+authors to explore 9, has running threads: 4
+Author Mateusz Skomra fully explored at depth d+2.
+Author Edin Husić fully explored at depth d+2.
+Author Dante Luber fully explored at depth d+2.
+Author Michael Joswig fully explored at depth d+2.
+Author László A. Végh fully explored at depth d+2.
+Author Jorge Alberto Olarte fully explored at depth d+2.
+Author Marcel Celaya fully explored at depth d+2.
+Author Chi Ho Yuen fully explored at depth d+2.
+Author Benjamin Lorenz fully explored at depth d+2.
+Author Raman Sanyal fully explored at depth d+2.
+Author Rico Raber fully explored at depth d+2.
+Author Benjamin Schröter fully explored at depth d+2.
+Author Ulrike Bücking fully explored at depth d+2.
+Author Karin Schaller fully explored at depth d+2.
+Author Sofía Garzón Mora fully explored at depth d+2.
+Author Jan-Hendrik de Wiljes fully explored at depth d+2.
+Author Alex Küronya fully explored at depth d+2.
+Author Lena Walter fully explored at depth d+2.
+Author Jan Hofmann fully explored at depth d+2.
+Author Mónica Blanco fully explored at depth d+2.
+Author Jakob Erbe fully explored at depth d+2.
+Author Akihiro Higashitani fully explored at depth d+2.
+Author Matthias Beck fully explored at depth d+2.
+Number of updates: 0
+Number of authors to explore: 90
+Graph saved to ../data/math.CO_collaboration_graph_20241028_214314.pkl
+authors to explore 90, has running threads: 3
+Author Katharina Jochemko fully explored at depth d+2.
+Author Lukas Katthän fully explored at depth d+2.
+Author Mateusz Michałek fully explored at depth d+2.
+Graph saved to ../data/math.CO_collaboration_graph_20241028_214314.pkl
+Graph built in 43.02 seconds.
