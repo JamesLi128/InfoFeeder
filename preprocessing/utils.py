@@ -676,7 +676,8 @@ class PDFDownloader:
         self.num_existed = 0
 
     def _download_pdf(self, paper_id: str = None, max_attemps : int = 5) -> None:
-        url = f"http://export.arxiv.org/pdf/{paper_id}"
+        url = f"http://arxiv.org/pdf/{paper_id}"
+        print(url)
         paper_name = paper_id2paper_name(paper_id)
         save_path = os.path.join(self.root_path, f"pdf/{paper_name}.pdf")
         
@@ -711,7 +712,7 @@ class PDFDownloader:
     
     def _download_pdf_step(self, paper_id: str = None, max_attemps : int = 5, lock : threading.Lock = None) -> None:
         print( f"Downloading PDF for paper {paper_id}...")
-        url = f"http://export.arxiv.org/pdf/{paper_id}"
+        url = f"http://arxiv.org/pdf/{paper_id}"
         paper_name = paper_id2paper_name(paper_id)
         save_path = os.path.join(self.root_path, f"pdf/{paper_name}.pdf")
 
