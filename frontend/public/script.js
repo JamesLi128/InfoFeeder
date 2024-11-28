@@ -1,5 +1,12 @@
 console.log("Script loaded");
 
+document.getElementById('input-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  const userInput = document.getElementById('user-input').value;
+  console.log('User Input:', userInput);
+  // You can add further processing here
+});
+
 function fetchData() {
   return fetch('data/graph.json')
     .then(response => {
@@ -37,7 +44,8 @@ fetchData().then(data => {
     .join("circle")
       .attr("r", 5)
       .attr("fill", "red")
-      .call(drag(simulation));
+      .call(drag(simulation))
+      .on("click", (event, d) => displayNodeInfo(d));
 
   const label = svg.append("g")
     .attr("class", "labels")
@@ -80,6 +88,11 @@ fetchData().then(data => {
         event.subject.fx = null;
         event.subject.fy = null;
       });
+  }
+
+  function displayNodeInfo(node) {
+    const infoDiv = document.getElementById('node-info');
+    infoDiv.innerHTML = `<h3>${node.name}</h3><p>${node.description}</p>`;
   }
 }).catch(error => {
   console.error("Error loading data:", error);
