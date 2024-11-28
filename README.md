@@ -24,7 +24,7 @@ After that, enter the name of scholar(notice: not all scholars can be queried, i
 Notice that you can drag the nodes around and click it to get the information for the name of the scholar/institution. Here, blue dot represents the scholar you queried, yellow dots are the institutions like Johns Hopkins University, and the green ones are collaborators. 
 
 # How is it done
-They are mostly done in the backend/preprocessing. It is capable of querying current scholars using arXiv url API, download their collaboration papers, process their first pages to extract affiliation info using OpenAI API, and then recursively querying the new scholars recognized in the process of processing collaborators. In other words, I can scrap the entire arXiv if 
+In the frontend, the visualization was done by d3. The rest are mostly done in the backend/preprocessing. It is capable of querying current scholars using arXiv url API, download their collaboration papers, process their first pages to extract affiliation info using OpenAI API, and then recursively querying the new scholars recognized in the process of processing collaborators. In other words, I can scrap the entire arXiv if 
 
 1. It allows unlimited number of queries
 2. The collaboration graph is connected
