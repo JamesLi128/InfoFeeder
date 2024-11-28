@@ -11,4 +11,15 @@ body {
   svg {
     border: 1px solid #ddd;
   }
-  
+
+/* Ensure nodes are selectable and on top */
+.nodes circle {
+  pointer-events: all;
+  cursor: pointer;
+  z-index: 1; /* Ensure nodes are on top */
+}
+
+/* Ensure labels are not blocking pointer events */
+.labels text {
+  pointer-events: none;
+}
