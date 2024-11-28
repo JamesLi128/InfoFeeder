@@ -1,0 +1,16 @@
+{
+    "nodes": [
+      { "id": "Root" },
+      { "id": "Child1" },
+      { "id": "Child2" },
+      { "id": "Grandchild1" },
+      { "id": "Grandchild2" }
+    ],
+    "links": [
+      { "source": "Root", "target": "Child1" },
+      { "source": "Root", "target": "Child2" },
+      { "source": "Child1", "target": "Grandchild1" },
+      { "source": "Child2", "target": "Grandchild2" }
+    ]
+  }
+  
