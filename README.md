@@ -1,35 +1,51 @@
-# InfoFeeder
-This is a project for the course Software Engineering for Data Science, the goal is to build an auto info feeder for researchers or the general public depending on the kinds of information asked for. Right now the main feature is paper feeder for researchers, whose architecture can be generalized to broader application areas.
+# ScholarNet
+This is a project for the course Software Engineering for Data Science. It visualizes the graph structure of scholar collaborations. The data is scraped by querying the arXiv, extract the name of the collaborators and their affiliations(Universities and Departments). By entering the name of a scholar, you have an intuitive access to the network info. 
 
 # Why do you need this
-How do you keep up with the academia? Track researchers on ResearchGate or track certain journals and browse the entire catalog to see if there are anything interesting? Either way, you still risk missing some important papers and need to spend extra time scanning the entire paper looking for results that actually matters to your research. InfoFeeder helps you keep an eye on the entire academia in fields you are interested in, track all the conferences and journals you might want to check, filter out the redundency, and summarize things you need to know with a daily/weekly/monthly feed on your preference. 
+The first usage that comes to my mind is in assisting the process of graduate program applications. It tells you where your recommender's letter will be more recognized, thus increasing your chance of admission. 
 
 # How does it work
-In general, it comprises three major steps: Scrap, Aggregate, Feed. 
+In backend/affiliation/, you should get the graph generator running with
+```
+python graph_generator.py
+```
 
-## Scrap
-Using arxiv or google scholar api to keep up with the frontier, scrap papers freshly published by conferences and journals, download and catagorize. 
+Then, direct to frontend/, and run 
+```
+python3 -m http-server
+```
 
-## Aggregate
-Use Chatgpt/Claude/.. text generation api, personalize a feeder(possibly for different users), select papers they might be interested in, generate a summary with important details.
+It should direct you to a local host page like below. 
+![Start Page](img/start_page.png)
 
-## Feed
-Send the feed to the user, get feedback and update preference
+After that, enter the name of scholar(notice: not all scholars can be queried, it's limited by the graph structure which can be scaled), for example Amitabh Basu, who I greatly appreciate for agreeing to be one of my recommenders for my PhD application, and click submit button. You should see something similar to the following:
+![Graph Example](img/result.png)
 
-# Checkbox
-- Find out how to use the api, what are the configurations
-- Find out how good these chatbots are on summarizing research papers, and test prompts
-- Find programming languages/ways to deploy the app, from backend processing and frontend feeding
-- Design the logic/classes, sketch the skeleton
-- Code realize the logic and design, test for errors
-- Learn about frontend and typical ways to connect these two things
-- Try to build the simplest frontend and make things work in the simplest way
-- Add-on features, add as I go...... (how to auto-email the feeds, other useful features to personalize, etc.)
+Notice that you can drag the nodes around and click it to get the information for the name of the scholar/institution. Here, blue dot represents the scholar you queried, yellow dots are the institutions like Johns Hopkins University, and the green ones are collaborators. 
 
-# Problems to Check
-- Are there anything similar to this on the market?
-- Do people really need this? (At least I do, and new researchers do because we don't know anybody or the name of any journals)
-- How crap are the chatbots, any substitutions?
+# How is it done
+They are mostly done in the backend/preprocessing. It is capable of querying current scholars using arXiv url API, download their collaboration papers, process their first pages to extract affiliation info using OpenAI API, and then recursively querying the new scholars recognized in the process of processing collaborators. In other words, I can scrap the entire arXiv if 
 
+1. It allows unlimited number of queries
+2. The collaboration graph is connected
+3. My CPU is amazing
+4. Gigantic hard drive(s)
+5. Free OpenAI API call
 
+Unfortunately, most of them are unfeasible due to limited(no) funding. But still, this baby is fun to play with. 
+
+# Limitations
+Well, these are direct results from the lack of funding mentioned in the previous part. I can't query the entire arXiv so I might(probably) miss some(a lot) papers. This means some of the institutions with strong connection with your recommender might not appear. The better the graph I scrapped, the better and more accurate the result would be.
+
+# What can be done
+I can certainly get the embeddings of papers and assign them back to the authors. This will result in a database of paper embeddings and scholar embedding(by pooling from his/her papers' embeddings). In other words, right now given any paper or scholar, I can hint you with papers or scholars you might be interested in. 
+
+And, of course, by scraping the latest papers in the area of your choice, it can generate a summary of what is currently going on.
+
+# Some Advice for YOU
+Don't hit the "Accept all Cookies" button.
+
+If you can, read the terms and be aware of what kinds of info you are sharing with third parties.
+
+This is what I can do from a fully public dataset, imagine what they can do with the sensitive ones.
 
