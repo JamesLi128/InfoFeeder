@@ -6,7 +6,7 @@ from datetime import datetime
 os.environ["PYTHONBUFFERED"] = "1"
 
 anchor_author = "Amitabh Basu"
-category_ls = ['cs.LG', 'cs.AI', 'math.CO', 'stat.ML']
+category_ls = ['cs.LG', 'cs.AI', 'math.CO', 'stat.ML', ]
 save_path=f"../data/test_graph_expand_{datetime.now().strftime('%Y%m%d_%H%M%S')}.pkl"
 cache_path = "../data/test_graph.pkl"
 print(save_path)

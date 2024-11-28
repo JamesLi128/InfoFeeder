@@ -90,13 +90,42 @@ class RecommendationLetterSeeker:
     
     def _load_collaboration_graph(self, path : str):
         with open(path, 'rb') as f:
-            collaboration_graph, paper_id2author_ls, _, _ = pickle.load(f)
+            collaboration_graph, paper_id2author_ls, _, _, _ = pickle.load(f)
         return collaboration_graph, paper_id2author_ls
+    
+    def combine_results(self, results : dict):
+        '''
+        Combine results from multiple categories, combine the affiliations of the same collaborator.
+        '''
+        collaborator_ls = []
+        affiliation_ls = []
+
+        for category, (collaborators, affiliations) in results.items():
+            for collaborator, (institution_ls, departments_ls) in zip(collaborators, affiliations):
+                if collaborator not in collaborator_ls:
+                    collaborator_ls.append(collaborator)
+                    affiliation_ls.append([[], []])
+                    for institution, departments in zip(institution_ls, departments_ls):
+                        affiliation_ls[-1][0].append(institution)
+                        affiliation_ls[-1][1].append(departments)
+                else:
+                    idx = collaborator_ls.index(collaborator)
+                    for institution, departments in zip(institution_ls, departments_ls):
+                        if institution not in affiliation_ls[idx][0]:
+                            affiliation_ls[idx][0].append(institution)
+                            affiliation_ls[idx][1].append(departments)
+                        else:
+                            inst_idx = affiliation_ls[idx][0].index(institution)
+                            for department in departments:
+                                if department not in affiliation_ls[idx][1][inst_idx]:
+                                    affiliation_ls[idx][1][inst_idx].append(department)
+
+        return collaborator_ls, affiliation_ls
 
     def from_scholar_name2affiliation(self, scholar_name : str):
         if scholar_name not in self.collaboration_graph.nodes:
             print(f"Query: scholar '{scholar_name}' not found in collaboration graph.")
-            return None
+            return (scholar_name, [], [])
 
         collaborators = list(self.collaboration_graph[scholar_name].keys())
         affiliations = []

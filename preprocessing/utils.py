@@ -77,9 +77,13 @@ class Collaboration_Graph_Scraper:
                 self.depth_queue.put(0)
         else:
             leaf_authors = self._find_leaf_authors()
-            for author in leaf_authors:
-                self.authors_to_explore.put(author)
+            if self.anchor_author != None:
+                self.authors_to_explore.put(self.anchor_author)
                 self.depth_queue.put(0)
+            else:
+                for author in leaf_authors:
+                    self.authors_to_explore.put(author)
+                    self.depth_queue.put(0)
             if self.max_depth > 1 and self.max_num_update == None:
                 Warning(f"Expanding graph out of {len(leaf_authors)} leaf authors, max_depth > 1, might take a long time, condider using smaller max_depth or setting max_num_update.")
         
@@ -160,6 +164,7 @@ class Collaboration_Graph_Scraper:
             return
         # query generation and parsing
         arxiv_query_url = url_generator(author_ls=[author_name], max_results=self.max_results, category_ls=self.category_ls)
+        print(f"url: {arxiv_query_url}")
         feed = feedparser.parse(arxiv_query_url)
         crnt_author_re = self._author_re(author_name)
         with lock:
@@ -234,7 +239,7 @@ class Collaboration_Graph_Scraper:
                         break
 
                     except queue.Empty:
-                        pass
+                        break
                     
                     except RequestException as e:
                         crnt_num_attemps += 1

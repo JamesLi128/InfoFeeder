@@ -1,0 +1,7 @@
+nohup: ignoring input
+Expanding Mateo Díaz's collaboration graph in: ['math.ST']
+Building collaboration graph...
+url: http://export.arxiv.org/api/query?search_query=(au:díaz_m)+AND+(cat:math.ST)&start=0&max_results=2000&sortBy=lastUpdatedDate&sortOrder=descending
+Author Mateo Díaz fully explored at depth d+0.
+Graph saved to ../data/math.ST_collaboration_graph_20241127_172155.pkl
+Graph built in 2.01 seconds.
