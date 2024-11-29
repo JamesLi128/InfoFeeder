@@ -10,7 +10,7 @@ In backend/affiliation/, you should get the graph generator running with
 python graph_generator.py
 ```
 
-Then, direct to frontend/, and run 
+Then, direct to frontend/public, and run 
 ```
 python3 -m http-server
 ```
