@@ -12,7 +12,7 @@ python graph_generator.py
 
 Then, direct to frontend/, and run 
 ```
-python3 -m http-server
+python3 -m http.server
 ```
 
 It should direct you to a local host page like below. 
