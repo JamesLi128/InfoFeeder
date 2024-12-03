@@ -97,8 +97,14 @@ function drag(simulation) {
 function displayNodeInfo(d) {
   const infoElement = document.getElementById('info');
   if (infoElement) {
-    infoElement.innerHTML = `Node ID: ${d.id}<br>Group: ${d.group}`;
-  } else {
+    if (d.group === 1) {
+      infoElement.innerHTML = `Institution: ${d.id}`;
+    } 
+    else {
+    infoElement.innerHTML = `Scholar: ${d.id}`;
+    }   } 
+  else {
     console.error('Element with ID "info" not found.');
   }
+
 }

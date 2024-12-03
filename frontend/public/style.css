@@ -1,25 +1,32 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f9;
-  }
-  
-  svg {
-    border: 1px solid #ddd;
-  }
-
-/* Ensure nodes are selectable and on top */
-.nodes circle {
-  pointer-events: all;
-  cursor: pointer;
-  z-index: 1; /* Ensure nodes are on top */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Arrange elements vertically */
+  height: 100vh;
+  background-color: #f4f4f9;
 }
 
-/* Ensure labels are not blocking pointer events */
-.labels text {
-  pointer-events: none;
+form#input-form {
+  margin-bottom: 20px; /* Space between form and info */
+  display: flex;
+  align-items: center; /* Align inputs and button */
+}
+
+form#input-form label {
+  margin-right: 10px; /* Space between label and input */
+}
+
+#info {
+  margin-top: 0; /* Reset unnecessary top margin */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 300px;
+  word-wrap: break-word;
+  background-color: #f9f9f9;
+  width: 100%; /* Ensure it spans the container */
+  text-align: left; /* Align text properly */
 }

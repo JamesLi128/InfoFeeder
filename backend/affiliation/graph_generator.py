@@ -26,6 +26,16 @@ def group_queries(queries, threshold=90):
     queries = list(new_queries)
     groups = []
     used_indices = set()
+
+    for i, query in enumerate(queries):
+        if i in used_indices:
+            continue
+
+        for j, other_query in enumerate(queries):
+            if j in used_indices:
+                continue
+            
+            
     
     for i, query in enumerate(queries):
         if i in used_indices:
@@ -47,13 +57,13 @@ def group_queries(queries, threshold=90):
         
         groups.append(group)
 
-    group_dict = {}
-    print(len(groups))
-    for idx, group in enumerate(groups):
-        for query in group:
-            group_dict[query] = idx
+    institution2group_head = {}
+    for group in groups:
+        group_head = max(group, key=len)
+        for institution in group:
+            institution2group_head[institution] = group_head
     
-    return group_dict
+    return institution2group_head
 
 @app.route('/get_graph_data', methods=['POST'])
 def get_graph_data():
@@ -76,16 +86,17 @@ def get_graph_data():
     
     collaborator_ls, affiliation_ls = letter_seeker.combine_results(result_dict)
 
-    institution_group_dict = group_queries(affiliation_ls, threshold=90)
+    institution2group_head = group_queries(affiliation_ls, threshold=80)
 
-    print(institution_group_dict)
+    print(institution2group_head)
 
     unavailable_institution = "N/A"
     json_dict = {
         "nodes" : [{"id" : scholar_name, "group" : 0}],
         "links" : [{"source" : scholar_name, "target" : unavailable_institution}]
     }
-    for institution_name in institution_group_dict.keys():
+    group_heads = set(institution2group_head.values())
+    for institution_name in group_heads:
         json_dict["nodes"].append({"id" : institution_name, "group" : 1})
         json_dict["links"].append({"source" : scholar_name, "target" : institution_name})
 
@@ -94,7 +105,7 @@ def get_graph_data():
         if len(institution_ls) == 0:
             json_dict["links"].append({"source" : unavailable_institution, "target" : collaborator})
         for institution in institution_ls:
-            json_dict["links"].append({"source" : institution, "target" : collaborator})
+            json_dict["links"].append({"source" : institution2group_head[institution], "target" : collaborator})
     
     return jsonify(json_dict)
 
