@@ -6,7 +6,7 @@ document.getElementById('input-form').addEventListener('submit', function(event)
   console.log('User Input:', userInput);
 
   // Send the data to the backend
-  fetch('http://localhost:5000/get_graph_data', {  // Ensure the URL matches your Flask server's URL
+  fetch('http://127.0.0.1:5000/get_graph_data', {  // Ensure the URL matches your Flask server's URL
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -19,8 +19,8 @@ document.getElementById('input-form').addEventListener('submit', function(event)
     // Process and visualize the graph data
     visualizeGraph(data);
   })
-  .catch((error) => {
-    console.error('Error:', error);
+  .catch(error => {
+    console.error('There was a problem with the fetch operation:', error);
   });
 });
 
